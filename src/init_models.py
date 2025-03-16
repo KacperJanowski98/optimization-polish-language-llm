@@ -13,8 +13,7 @@ from transformers import (
     PreTrainedTokenizer
 )
 
-from utils import authenticate_huggingface, setup_gpu_memory, get_device
-
+from src.utils import authenticate_huggingface, setup_gpu_memory, get_device
 
 logging.basicConfig(
     level=logging.INFO,
@@ -183,9 +182,8 @@ def configure_generation_parameters(model_name: str) -> Dict:
     Returns:
         Dict: Generation parameters for the model
     """
-    # Default parameters
+    # Default parameters (excluding max_new_tokens to avoid conflicts)
     default_params = {
-        "max_new_tokens": 512,
         "do_sample": True,
         "temperature": 0.7,
         "top_p": 0.9,
