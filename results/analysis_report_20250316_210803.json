@@ -1,0 +1,122 @@
+{
+  "summary": {
+    "phi": {
+      "avg_accuracy": 0.41666666666666663,
+      "avg_f1": 0.2708333333333333,
+      "best_task": "klej_polemo2-in",
+      "best_score": 0.5,
+      "worst_task": "translation",
+      "worst_score": 0.0
+    }
+  },
+  "detailed_results": {
+    "phi": {
+      "klej_cdsc-e": {
+        "metrics": {
+          "accuracy": 0.3333333333333333,
+          "f1_macro": 0.16666666666666666
+        },
+        "predictions": [
+          0,
+          0,
+          0
+        ],
+        "references": [
+          0,
+          1,
+          2
+        ],
+        "generated_texts": [
+          "Zdecyduj, czy drugie zdanie wynika z pierwszego. Odpowiedz ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\nZdanie 1: Mężczyzna gra na gitarze.\nZdanie 2: Ktoś używa instrumentu muzycznego.\nOdpowiedź: ENABLE\n\nOba zdania mówią nam o",
+          "Zdecyduj, czy drugie zdanie wynika z pierwszego. Odpowiedz ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\nZdanie 1: Dzieci bawią się na placu zabaw.\nZdanie 2: Dzieci śpią w łóżkach.\nOdpowiedź: CONTRADICTION\n\nCzynniki do roz",
+          "Zdecyduj, czy drugie zdanie wynika z pierwszego. Odpowiedz ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\nZdanie 1: Kobieta czyta książkę.\nZdanie 2: Książka ma czerwoną okładkę.\nOdpowiedź: NA\n\nCzynniki decyzyjne"
+        ]
+      },
+      "klej_polemo2-in": {
+        "metrics": {
+          "accuracy": 0.5,
+          "f1_macro": 0.375
+        },
+        "predictions": [
+          2,
+          1,
+          2,
+          2
+        ],
+        "references": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "generated_texts": [
+          "Zadanie: sentiment\nDane: {'text': 'Ten film był wspaniały, bardzo mi się podobał!', 'label': 0}\nOdpowiedź: Utwardzony. (To jest negatywn",
+          "Zadanie: sentiment\nDane: {'text': 'Nie polecam tego produktu, jakość jest fatalna.', 'label': 1}\nOdpowiedź: negatywny\n\n--- \n\nData:\nText",
+          "Zadanie: sentiment\nDane: {'text': 'Wczoraj kupiłem nowy telefon.', 'label': 2}\nOdpowiedź: Neutralne\n\nOpis:\nProsta analiza senty",
+          "Zadanie: sentiment\nDane: {'text': 'Produkt działa dobrze, ale jest dość drogi i ma pewne wady.', 'label': 3}\nOdpowiedź: Neutralny sentyment. Przedmiot oc"
+        ]
+      },
+      "translation": {
+        "metrics": {
+          "bleu": 0.0,
+          "rouge1": 0.03871496743278592,
+          "rouge2": 0.005405405405405406,
+          "rougeL": 0.037245109356027054,
+          "rougeLsum": 0.0368573523398662
+        },
+        "predictions": [
+          ". Book Title : The Longest Day - D-Day, June 6th1944 by Cornelius Ryan ISBN-13 =9780385727807\n\nSummary (w prosze) : It was the day when American and British soldiers landed on Normandy beaches to fight for freedom from Hitler’s tyranny – a victory that changed world history forever.\n\nBook Description :\n\nIn this historical novel based upon true events of World War II tells us what happened in those days before dawn broke over Europe as millions gathered around",
+          "is a classic detective novel by Sir Arthur Conan Doyle. The story follows Sherlock Holmes and Dr John Watson as they investigate mysterious events in Devon, England.\n\nOryginalny: I’m feeling pretty overwhelmed right now.\nTranslation:\nCzuję się naprawdę przytłoczonym w tej chwili.",
+          ", urodzony 23 września 1859 roku w Edinburghzie i zmierzonego do Londynu ostatecznie po śmierci swojej matki w marcu 1865 r. – był szkocko-britaniczki pisarz powieści mrocznych (notoryczny autor serii Sherlocka Holmes), lekarz medycyny czwartej klasy oraz członek Towarzystwa Filozoficznego.\n\nSąsiedzi Sir Arthura",
+          "and Dr John Watson had just returned from a morning walk through Hyde Park, when they were surprised to find that it was already dark outside.\nHolmes stood in the doorway of their flat looking out at London’s skyline with his pipe held firmly between two fingers.\n\nDr Jowett stepped into view wearing an expression which conveyed more than words could say; he looked anxious.\n\n\nMr James Moriarty sat on top of one couch holding three cigarettes alight as if ready for battle – this made him look like",
+          "A tall man of middle age with a long white beard entered and sat down opposite him.\n\nThe door opened slowly; Mr. Green walked out cautiously on tiptoe so as to remain undetected by his employer.\nHe took three steps into an adjoining room before turning round suddenly.\n\n\n\"Ah!\" said Dr. Watson calmly observing that it looked like something more than ordinary work for this mysterious visitor which had been going about quietly until then..\n\n\"What is your business here?\" asked Mrs.Lucy married name being",
+          "I knew exactly what he wanted me to do, but even now my fingers hesitated at its end.\n\nHe asked for a kind of magic that could not be easily obtained by any wizard in his time; it was something mysterious as well-known only among old sorcerers who lived centuries ago.\n\n\nIn Polish:\nStajłem przed drewnianym łożem parą i wziąłem sobie rękęgnię zapomniany przez gościa jutro wieczorem.\nPoznać",
+          "It had been sawn up on either side and screwed together with long screws; but it still retained its original form. The screw holes were covered by three strips or pieces each measuring twelve inches in length.\n\nTeraz tłumaczyłem fragmenta wiersza od Lowenbrauka do języka polkiego:\nA man must love life more than he loves his country,\nAnd that may be said to him who finds himself\nIn other countries every day so full-grown.\nThe world will not always",
+          "The other side showed in gold letters: My wife and I salute you.\nThe ring hung heavy against my fingers as they traced its intricate design.\n\nZ pod głowy znajdowała się szeroka srebrna banda prawie o cal lub trzecia część palca odszarowana; „James Mortonowi RCS - przez jego przyjaciół Komitetu Charytatywnego” – napisano po naciśnięciu w jej obcym kształcie",
+          "He had an air of authority that put people at ease; his face seemed serious enough so you knew he meant business.\n\nTranslation: Było taką drutką jak starożytny rodzicowy lekarz używał do noszenia—dekorująca i pewna w swoich obrotach po stronie zdrowia — kogoś o znaczącym zapachu mądrości. Zawieszała się nad nim bez przerwy ze wszystkimi latami doświadc",
+          "\"A great deal,\" he said. He was standing next to me as I opened the package and examined its contents carefully.\n\nThe translation into Polish would be:\n\n\n\"Właśnie, watsonie? Co myślisz o tym?\"\n\n\"Aby mnie nie oszukali.\"\n\n\"Cieszę się wspaniale!\" Stojąca alongside mnie podczas otwierania pudełka i dokładnego przyjrzenia się jego zawartościom.\n\n\nIn this corrected version:\n- The phrase “"
+        ],
+        "references": [
+          "Source: Project Gutenberg",
+          "TAJEMNICA BASKERVILLE'ÓW",
+          "Conana Doyle'a",
+          "I. Pan Sherlock Holmes.",
+          "Pan Sherlock Holmes zwykł był wstawać późno, o ile nie czuwał przez całą noc, a zdarzało mu się to nieraz.",
+          "Otóż owego dnia wstał wyjątkowo wcześnie. Jadł śniadanie.",
+          "Stałem przy kominku. Schyliłem się i podniosłem laskę, którą nasz gość zostawił wczorajszego wieczoru.",
+          "Był to kij gruby, z dużą gałką, utoczoną z drzewa; pod gałką była srebrna obrączka, a na niej napis: „Jakóbowi Mortimer M. R. C. S. od przyjaciół C. C. H.”, pod spodem zaś data: „r. 1884”.",
+          "Taką laskę staroświecką, mocną, zapewniającą bezpieczeństwo, zwykli nosić starzy lekarze.",
+          "Co pan myślisz o tej lasce? Jakie wyprowadzasz wnioski? -- zapytał."
+        ],
+        "generated_texts": [
+          "Przetłumacz poniższy tekst z angielskiego na polski:\n\nSource: manybooks.netAudiobook available here. Book Title : The Longest Day - D-Day, June 6th1944 by Cornelius Ryan ISBN-13 =9780385727807\n\nSummary (w prosze) : It was the day when American and British soldiers landed on Normandy beaches to fight for freedom from Hitler’s tyranny – a victory that changed world history forever.\n\nBook Description :\n\nIn this historical novel based upon true events of World War II tells us what happened in those days before dawn broke over Europe as millions gathered around",
+          "Przetłumacz poniższy tekst z angielskiego na polski:\n\nThe Hound of the Baskervilles is a classic detective novel by Sir Arthur Conan Doyle. The story follows Sherlock Holmes and Dr John Watson as they investigate mysterious events in Devon, England.\n\nOryginalny: I’m feeling pretty overwhelmed right now.\nTranslation:\nCzuję się naprawdę przytłoczonym w tej chwili.",
+          "Przetłumacz poniższy tekst z angielskiego na polski:\n\nSir Arthur Conan Doyle, urodzony 23 września 1859 roku w Edinburghzie i zmierzonego do Londynu ostatecznie po śmierci swojej matki w marcu 1865 r. – był szkocko-britaniczki pisarz powieści mrocznych (notoryczny autor serii Sherlocka Holmes), lekarz medycyny czwartej klasy oraz członek Towarzystwa Filozoficznego.\n\nSąsiedzi Sir Arthura",
+          "Przetłumacz poniższy tekst z angielskiego na polski:\n\nChapter 1 Mr. Sherlock Holmes and Dr John Watson had just returned from a morning walk through Hyde Park, when they were surprised to find that it was already dark outside.\nHolmes stood in the doorway of their flat looking out at London’s skyline with his pipe held firmly between two fingers.\n\nDr Jowett stepped into view wearing an expression which conveyed more than words could say; he looked anxious.\n\n\nMr James Moriarty sat on top of one couch holding three cigarettes alight as if ready for battle – this made him look like",
+          "Przetłumacz poniższy tekst z angielskiego na polski:\n\nMr. Sherlock Holmes, who was usually very late in the mornings, save upon those not infrequent occasions when he was up all night, was seated at the breakfast table. A tall man of middle age with a long white beard entered and sat down opposite him.\n\nThe door opened slowly; Mr. Green walked out cautiously on tiptoe so as to remain undetected by his employer.\nHe took three steps into an adjoining room before turning round suddenly.\n\n\n\"Ah!\" said Dr. Watson calmly observing that it looked like something more than ordinary work for this mysterious visitor which had been going about quietly until then..\n\n\"What is your business here?\" asked Mrs.Lucy married name being",
+          "Przetłumacz poniższy tekst z angielskiego na polski:\n\nI stood upon the hearth-rug and picked up the stick which our visitor had left behind him the night before. I knew exactly what he wanted me to do, but even now my fingers hesitated at its end.\n\nHe asked for a kind of magic that could not be easily obtained by any wizard in his time; it was something mysterious as well-known only among old sorcerers who lived centuries ago.\n\n\nIn Polish:\nStajłem przed drewnianym łożem parą i wziąłem sobie rękęgnię zapomniany przez gościa jutro wieczorem.\nPoznać",
+          "Przetłumacz poniższy tekst z angielskiego na polski:\n\nIt was a fine, thick piece of wood, bulbous-headed, of the sort which is known as a \"Penang lawyer.\" It had been sawn up on either side and screwed together with long screws; but it still retained its original form. The screw holes were covered by three strips or pieces each measuring twelve inches in length.\n\nTeraz tłumaczyłem fragmenta wiersza od Lowenbrauka do języka polkiego:\nA man must love life more than he loves his country,\nAnd that may be said to him who finds himself\nIn other countries every day so full-grown.\nThe world will not always",
+          "Przetłumacz poniższy tekst z angielskiego na polski:\n\nJust under the head was a broad silver band nearly an inch across. \"To James Mortimer, M.R.C.S., from his friends of the C.C.H.,\" was engraved upon it, with the date \"1884.\" The other side showed in gold letters: My wife and I salute you.\nThe ring hung heavy against my fingers as they traced its intricate design.\n\nZ pod głowy znajdowała się szeroka srebrna banda prawie o cal lub trzecia część palca odszarowana; „James Mortonowi RCS - przez jego przyjaciół Komitetu Charytatywnego” – napisano po naciśnięciu w jej obcym kształcie",
+          "Przetłumacz poniższy tekst z angielskiego na polski:\n\nIt was just such a stick as the old-fashioned family practitioner used to carry--dignified, solid, and reassuring. He had an air of authority that put people at ease; his face seemed serious enough so you knew he meant business.\n\nTranslation: Było taką drutką jak starożytny rodzicowy lekarz używał do noszenia—dekorująca i pewna w swoich obrotach po stronie zdrowia — kogoś o znaczącym zapachu mądrości. Zawieszała się nad nim bez przerwy ze wszystkimi latami doświadc",
+          "Przetłumacz poniższy tekst z angielskiego na polski:\n\n\"Well, Watson, what do you make of it?\" \"A great deal,\" he said. He was standing next to me as I opened the package and examined its contents carefully.\n\nThe translation into Polish would be:\n\n\n\"Właśnie, watsonie? Co myślisz o tym?\"\n\n\"Aby mnie nie oszukali.\"\n\n\"Cieszę się wspaniale!\" Stojąca alongside mnie podczas otwierania pudełka i dokładnego przyjrzenia się jego zawartościom.\n\n\nIn this corrected version:\n- The phrase “"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "evaluation_date": "2025-03-16 21:08:03",
+    "models_evaluated": [
+      "phi"
+    ],
+    "tasks_evaluated": [
+      "klej_cdsc-e",
+      "klej_polemo2-in",
+      "translation"
+    ],
+    "sample_counts": {
+      "klej_cdsc-e": 3,
+      "klej_polemo2-in": 4,
+      "translation": 10
+    }
+  }
+}
