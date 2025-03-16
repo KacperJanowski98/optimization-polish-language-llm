@@ -6,7 +6,6 @@ import logging
 from typing import Dict, List, Optional, Union, Any
 from datasets import load_dataset, Dataset, DatasetDict
 
-# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -70,7 +69,7 @@ def prepare_polish_datasets(
     klej_datasets: List[str] = None,
     max_samples: int = 100,
     data_dir: Optional[str] = None
-) -> Dict[str, Union[Dataset, DatasetDict]]:
+) -> Dict[str, Union[Dataset, DatasetDict, Dict[str, Any]]]:
     """
     Prepare datasets for Polish language evaluation using Polish GLUE (KLEJ).
     
@@ -81,7 +80,7 @@ def prepare_polish_datasets(
         data_dir (Optional[str]): Directory for caching or loading local datasets
         
     Returns:
-        Dict[str, Dataset]: Dictionary of task-specific datasets
+        Dict[str, Dict]: Dictionary of task-specific datasets with metadata
     """
     datasets = {}
     
@@ -98,9 +97,9 @@ def prepare_polish_datasets(
             klej_data = load_polish_glue(klej_datasets, max_samples, data_dir)
             datasets.update(klej_data)
         elif task == "translation":
-            datasets[task] = prepare_translation_dataset(max_samples, data_dir)
+            datasets["translation"] = prepare_translation_dataset(max_samples, data_dir)
         elif task == "generation":
-            datasets[task] = prepare_generation_dataset(max_samples, data_dir)
+            datasets["generation"] = prepare_generation_dataset(max_samples, data_dir)
         else:
             logger.warning(f"Unknown task: {task}, skipping")
     
@@ -110,7 +109,7 @@ def load_polish_glue(
     dataset_names: Optional[List[str]] = None,
     max_samples: int = 100,
     data_dir: Optional[str] = None
-) -> Dict[str, Dataset]:
+) -> Dict[str, Dict[str, Any]]:
     """
     Load datasets from the Polish GLUE (KLEJ) benchmark.
     
@@ -120,7 +119,7 @@ def load_polish_glue(
         data_dir: Directory for caching datasets
         
     Returns:
-        Dict[str, Dataset]: Dictionary of KLEJ datasets
+        Dict[str, Dict]: Dictionary of KLEJ datasets with metadata
     """
     klej_datasets = {}
     
@@ -323,7 +322,7 @@ def create_fallback_polemo() -> Dict:
         "keys": ["text", "label"]
     }
 
-def prepare_translation_dataset(max_samples: int = 100, data_dir: str = None) -> Dataset:
+def prepare_translation_dataset(max_samples: int = 100, data_dir: str = None) -> Dict[str, Any]:
     """
     Prepare a dataset for English-Polish translation evaluation.
     
@@ -332,7 +331,7 @@ def prepare_translation_dataset(max_samples: int = 100, data_dir: str = None) ->
         data_dir (str): Directory for caching/saving data
         
     Returns:
-        Dataset: Translation dataset
+        Dict: Translation dataset with metadata
     """
     logger.info("Loading translation dataset (English-Polish)")
     
@@ -359,7 +358,6 @@ def prepare_translation_dataset(max_samples: int = 100, data_dir: str = None) ->
             dataset = dataset.select(range(max_samples))
         
         logger.info(f"Loaded translation dataset with {len(dataset)} samples")
-        return dataset
     
     except Exception as e:
         logger.error(f"Failed to load translation dataset: {str(e)}")
@@ -395,9 +393,18 @@ def prepare_translation_dataset(max_samples: int = 100, data_dir: str = None) ->
             ]
         }
         
-        return Dataset.from_dict(minimal_data)
+        dataset = Dataset.from_dict(minimal_data)
+    
+    # Return with metadata similar to KLEJ datasets
+    return {
+        "dataset": dataset,
+        "description": "English-Polish translation dataset",
+        "task_type": "generation",
+        "metric": "bleu",
+        "keys": ["en", "pl"]
+    }
 
-def prepare_generation_dataset(max_samples: int = 100, data_dir: str = None) -> Dataset:
+def prepare_generation_dataset(max_samples: int = 100, data_dir: str = None) -> Dict[str, Any]:
     """
     Prepare a dataset for Polish text generation evaluation.
     
@@ -406,7 +413,7 @@ def prepare_generation_dataset(max_samples: int = 100, data_dir: str = None) -> 
         data_dir (str): Directory for caching/saving data
         
     Returns:
-        Dataset: Polish text generation dataset
+        Dict: Polish text generation dataset with metadata
     """
     logger.info("Creating a Polish text generation prompts dataset")
     
@@ -433,7 +440,15 @@ def prepare_generation_dataset(max_samples: int = 100, data_dir: str = None) -> 
     })
     
     logger.info(f"Created generation dataset with {len(dataset)} samples")
-    return dataset
+    
+    # Return with metadata similar to KLEJ datasets
+    return {
+        "dataset": dataset,
+        "description": "Polish text generation prompts",
+        "task_type": "generation",
+        "metric": "qualitative",
+        "keys": ["prompt"]
+    }
 
 if __name__ == "__main__":
     # Test the dataset preparation
