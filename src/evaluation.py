@@ -1,9 +1,11 @@
 """
 Evaluation module for Polish language model evaluation.
 """
+import difflib
 import logging
 import time
 import re
+import gc
 import json
 from typing import Dict, List, Tuple, Any, Optional, Callable
 from tqdm.auto import tqdm
@@ -22,6 +24,59 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
+def process_model_prediction(
+    model: PreTrainedModel,
+    tokenizer: PreTrainedTokenizer,
+    prompt: str,
+    max_new_tokens: int = 50,
+    generation_params: Dict[str, Any] = None
+) -> str:
+    """
+    Process a single prediction with standardized error handling and logging.
+    
+    Args:
+        model: Model to use for generation
+        tokenizer: Tokenizer for the model
+        prompt: Input prompt for the model
+        max_new_tokens: Maximum number of tokens to generate
+        generation_params: Additional generation parameters
+        
+    Returns:
+        str: Generated text from the model
+    """
+    if generation_params is None:
+        generation_params = {}
+    
+    try:
+        # Tokenize input
+        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        
+        # Generate with timeout to prevent hanging
+        with torch.no_grad():
+            outputs = model.generate(
+                **inputs,
+                max_new_tokens=max_new_tokens,
+                **generation_params
+            )
+        
+        # Decode output
+        generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        return generated_text
+    
+    except (RuntimeError, ValueError) as e:
+        if "CUDA out of memory" in str(e):
+            logger.error(f"CUDA out of memory during generation: {str(e)}")
+            # Try to recover
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+            return "ERROR: GPU memory exhausted"
+        else:
+            logger.error(f"Error during model generation: {str(e)}")
+            return f"ERROR: {str(e)}"
+    except Exception as e:
+        logger.error(f"Unexpected error during model generation: {str(e)}")
+        return f"ERROR: Unexpected error: {str(e)}"
 
 def evaluate_models(
     models: Dict[str, Tuple[PreTrainedModel, PreTrainedTokenizer]],
@@ -114,6 +169,16 @@ def evaluate_models(
             )
             
             model_results[task_name] = task_results
+
+            # Memory cleanup
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+            gc.collect()
+            logger.info("Cleared cache after model evaluation")
+            
+            # Save interim results after each model
+            if save_results and results_dir:
+                save_evaluation_results(results, results_dir, f"interim_{model_name}")
             
             # Log partial results
             logger.info(f"Results for {model_name} on {task_name}:")
@@ -211,27 +276,58 @@ def evaluate_text_entailment(
         # Create prompt
         prompt = create_task_specific_prompt("klej_cdsc-e", example)
         
-        # Generate prediction
-        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        # Generate prediction using the standardized helper
+        generated_text = process_model_prediction(
+            model=model,
+            tokenizer=tokenizer,
+            prompt=prompt,
+            max_new_tokens=10,
+            generation_params=generation_params
+        )
         
-        with torch.no_grad():
-            outputs = model.generate(
-                **inputs,
-                max_new_tokens=10,  # Short output expected
-                **generation_params
-            )
-        
-        # Decode output
-        generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        # Skip samples with errors
+        if generated_text.startswith("ERROR:"):
+            logger.warning("Skipping example due to generation error.")
+            continue
+            
         generated_texts.append(generated_text)
         
         # Extract prediction from generated text
         # Try to find one of the expected labels in the response
         prediction = None
+        generated_lower = generated_text.lower()
+
+        # First try exact matches with word boundaries to avoid substring matches
         for label_text in reverse_mapping.keys():
-            if label_text in generated_text.lower():
+            pattern = r'\b' + re.escape(label_text) + r'\b'
+            if re.search(pattern, generated_lower):
                 prediction = reverse_mapping[label_text]
                 break
+
+        # If no match found, log this for analysis
+        if prediction is None:
+            logger.debug(f"Could not extract prediction with exact pattern. Text: {generated_text}")
+            
+            # As a fallback, try fuzzy matching instead of defaulting
+            # Look for closest match among the labels (if any word is 80%+ similar)
+            highest_ratio = 0
+            best_match = None
+            
+            for word in generated_lower.split():
+                for label_text in reverse_mapping.keys():
+                    if len(word) > 3:  # Only consider words of reasonable length
+                        ratio = difflib.SequenceMatcher(None, word, label_text).ratio()
+                        if ratio > highest_ratio and ratio > 0.8:  # 80% similarity threshold
+                            highest_ratio = ratio
+                            best_match = label_text
+            
+            if best_match:
+                prediction = reverse_mapping[best_match]
+                logger.debug(f"Using fuzzy match: {best_match} (ratio: {highest_ratio:.2f})")
+            else:
+                # Only default as a last resort
+                prediction = 2  # NEUTRAL
+                logger.warning(f"Defaulting to neutral for text: {generated_text}")
         
         # Default to neutral if no clear answer found
         if prediction is None:
@@ -300,18 +396,20 @@ def evaluate_semantic_relatedness(
         # Create prompt
         prompt = create_task_specific_prompt("klej_cdsc-r", example)
         
-        # Generate prediction
-        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        # Generate prediction using the standardized helper
+        generated_text = process_model_prediction(
+            model=model,
+            tokenizer=tokenizer,
+            prompt=prompt,
+            max_new_tokens=10,
+            generation_params=generation_params
+        )
         
-        with torch.no_grad():
-            outputs = model.generate(
-                **inputs,
-                max_new_tokens=10,  # Short output expected
-                **generation_params
-            )
-        
-        # Decode output
-        generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        # Skip samples with errors
+        if generated_text.startswith("ERROR:"):
+            logger.warning("Skipping example due to generation error.")
+            continue
+            
         generated_texts.append(generated_text)
         
         # Extract prediction from generated text
@@ -572,18 +670,20 @@ def evaluate_rating_prediction(
         # Create prompt
         prompt = create_task_specific_prompt("klej_ar", example)
         
-        # Generate prediction
-        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        # Generate prediction using the standardized helper
+        generated_text = process_model_prediction(
+            model=model,
+            tokenizer=tokenizer,
+            prompt=prompt,
+            max_new_tokens=10,
+            generation_params=generation_params
+        )
         
-        with torch.no_grad():
-            outputs = model.generate(
-                **inputs,
-                max_new_tokens=10,  # Short output expected
-                **generation_params
-            )
-        
-        # Decode output
-        generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        # Skip samples with errors
+        if generated_text.startswith("ERROR:"):
+            logger.warning("Skipping example due to generation error.")
+            continue
+            
         generated_texts.append(generated_text)
         
         # Extract prediction from generated text
@@ -662,29 +762,77 @@ def evaluate_translation(
         # Create prompt
         prompt = create_task_specific_prompt("translation", example)
         
-        # Generate prediction
-        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        # Generate prediction using the standardized helper
+        generated_text = process_model_prediction(
+            model=model,
+            tokenizer=tokenizer,
+            prompt=prompt,
+            max_new_tokens=10,
+            generation_params=generation_params
+        )
         
-        with torch.no_grad():
-            outputs = model.generate(
-                **inputs,
-                max_new_tokens=100,  # Longer output for translation
-                **generation_params
-            )
-        
-        # Decode output
-        generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        # Skip samples with errors
+        if generated_text.startswith("ERROR:"):
+            logger.warning("Skipping example due to generation error.")
+            continue
+            
         generated_texts.append(generated_text)
         
-        # Extract translation from generated text (everything after the prompt)
-        translation = generated_text.replace(prompt, "").strip()
+        # Extract translation more robustly
+        translation = ""
+        if prompt in generated_text:
+            # Try to extract everything after the prompt
+            translation = generated_text.split(prompt, 1)[1].strip()
+        else:
+            # If prompt isn't found intact, look for common markers in the output
+            for marker in ["Translation:", "Tłumaczenie:", ":"]:
+                if marker in generated_text:
+                    parts = generated_text.split(marker, 1)
+                    if len(parts) > 1:
+                        translation = parts[1].strip()
+                        break
+            
+            # If no markers found, log this issue and use the full output as fallback
+            if not translation:
+                logger.warning("Could not extract translation cleanly. Using full output.")
+                translation = generated_text
         
         predictions.append(translation)
         references.append(example["pl"])
     
     # Calculate metrics
     metric_results = {}
-    
+
+    # Validate translations are not empty or malformed
+    valid_predictions = []
+    valid_references = []
+    invalid_count = 0
+
+    for pred, ref in zip(predictions, references):
+        # Check if prediction is valid (not empty and contains Polish characters)
+        if len(pred.strip()) > 5 and re.search(r'[ąęóśłżźćń]', pred, re.IGNORECASE):
+            valid_predictions.append(pred)
+            valid_references.append(ref)
+        else:
+            invalid_count += 1
+
+    if invalid_count > 0:
+        logger.warning(f"Excluded {invalid_count} invalid translations from metrics calculation")
+
+    # Use valid predictions/references for metrics
+    if len(valid_predictions) > 0:
+        # BLEU expects a list of references for each prediction
+        refs_for_bleu = [[ref] for ref in valid_references]
+        bleu = metrics["bleu"].compute(predictions=valid_predictions, references=refs_for_bleu)
+        metric_results["bleu"] = bleu["bleu"]
+        
+        # Record the percentage of valid translations
+        metric_results["valid_translation_percentage"] = len(valid_predictions) / len(predictions) * 100
+    else:
+        logger.error("No valid translations found for metric calculation")
+        metric_results["bleu"] = 0.0
+        metric_results["valid_translation_percentage"] = 0.0
+
     if "bleu" in metrics:
         # BLEU expects a list of references for each prediction
         refs_for_bleu = [[ref] for ref in references]
@@ -823,18 +971,20 @@ def evaluate_classification(
         # Create generic prompt
         prompt = f"Task: Classification\nText: {str(example)}\nLabel:"
         
-        # Generate prediction
-        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        # Generate prediction using the standardized helper
+        generated_text = process_model_prediction(
+            model=model,
+            tokenizer=tokenizer,
+            prompt=prompt,
+            max_new_tokens=10,
+            generation_params=generation_params
+        )
         
-        with torch.no_grad():
-            outputs = model.generate(
-                **inputs,
-                max_new_tokens=10,
-                **generation_params
-            )
-        
-        # Decode output
-        generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        # Skip samples with errors
+        if generated_text.startswith("ERROR:"):
+            logger.warning("Skipping example due to generation error.")
+            continue
+            
         generated_texts.append(generated_text)
         
         # For generic classification, just use the first number found in the output

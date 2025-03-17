@@ -14,6 +14,7 @@ from transformers import (
 )
 
 from src.utils import authenticate_huggingface, setup_gpu_memory, get_device
+from src.config import MODEL_GENERATION_PARAMS, DEFAULT_GENERATION_PARAMS
 
 logging.basicConfig(
     level=logging.INFO,
@@ -182,37 +183,15 @@ def configure_generation_parameters(model_name: str) -> Dict:
     Returns:
         Dict: Generation parameters for the model
     """
-    # Default parameters (excluding max_new_tokens to avoid conflicts)
-    default_params = {
-        "do_sample": True,
-        "temperature": 0.7,
-        "top_p": 0.9,
-        "top_k": 50,
-        "repetition_penalty": 1.2,
-        "num_return_sequences": 1,
-    }
+    # Start with default parameters
+    params = DEFAULT_GENERATION_PARAMS.copy()
     
-    # Model-specific parameters
-    model_params = {
-        "bielik": {
-            "temperature": 0.6,
-            "repetition_penalty": 1.3,
-        },
-        "gemma": {
-            "temperature": 0.7,
-            "top_p": 0.95,
-        },
-        "phi": {
-            "temperature": 0.8,
-            "top_k": 40,
-        }
-    }
+    # Update with model-specific parameters if available
+    if model_name.lower() in MODEL_GENERATION_PARAMS:
+        params.update(MODEL_GENERATION_PARAMS[model_name.lower()])
     
-    # Update default parameters with model-specific ones
-    if model_name.lower() in model_params:
-        default_params.update(model_params[model_name.lower()])
-    
-    return default_params
+    return params
+
 
 if __name__ == "__main__":
     # Example usage

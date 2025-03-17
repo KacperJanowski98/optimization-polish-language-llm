@@ -161,13 +161,24 @@ def load_polish_glue(
             logger.info(f"Successfully loaded {name} with {len(dataset)} samples")
             
         except Exception as e:
-            logger.error(f"Failed to load KLEJ dataset {name}: {str(e)}")
+            # More specific error handling
+            if "404" in str(e) or "not found" in str(e).lower():
+                logger.error(f"Dataset {name} not found in KLEJ. Error: {str(e)}")
+            elif "connect" in str(e).lower() or "timeout" in str(e).lower():
+                logger.error(f"Network error while loading dataset {name}. Error: {str(e)}")
+            else:
+                logger.error(f"Failed to load KLEJ dataset {name}. Error: {str(e)}")
+            
+            # Log a warning about using fallback data
+            logger.warning(f"Using minimal fallback dataset for {name}. Results will be less reliable.")
             
             # Try to create a fallback minimal dataset if loading fails
             if name == "cdsc-e":
                 klej_datasets[f"klej_{name}"] = create_fallback_cdsc_e()
             elif name == "polemo2-in":
                 klej_datasets[f"klej_{name}"] = create_fallback_polemo()
+            else:
+                logger.error(f"No fallback dataset available for {name}, skipping this task.")
     
     return klej_datasets
 
