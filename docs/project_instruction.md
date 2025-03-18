@@ -55,7 +55,8 @@ polish_lm_evaluation/
 
 2. **Install required packages**:
    ```bash
-   pip install torch transformers datasets evaluate pandas matplotlib jupyter sentencepiece huggingface_hub python-dotenv
+   pip install -r requirements-torch.txt
+   pip install -r requirements.txt
    ```
 
 3. **Create a .env file for storing API keys**:
@@ -94,37 +95,7 @@ if not hf_token:
 login(token=hf_token)
 ```
 
-### 3. Model Initialization
-
-Create code to download and initialize the three models:
-
-1. **Requirements**:
-   - Handle model-specific options (some models may need different parameters)
-   - Implement proper memory management for large models
-   - Configure generation parameters appropriately
-
-2. **Model-specific considerations**:
-   - **Bielik-11B**: Being 11B parameters, consider using quantization (int8)
-   - **Gemma-3-4B**: Follow Google's terms of use and licensing
-   - **Phi-4-mini**: Check for any Microsoft-specific requirements
-
-3. **Template structure**:
-   ```python
-   def initialize_models(device="cuda", load_in_8bit=False):
-       """
-       Initialize all three models for evaluation
-       
-       Args:
-           device: Device to load models on
-           load_in_8bit: Whether to use 8-bit quantization
-           
-       Returns:
-           Dictionary of model and tokenizer pairs
-       """
-       # Initialization code here
-   ```
-
-### 4. Dataset Preparation
+### 3. Dataset Preparation
 
 Create datasets for evaluating Polish language capabilities:
 
@@ -142,231 +113,177 @@ Create datasets for evaluating Polish language capabilities:
    - Existing multilingual datasets with Polish components
    - HuggingFace datasets with Polish language support
 
-3. **Dataset processing template**:
-   ```python
-   def prepare_polish_datasets(tasks=["translation", "qa", "generation"]):
-       """
-       Prepare datasets for Polish language evaluation
-       
-       Args:
-           tasks: List of tasks to prepare datasets for
-           
-       Returns:
-           Dictionary of task-specific datasets
-       """
-       # Dataset preparation code here
-   ```
 
-### 5. Evaluation Framework
+Using existing datasets from Hugging Face:
 
-Design an evaluation framework that:
+1. **[allegro/klej-dyk](https://huggingface.co/datasets/allegro/klej-dyk)** - Question-answer pairs obtained from Czy wiesz... section of Polish Wikipedia
+2. **[allegro/klej-polemo2-in](https://huggingface.co/datasets/allegro/klej-polemo2-in)** - The PolEmo2.0 is a dataset of online consumer reviews from four domains: medicine, hotels, products, and university. It is human-annotated on a level of full reviews and individual sentences
+3. **[allegro/klej-psc](https://huggingface.co/datasets/allegro/klej-psc)** - The Polish Summaries Corpus (PSC) is a dataset of summaries for 569 news articles
+4. **[allegro/klej-cdsc-e](https://huggingface.co/datasets/allegro/klej-cdsc-e)** - Polish CDSCorpus consists of 10K Polish sentence pairs which are human-annotated for semantic relatedness (CDSC-R) and entailment (CDSC-E)
 
-1. **Supports multiple evaluation metrics**:
-   - BLEU, ROUGE for translation/generation
-   - Accuracy for classification
-   - F1/Precision/Recall for QA tasks
-   - Custom metrics for Polish-specific evaluation
-
-2. **Implements proper prompt engineering**:
-   - Design task-specific prompts in Polish
-   - Ensure consistency across models
-   - Account for different model capabilities
-
-3. **Manages computational resources**:
-   - Batch processing where appropriate
-   - Memory management for large models
-   - Resource cleanup between tests
-
-4. **Template structure**:
-   ```python
-   def evaluate_models(models, tokenizers, datasets, metrics=["bleu", "rouge"]):
-       """
-       Evaluate models on Polish language tasks
-       
-       Args:
-           models: Dictionary of initialized models
-           tokenizers: Dictionary of tokenizers
-           datasets: Task-specific datasets
-           metrics: Evaluation metrics to use
-           
-       Returns:
-           Dictionary of evaluation results
-       """
-       # Evaluation code here
-   ```
-
-### 6. Evaluation Notebook
-
-Create a Jupyter notebook for running evaluations and visualizing results:
-
-1. **Structure**:
-   - Environment setup and imports
-   - Model initialization
-   - Dataset loading
-   - Model evaluation
-   - Results visualization
-   - Analysis and conclusions in raport form
-
-2. **Visualization ideas**:
-   - Comparative bar charts for metrics
-   - Error analysis tables
-   - Task-specific performance breakdown
-   - Inference time comparison
-   - Memory usage comparison
-
-## Code Templates
-
-### Model Initialization with .env Support
+#### Evaluation klej-dyk
 
 ```python
-import os
-import torch
-from dotenv import load_dotenv
-from huggingface_hub import login
-from transformers import AutoModelForCausalLM, AutoTokenizer
+import random
+from pprint import pprint
 
-# Load environment variables
-load_dotenv()
+from datasets import load_dataset, load_metric
 
-# Authenticate with Hugging Face
-hf_token = os.getenv("HF_TOKEN")
-if not hf_token:
-    raise ValueError("HF_TOKEN not found in environment variables")
+dataset = load_dataset("allegro/klej-dyk")
+dataset = dataset.class_encode_column("target")
+references = dataset["test"]["target"]
 
-login(token=hf_token)
+# generate random predictions
+predictions = [random.randrange(max(references) + 1) for _ in range(len(references))]
 
-def load_model(model_id, use_8bit=False, device="cuda"):
-    """Load a model and its tokenizer"""
-    tokenizer = AutoTokenizer.from_pretrained(model_id, token=hf_token)
-    
-    # Set padding token if needed
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-    
-    # Configure model loading options
-    model_kwargs = {
-        "device_map": "auto", 
-        "trust_remote_code": True,
-        "token": hf_token
-    }
-    
-    if use_8bit:
-        model_kwargs["load_in_8bit"] = True
-    
-    # Load the model
-    model = AutoModelForCausalLM.from_pretrained(
-        model_id,
-        **model_kwargs
-    )
-    
-    return model, tokenizer
+acc = load_metric("accuracy")
+f1 = load_metric("f1")
+
+acc_score = acc.compute(predictions=predictions, references=references)
+f1_score = f1.compute(predictions=predictions, references=references, average="macro")
+
+pprint(acc_score)
+pprint(f1_score)
+
+# {'accuracy': 0.5286686103012633}
+# {'f1': 0.46700507614213194}
 ```
 
-### Dataset Processing
+**Tasks (input, output, and metrics)**
+
+The task is to predict if the answer to the given question is correct or not.
+
+Input ('question sentence', 'answer' columns): question and answer sentences
+
+Output ('target' column): 1 if the answer is correct, 0 otherwise.
+
+Domain: Wikipedia
+
+Measurements: F1-Score
+
+#### Evaluation klej-polemo2-in
 
 ```python
-from datasets import load_dataset, Dataset
+import random
+from pprint import pprint
 
-def load_polish_qa_dataset(max_samples=100):
-    """Load a Polish QA dataset"""
-    # Example using a multilingual dataset and filtering for Polish
-    dataset = load_dataset("squad_v2", split="validation")
-    
-    # Filter or transform for Polish
-    # This is just a placeholder - you'd need a real Polish dataset
-    polish_examples = []
-    
-    # Return as a HuggingFace Dataset
-    return Dataset.from_dict({
-        "question": [ex["question"] for ex in polish_examples],
-        "context": [ex["context"] for ex in polish_examples],
-        "answer": [ex["answer"] for ex in polish_examples]
-    })
+from datasets import load_dataset, load_metric
+
+dataset = load_dataset("allegro/klej-polemo2-in")
+dataset = dataset.class_encode_column("target")
+references = dataset["test"]["target"]
+
+# generate random predictions
+predictions = [random.randrange(max(references) + 1) for _ in range(len(references))]
+
+acc = load_metric("accuracy")
+f1 = load_metric("f1")
+
+acc_score = acc.compute(predictions=predictions, references=references)
+f1_score = f1.compute(predictions=predictions, references=references, average="macro")
+
+pprint(acc_score)
+pprint(f1_score)
+
+# {'accuracy': 0.25069252077562326}
+# {'f1': 0.23760962219870274}
 ```
 
-### Evaluation Function
+**Tasks (input, output, and metrics)**
+
+The task is to predict the correct label of the review.
+
+Input ('text' column): sentence
+
+Output ('target' column): label for sentence sentiment ('zero': neutral, 'minus': negative, 'plus': positive, 'amb': ambiguous)
+
+Domain: Online reviews
+
+Measurements: Accuracy
+
+#### Evaluation klej-psc
 
 ```python
-import evaluate
+import random
+from pprint import pprint
 
-def evaluate_translation(models, tokenizers, dataset, source_lang="en", target_lang="pl"):
-    """Evaluate models on translation task"""
-    results = {}
-    bleu = evaluate.load("bleu")
-    
-    for model_name, model in models.items():
-        tokenizer = tokenizers[model_name]
-        translations = []
-        references = []
-        
-        for example in dataset:
-            # Create translation prompt
-            prompt = f"Translate from {source_lang} to {target_lang}: {example['source']}"
-            
-            # Generate translation
-            inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-            outputs = model.generate(**inputs, max_new_tokens=100)
-            translation = tokenizer.decode(outputs[0], skip_special_tokens=True)
-            
-            # Clean up translation
-            translation = translation.replace(prompt, "").strip()
-            
-            translations.append(translation)
-            references.append([example["target"]])
-        
-        # Calculate BLEU score
-        score = bleu.compute(predictions=translations, references=references)
-        results[model_name] = {
-            "bleu": score["bleu"],
-            "translations": translations
-        }
-    
-    return results
+from datasets import load_dataset, load_metric
+
+dataset = load_dataset("allegro/klej-psc")
+dataset = dataset.class_encode_column("label")
+references = dataset["test"]["label"]
+
+# generate random predictions
+predictions = [random.randrange(max(references) + 1) for _ in range(len(references))]
+
+acc = load_metric("accuracy")
+f1 = load_metric("f1")
+
+acc_score = acc.compute(predictions=predictions, references=references)
+f1_score = f1.compute(predictions=predictions, references=references, average="macro")
+
+pprint(acc_score)
+pprint(f1_score)
+
+# {'accuracy': 0.18588469184890655}
+# {'f1': 0.17511412402843068}
 ```
 
-## Evaluation Tasks
+**Tasks (input, output, and metrics)**
 
-Here are suggested Polish language tasks for evaluation:
+The task is to predict whether the extract text and summary are similar.
 
-1. **Text Generation**:
-   - Polish creative writing
-   - Polish text completion
-   - Following instructions in Polish
+Based on PSC, we formulate a text-similarity task. We generate the positive pairs (i.e., referring to the same article) using only those news articles with both extractive and abstractive summaries. We match each extractive summary with two least similar abstractive ones of the same article. To create negative pairs, we follow a similar procedure. We find two most similar abstractive summaries for each extractive summary, but from different articles.
 
-2. **Translation**:
-   - English → Polish
-   - Polish → English
-   - Quality and fluency evaluation
+Input ('extract_text', 'summary_text' columns): extract text and summary text sentences
 
-3. **Question Answering**:
-   - Factual questions in Polish
-   - Reading comprehension in Polish
+Output ('label' column): label: 1 indicates summary is similar, 0 means that it is not similar
 
-4. **Grammar and Fluency**:
-   - Polish grammar correction
-   - Polish text coherence
-   - Handling Polish-specific linguistic features
+Domain: News articles
 
-## Results Analysis
+Measurements: F1-Score
 
-Design analysis to answer these questions:
+#### Evaluation klej-cdsc-e
+```python
+import random
+from pprint import pprint
 
-1. Does the Polish-specialized model (Bielik-11B) outperform multilingual models?
-2. What are the strengths and weaknesses of each model?
-3. Which Polish language features are handled well/poorly?
-4. How do model sizes affect performance on Polish tasks?
-5. Are there specific Polish linguistic phenomena that challenge the models?
+from datasets import load_dataset, load_metric
 
-## Next Steps and Extensions
+dataset = load_dataset("allegro/klej-cdsc-e")
+dataset = dataset.class_encode_column("entailment_judgment")
+references = dataset["test"]["entailment_judgment"]
 
-Possible extensions to the project:
+# generate random predictions
+predictions = [random.randrange(max(references) + 1) for _ in range(len(references))]
 
-1. Testing more models or model sizes
-2. More comprehensive Polish test sets
-3. Human evaluation to complement automatic metrics
-4. Fine-tuning experiments for Polish-specific tasks
-5. Domain-specific Polish evaluation (legal, medical, etc.)
+acc = load_metric("accuracy")
+f1 = load_metric("f1")
 
-## Conclusion
+acc_score = acc.compute(predictions=predictions, references=references)
+f1_score = f1.compute(predictions=predictions, references=references, average="macro")
 
-This project will provide valuable insights into how well different language models handle the Polish language, comparing a specialized Polish model against multilingual models. The results can guide model selection for Polish language applications and identify areas where current models need improvement.
+pprint(acc_score)
+pprint(f1_score)
+
+# {'accuracy': 0.325}
+# {'f1': 0.2736171695141161}
+```
+
+**Tasks (input, output, and metrics)**
+
+The entailment relation between two sentences is labeled with entailment, contradiction, or neutral. The task is to predict if the premise entails the hypothesis (entailment), negates the hypothesis (contradiction), or is unrelated (neutral).
+
+b entails a (a wynika z b) – if a situation or an event described by sentence b occurs, it is recognized that a situation or an event described by a occurs as well, i.e., a and b refer to the same event or the same situation;
+
+Input: ('sentence_A', 'sentence_B'): sentence pair
+
+Output ('entailment_judgment' column): one of the possible entailment relations (entailment, contradiction, neutral)
+
+Domain: image captions
+
+Measurements: Accuracy
+
+## Task
+
+Based on these datasets, create a dataset with the option to choose the amount of data to be retrieved from the sets. This dataset will be used to evaluate the performance of Polish language models.
