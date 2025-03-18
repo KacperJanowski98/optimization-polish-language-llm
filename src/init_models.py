@@ -171,6 +171,9 @@ def initialize_model(
         "torch_dtype": torch.float16 if device == "cuda" else torch.float32,
     }
     
+    # Flag to track if model is using distributed computation
+    is_distributed_model = False
+    
     # Setup device mapping for offloading
     if offload_to_cpu and device == "cuda":
         logger.info(f"Setting up CPU offloading for {model_id}")
@@ -178,6 +181,7 @@ def initialize_model(
         model_kwargs["device_map"] = "auto"
         model_kwargs["offload_folder"] = "offload_folder"
         model_kwargs["offload_state_dict"] = True
+        is_distributed_model = True
     else:
         model_kwargs["device_map"] = device if device != "cpu" else None
     
@@ -196,6 +200,9 @@ def initialize_model(
     
     # Load the model
     model = AutoModelForCausalLM.from_pretrained(model_id, **model_kwargs)
+    
+    # Store the distributed flag as an attribute of the model for later use
+    model._is_distributed = is_distributed_model or model_kwargs.get("device_map") == "auto"
     
     logger.info(f"Successfully loaded {model_id}")
     
@@ -288,22 +295,35 @@ def create_model_pipeline(
     Raises:
         ValueError: If the model_key is not recognized
     """
-    # Determine device
-    if device == "auto":
-        device = "cuda" if torch.cuda.is_available() else "cpu"
-    
     # Load model and tokenizer if not provided
     if model is None or tokenizer is None:
         model, tokenizer = initialize_model(model_key=model_key, device=device)
     
-    # Create pipeline
-    pipe = pipeline(
-        task,
-        model=model,
-        tokenizer=tokenizer,
-        device=device if device != "cpu" else -1,
-        **kwargs
-    )
+    # Check if model is distributed (loaded with device_map="auto" or offloading)
+    is_distributed = hasattr(model, "_is_distributed") and model._is_distributed
+    
+    # For distributed models, don't specify device in the pipeline
+    if is_distributed:
+        logger.info(f"Creating pipeline for distributed model {model_key} without device specification")
+        pipe = pipeline(
+            task,
+            model=model,
+            tokenizer=tokenizer,
+            **kwargs
+        )
+    else:
+        # Determine device for non-distributed models
+        if device == "auto":
+            device = "cuda" if torch.cuda.is_available() else "cpu"
+        
+        logger.info(f"Creating pipeline for model {model_key} on device {device}")
+        pipe = pipeline(
+            task,
+            model=model,
+            tokenizer=tokenizer,
+            device=device if device != "cpu" else -1,
+            **kwargs
+        )
     
     return pipe
 
