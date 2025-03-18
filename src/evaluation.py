@@ -13,14 +13,15 @@ The framework ensures fair and consistent evaluation across all models.
 
 import logging
 import time
-from typing import Dict, List, Tuple, Any, Optional, Union, Callable
+from typing import Dict, List, Any, Optional
 import os
 import json
 from datetime import datetime
 import pandas as pd
 import numpy as np
 from tqdm.auto import tqdm
-from datasets import Dataset, load_metric
+from datasets import Dataset
+from evaluate import load as load_metric
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,

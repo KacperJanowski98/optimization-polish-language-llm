@@ -13,7 +13,7 @@ import json
 import torch
 import logging
 import gc
-from typing import Dict, Any, List, Optional, Union
+from typing import Dict, Any, Optional
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -62,7 +62,7 @@ def check_environment_setup():
         checks_passed = False
     
     # Check for required directories
-    required_dirs = ['results']
+    required_dirs = ['../results']
     for dir_name in required_dirs:
         if not os.path.exists(dir_name):
             logger.warning(f"Directory {dir_name} not found. Creating it.")

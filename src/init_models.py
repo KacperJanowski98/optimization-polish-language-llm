@@ -13,7 +13,7 @@ and proper configuration for each model.
 
 import os
 import logging
-from typing import Dict, Tuple, Optional, List, Union
+from typing import Dict, Tuple, Optional, List
 import torch
 from transformers import (
     AutoModelForCausalLM, 
