@@ -13,7 +13,7 @@ and proper configuration for each model.
 
 import os
 import logging
-from typing import Dict, Tuple, Optional, List
+from typing import Dict, Tuple, Optional, List, Union
 import torch
 from transformers import (
     AutoModelForCausalLM, 
@@ -108,7 +108,8 @@ def initialize_model(
     load_in_4bit: bool = False,
     cache_dir: Optional[str] = None,
     revision: Optional[str] = None,
-    trust_remote_code: bool = True
+    trust_remote_code: bool = True,
+    offload_to_cpu: bool = False
 ) -> Tuple[AutoModelForCausalLM, AutoTokenizer]:
     """
     Initialize a specific model and its tokenizer.
@@ -121,6 +122,7 @@ def initialize_model(
         cache_dir: Directory to cache the downloaded model
         revision: Model revision to load
         trust_remote_code: Whether to trust remote code
+        offload_to_cpu: Whether to offload some model layers to CPU to save GPU memory
         
     Returns:
         Tuple of (model, tokenizer)
@@ -166,9 +168,18 @@ def initialize_model(
         "cache_dir": cache_dir,
         "revision": revision,
         "trust_remote_code": trust_remote_code,
-        "device_map": device if device != "cpu" else None,
         "torch_dtype": torch.float16 if device == "cuda" else torch.float32,
     }
+    
+    # Setup device mapping for offloading
+    if offload_to_cpu and device == "cuda":
+        logger.info(f"Setting up CPU offloading for {model_id}")
+        # Create a device map that offloads some layers to CPU
+        model_kwargs["device_map"] = "auto"
+        model_kwargs["offload_folder"] = "offload_folder"
+        model_kwargs["offload_state_dict"] = True
+    else:
+        model_kwargs["device_map"] = device if device != "cpu" else None
     
     # Add quantization if needed
     if device == "cuda":
@@ -196,7 +207,8 @@ def initialize_models(
     device: str = "auto",
     load_in_8bit: bool = True,
     load_in_4bit: bool = False,
-    cache_dir: Optional[str] = None
+    cache_dir: Optional[str] = None,
+    offload_to_cpu: bool = False
 ) -> Dict[str, Tuple[AutoModelForCausalLM, AutoTokenizer]]:
     """
     Initialize multiple models for evaluation.
@@ -207,6 +219,7 @@ def initialize_models(
         load_in_8bit: Whether to use 8-bit quantization for large models
         load_in_4bit: Whether to use 4-bit quantization (if 8-bit is not used)
         cache_dir: Directory to cache the downloaded models
+        offload_to_cpu: Whether to offload some model layers to CPU to save GPU memory
         
     Returns:
         Dictionary of model name to (model, tokenizer) pairs
@@ -241,7 +254,8 @@ def initialize_models(
             device=device,
             load_in_8bit=load_in_8bit,
             load_in_4bit=load_in_4bit,
-            cache_dir=cache_dir
+            cache_dir=cache_dir,
+            offload_to_cpu=offload_to_cpu
         )
         
         models_dict[key] = (model, tokenizer)
