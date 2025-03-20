@@ -1,11 +1,12 @@
 """
 Model initialization for Polish language model evaluation.
 
-This module provides functionality to initialize the three language models
+This module provides functionality to initialize the four language models
 for evaluation:
 1. Bielik-11B-v2.3-Instruct - A specialized Polish language model
 2. Google Gemma-3-4B-IT - A multilingual model
 3. Microsoft Phi-4-mini-instruct - A multilingual model
+4. CYFRAGOVPL/Llama-PLLuM-8B-instruct - Polish government-backed Llama-based model
 
 The module handles model-specific requirements, memory management strategies,
 and proper configuration for each model.
@@ -51,6 +52,12 @@ MODEL_CONFIGS = {
         'description': 'Microsoft multilingual model',
         'recommended_quantization': False,
         'context_length': 4096,
+    },
+    'pllum': {
+        'model_id': 'CYFRAGOVPL/Llama-PLLuM-8B-instruct',
+        'description': 'Polish government-backed Llama-based language model (8B parameters)',
+        'recommended_quantization': True,
+        'context_length': 4096,
     }
 }
 
@@ -83,7 +90,7 @@ def get_model_info(model_key: str) -> Dict:
     Get information about a specific model.
     
     Args:
-        model_key: Key identifier for the model ('bielik', 'gemma', or 'phi')
+        model_key: Key identifier for the model ('bielik', 'gemma', 'phi', or 'pllum')
         
     Returns:
         Dictionary with model information
@@ -115,7 +122,7 @@ def initialize_model(
     Initialize a specific model and its tokenizer.
     
     Args:
-        model_key: Key identifier for the model ('bielik', 'gemma', or 'phi')
+        model_key: Key identifier for the model ('bielik', 'gemma', 'phi', or 'pllum')
         device: Device to load the model on ('cpu', 'cuda', 'auto')
         load_in_8bit: Whether to use 8-bit quantization (overrides recommended setting if provided)
         load_in_4bit: Whether to use 4-bit quantization (only used if load_in_8bit is False)
@@ -282,7 +289,7 @@ def create_model_pipeline(
     Create a pipeline for a specific model and task.
     
     Args:
-        model_key: Key identifier for the model ('bielik', 'gemma', or 'phi')
+        model_key: Key identifier for the model ('bielik', 'gemma', 'phi', or 'pllum')
         task: Task for the pipeline (e.g., 'text-generation', 'text-classification')
         model: Optional pre-loaded model (if None, will be loaded)
         tokenizer: Optional pre-loaded tokenizer (if None, will be loaded)
@@ -333,7 +340,7 @@ def get_generation_config(model_key: str) -> Dict:
     Get recommended generation configuration for a specific model.
     
     Args:
-        model_key: Key identifier for the model ('bielik', 'gemma', or 'phi')
+        model_key: Key identifier for the model ('bielik', 'gemma', 'phi', or 'pllum')
         
     Returns:
         Dictionary with recommended generation parameters
@@ -375,6 +382,13 @@ def get_generation_config(model_key: str) -> Dict:
             **common_params,
             "temperature": 0.6,  # More conservative for Phi
             "top_p": 0.92,
+        }
+    elif model_key == 'pllum':
+        return {
+            **common_params,
+            "temperature": 0.7,
+            "top_p": 0.95,
+            "repetition_penalty": 1.15,  # Slightly stronger repetition penalty for PLLuM
         }
     
     return common_params

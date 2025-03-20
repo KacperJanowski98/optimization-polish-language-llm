@@ -2,20 +2,22 @@
 
 ## Overview
 
-This document provides comprehensive instructions for implementing a project to evaluate the performance of three language models on Polish language tasks:
+This document provides comprehensive instructions for implementing a project to evaluate the performance of four language models on Polish language tasks:
 
 1. **[Bielik-11B-v2.3-Instruct](https://huggingface.co/speakleash/Bielik-11B-v2.3-Instruct)** - A specialized Polish language model
 2. **[Google Gemma-3-4B-IT](https://huggingface.co/google/gemma-3-4b-it)** - A multilingual model
 3. **[Microsoft Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct)** - A multilingual model
+4. **[CYFRAGOVPL/Llama-PLLuM-8B-instruct](https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-8B-instruct)** - Polish government-backed Llama-based model
 
-The project will evaluate how well these models perform on Polish language tasks, comparing the performance of the Polish-specific model against the multilingual models.
+The project will evaluate how well these models perform on Polish language tasks, comparing the performance of the Polish-specific models against the multilingual models.
 
 ## Objectives
 
-- Download and initialize the three language models from Hugging Face
+- Download and initialize the four language models from Hugging Face
 - Create appropriate Polish language test datasets
 - Develop code to evaluate models on various Polish language tasks
 - Compare and analyze model performance
+- Specifically assess the performance difference between Polish-dedicated models (Bielik and PLLuM) and multilingual models
 
 ## Requirements
 
@@ -286,37 +288,38 @@ Measurements: Accuracy
 
 ### 4. Model Initialization
  
- Create code to download and initialize the three models:
+Create code to download and initialize the four models:
  
- 1. **Requirements**:
-    - Handle model-specific options (some models may need different parameters)
-    - Implement proper memory management for large models
-    - Configure generation parameters appropriately
+1. **Requirements**:
+   - Handle model-specific options (some models may need different parameters)
+   - Implement proper memory management for large models
+   - Configure generation parameters appropriately
  
- 2. **Model-specific considerations**:
-    - **Bielik-11B**: Being 11B parameters, consider using quantization (int8)
-    - **Gemma-3-4B**: Follow Google's terms of use and licensing
-    - **Phi-4-mini**: Check for any Microsoft-specific requirements
+2. **Model-specific considerations**:
+   - **Bielik-11B**: Being 11B parameters, consider using quantization (int8)
+   - **Gemma-3-4B**: Follow Google's terms of use and licensing
+   - **Phi-4-mini**: Check for any Microsoft-specific requirements
+   - **PLLuM-8B**: Being 8B parameters, consider using quantization (int8)
  
- 3. **Template structure**:
-    ```python
-    def initialize_models(device="cuda", load_in_8bit=False):
-        """
-        Initialize all three models for evaluation
-        
-        Args:
-            device: Device to load models on
-            load_in_8bit: Whether to use 8-bit quantization
-            
-        Returns:
-            Dictionary of model and tokenizer pairs
-        """
-        # Initialization code here
-    ```
+3. **Template structure**:
+   ```python
+   def initialize_models(device="cuda", load_in_8bit=False):
+       """
+       Initialize all four models for evaluation
+       
+       Args:
+           device: Device to load models on
+           load_in_8bit: Whether to use 8-bit quantization
+           
+       Returns:
+           Dictionary of model and tokenizer pairs
+       """
+       # Initialization code here
+   ```
 
 ### 5. Evaluation Framework
 
-Create a comprehensive evaluation framework to compare the three models' performance on Polish language tasks:
+Create a comprehensive evaluation framework to compare the four models' performance on Polish language tasks:
 
 1. **Setup evaluation utilities**:
    - Create consistent evaluation methods for all models
@@ -522,6 +525,12 @@ def generate_summary_report(results_df):
         dataset_results = results_df[results_df["dataset"] == dataset]
         summary += f"{dataset_results.to_markdown()}\n\n"
     
+    # Polish-specific vs. multilingual comparison
+    summary += "## Polish-Dedicated vs. Multilingual Models\n\n"
+    
+    # Add code to group and compare the Polish-specific models (Bielik and PLLuM)
+    # against the multilingual models (Gemma and Phi)
+    
     # Determine the best model overall
     best_model_acc = overall_avg.loc[overall_avg["accuracy"].idxmax()]["model"]
     best_model_f1 = overall_avg.loc[overall_avg["f1"].idxmax()]["model"]
@@ -546,3 +555,4 @@ When comparing the models, consider the following:
 - **Consistency**: Models with lower variance across tasks may be more reliable
 - **Resource efficiency**: Consider performance relative to model size
 - **Speed-quality tradeoff**: Measure inference time alongside accuracy/F1
+- **Polish-specific advantages**: Compare whether Polish-dedicated models (Bielik and PLLuM) have a specific advantage over multilingual models for Polish language tasks
