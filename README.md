@@ -17,6 +17,20 @@ This project evaluates and compares the performance of four language models on P
 
 The evaluation uses a variety of Polish language datasets from the KLEJ benchmark to assess model capabilities across different linguistic tasks.
 
+## Key Findings
+
+Our evaluation across four Polish language tasks revealed several interesting findings:
+
+- **PLLuM (8B)** emerged as the best overall performer with an average accuracy of 61.5% and F1 score of 53.3%, despite having fewer parameters than Bielik (11B).
+- **Bielik (11B)** performed well, coming in second place with 53.0% accuracy and 43.7% F1 score.
+- **Polish-specific models** (PLLuM and Bielik) consistently outperformed multilingual models (Phi and Gemma), particularly on the question-answering (DYK) and text similarity (PSC) tasks.
+- **Performance by task**:
+  - **Question-Answer (DYK)**: PLLuM excelled with 90% accuracy
+  - **Text Similarity (PSC)**: PLLuM achieved 96% accuracy
+  - **Sentiment Analysis & Entailment**: All models achieved similar results, suggesting these tasks are more challenging
+
+These findings demonstrate the importance of language-specific training for Polish language understanding tasks, although smaller models can outperform larger ones with appropriate training and architectural choices.
+
 ## Key Features
 
 - Standardized evaluation framework for comparing different models
@@ -48,7 +62,7 @@ polish-language-model-evaluation/
 │   ├── datasets.py        # Dataset preparation
 │   ├── evaluation.py      # Evaluation utilities
 │   └── utils.py           # Helper functions
-├── results/               # Evaluation results
+├── results/               # Evaluation results and visualizations
 ├── docs/                  # Documentation
 │   └── project_instruction.md    # Detailed project instructions
 ├── requirements.txt       # Python dependencies
@@ -108,6 +122,34 @@ polish-language-model-evaluation/
    - Run evaluations
    - Analyze and visualize results
 
+## Results
+
+### Overall Performance
+
+The following table shows the average performance metrics across all tasks:
+
+| Model   | Accuracy | F1 Score | Precision |
+|---------|----------|----------|-----------|
+| PLLuM   | 61.5%    | 53.3%    | 61.5%     |
+| Bielik  | 53.0%    | 43.7%    | 53.0%     |
+| Phi     | 49.0%    | 40.3%    | 49.0%     |
+| Gemma   | 40.0%    | 23.5%    | 40.0%     |
+
+### Task-Specific Results
+
+#### Question-Answer Correctness (DYK)
+PLLuM shows exceptional performance (90% accuracy), followed by Bielik (64%). The multilingual models performed less effectively, with Phi at 58% and Gemma at 50%.
+
+#### Text Similarity (PSC)
+Again, PLLuM leads with 96% accuracy, followed by Bielik (88%), Phi (78%), and Gemma (50%).
+
+#### Sentiment Analysis and Entailment
+All models showed similar performance on these more challenging tasks, suggesting that even specialized Polish models face difficulties with complex linguistic nuances.
+
+### Polish-Specific vs. Multilingual Models
+
+Our evaluation clearly demonstrates that models specifically trained or fine-tuned for Polish (PLLuM and Bielik) outperform general multilingual models across most tasks. This suggests that language-specific training remains crucial for optimal performance on Polish NLP tasks.
+
 ## Methodology
 
 The evaluation follows these steps:
@@ -120,20 +162,6 @@ The evaluation follows these steps:
    - Task-specific strengths and weaknesses
    - Polish-specific vs. multilingual performance differences
    - Efficiency relative to model size
-
-## Results
-
-> Note: Results will be added after running the evaluation.
-
-The evaluation results will include:
-- Performance metrics for each model on each dataset
-- Comparative analysis across models
-- Visualizations of model performance
-- Insights into Polish-specific vs. multilingual model capabilities
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
