@@ -1,0 +1,462 @@
+{
+  "model": "phi",
+  "dataset": "psc",
+  "task": "text similarity",
+  "accuracy": 0.78,
+  "f1": 0.7756017951856384,
+  "precision": 0.78,
+  "samples_evaluated": 50,
+  "evaluation_time": 15.931016206741333,
+  "details": [
+    {
+      "id": 0,
+      "extract_text": "odnotowywanie wątpliwości co do rzeczywistej treści opracowywanego przez tłumacza pisma dotyczy jedy...",
+      "summary_text": "Tłumacz przysięgły uprawniony jest do sporządzania, sprawdzania i poświadczania tłumaczeń oraz sporządzania odpisów pism w języku, dla którego został ustanowiony. Od tłumacza może być także wymagana ocena autentyczności dokumentu zgodnie z jego moralnymi i fachowymi kwalifikacjami. Wiele fałszerstw może być odkrytych bez specjalistycznego sprzętu. Rozwój międzynarodowego handlu i ilości dokumentów wymaga także standaryzacji w zakresie ich przygotowania i oceny autentyczności.",
+      "target": 1,
+      "response": "nie\n\nw tekście źródłowym nie",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 1,
+      "extract_text": "propozycje SLD dotyczące polityki zatrudnienia i walki z bezrobociem rażą pustosłowiem, a tam, gdzie...",
+      "summary_text": "Doszło do konfliktu pomiędzy Agencją Restrukturyzacji i Modernizacji Rolnictwa a firmą Hewlett-Packard w związku ze zbudowaniem programu Zintegrowanego Systemu Zarządzania i Kontroli (IACS) i jego późniejszym serwisowaniem. ARiMR postawiła nowe żądania, posądzając HP o niewykonywanie umowy i niejasne kombinacje prawne. HP zaś broni się tym, że prace nad projektem są zaawansowane, a Agencja szantażuje firmę zerwaniem umowy.",
+      "target": 0,
+      "response": "nie\n\ndzieje się tak, ponieważ pod",
+      "prediction": 1,
+      "correct": false
+    },
+    {
+      "id": 2,
+      "extract_text": "Miniprzeszczepy komórek krwiotwórczych są nadzieją w leczeniu chorób nowotworowych. w Jerozolimie W ...",
+      "summary_text": "W tym roku pogorszyły się wyniki ekonomiczno-finansowe branży tłuszczowej, co jest spowodowane m.in. bardzo niską krajową produkcją rzepaku. Aby produkcja rzepaku wzrosła z obecnych 584,4 tys. ton do optymalnego poziomu 1,5 mln ton, potrzebne są różne formy promocji, np. przywrócenie systemu umów kontraktacyjnych, zaopatrywanie plantatorów w nasiona, nisko oprocentowane kredyty, doradztwo agrotechniczne.",
+      "target": 0,
+      "response": "nie\n\nwyjaśnienie:\npodsumowanie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 3,
+      "extract_text": "JAROSłAW KALINOWSKI: Jesteśmy za przekazaniem kompetencji i środków gminom. Uważamy, że jest potrzeb...",
+      "summary_text": "Próby podbierania wyborców będą główną osią kampanii do parlamentu. Stawka najsilniejszych jest wyrównana i niezmienna od miesięcy. Liderzy to SLD i AWS. Za nimi plasują się PSL, UW, ROP i UP. AWS i SLD trudno będzie podbierać sobie głosy. O preferencjach politycznych Polaków wciąż często decyduje przeszłość. Duże znaczenie dawnych podziałów świadczy o tym, że nadchodzące wybory będą wyborami identyfikacji ideologicznej, nie zaś walką programów.",
+      "target": 0,
+      "response": "nie\n\ndzieki dla swojego czasu.",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 4,
+      "extract_text": "notowania ścisłego kierownictwa partii są coraz gorsze.Parlamentarzyści Sojuszu, którzy nie weszli d...",
+      "summary_text": "Rządowi Leszka Millera powodzi się coraz gorzej, a poparcie posłów dla kierownictwa partii spada. Rząd wykonał kilka niezręcznych ruchów, a posłowie nie mają z kim porozmawiać o nurtujących ich kwestiach. Jeśli tak dalej pójdzie, podczas najbliższej konwencji partii Sojusz może mieć problem z uzyskaniem potwierdzenia wotum zaufania oraz wyborem nowego sekretarza generalnego.",
+      "target": 1,
+      "response": "tak\nodpowiedź to: tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 5,
+      "extract_text": "Miniprzeszczepy komórek krwiotwórczych są nadzieją w leczeniu białaczek i chłoniaków. używa się wyłą...",
+      "summary_text": "Od 9 miesięcy działa pierwsza globalna sieć satelitarnej telefonii komórkowej – Iridium. Pozwala ona na wykonywanie i odbieranie połączeń w każdym miejscu na kuli ziemskiej. Twórca sieci, konsorcjum Iridium LLC, znajduje się jednak na granicy bankructwa, bo liczba abonentów jest niewielka. Zawiodły marketing, dystrybucja sprzętu, niedostosowanie oferty do potrzeb klientów oraz sprzedaż usług.",
+      "target": 0,
+      "response": "nie\n\nwyjaśnienie:\npodsumowanie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 6,
+      "extract_text": "Być może w tym tygodniu Sejm zdecyduje,  czy kadencja obecnego samorządu będzie skrócona i czy wybor...",
+      "summary_text": "Komisja sejmowa przygotowuje ustawę o bezpośrednim wyborze wójtów, burmistrzów i prezydentów. Projekt zgłoszony przez PO umacnia pozycję burmistrza, uniezależnia go od radnych i nadaje mu dodatkowe kompetencje. Bezpośrednie wybory mają zaktywizować lokalną społeczność i zwiększyć odpowiedzialność wybranego. Projektowi sprzeciwia się PiS. Pozostałe ugrupowania inaczej wyobrażają sobie ostateczny kształy ustawy. Samorządowcy uważają, że wybory bezpośrednie powinny odbyć się jesienią i objąć wszystkie gminy. Projekt PO jest ich zdaniem dobrze przemyślany.",
+      "target": 1,
+      "response": "nie\n\ndzieki dla swojego entuz",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 7,
+      "extract_text": "Protesty francuskich bezrobotnych, już od prawie miesiąca domagających się zwiększenia minimalnej wy...",
+      "summary_text": "Jednym z niewielu tradycyjnych elementów kultury japońskiego pozostaje sumo. To misterium łączące w sobie elementy teatru, religii i walki nadal fascynuje zarówno japońskich nastolatków, uważających monumentalnych wojowników prawie za bogów, jak i nastolatki, które zwycięzców otaczają wielką czcią. Również na świecie, choć w wersji amatorskiej, narodowe federacje sumo starają się rozszerzyć popularność tego sportu, ktory łączyo tradycję, ceremoniał i widowiskowość. Dzięki temu coraz częściej zawody sumo generują duże pieniądze.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 8,
+      "extract_text": "Od kiedy Polska stała się członkiem NATO, polityka bezpieczeństwa przestała być tematem dyskusji. Wy...",
+      "summary_text": "W kwietniu Wyższą Szkołę Policji w Szczytnie odwiedzili policjanci - słuchacze Środkowoeuropejskiej Akademii Policyjnej. Co roku przez dwanaście tygodni wędrują z kraju do kraju. Słuchają wykładów, na koniec piszą pracę zaliczeniową. W tym roku tematem wiodącym jest zwalczanie przestępczości zorganizowanej. Takie zjawiska jak narkotyki czy prostytucję uważają za efekt polityki państwa i narastających problemów społecznych. Uczestnictwo w międzynarodowym programie jest dla nich szansą na nawiązanie kontaktów i wymianę doświadczeń, która może pomóc w efektywniejszej pracy.",
+      "target": 0,
+      "response": "nie\n\nodpowiedź: nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 9,
+      "extract_text": "Od kiedy Polska stała się członkiem NATO, polityka bezpieczeństwa przestała być tematem ważnych dysk...",
+      "summary_text": "Polski rząd wystosował prośbę o rekordowo długi, osiemnastoletni okres przejściowy dotyczący zakupu ziemi rolnej przez cudzoziemców po przystąpieniu kraju do Unii Europejskiej. Wiadomo już, że UE nie wyrazi na to zgody i apeluje, aby nowe rozmowy opierały się raczej na danych z rynku nieruchomości (których Polska do tej pory nie przygotowała solidnie) niż na uprzedzeniach i obawach rządu polskiego, podyktowanych raczej interesami politycznymi niż faktycznymi niebezpieczeństwami.",
+      "target": 0,
+      "response": "ne\n\nodpowiedź: nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 10,
+      "extract_text": "Przeciwnicy kary śmierci powołują się na wartość życia ludzkiego. Na drugim biegunie mamy stosowanie...",
+      "summary_text": "Premier Jerzy Buzek na ministra spraw wewnętrznych i administracji wybrał Marka Biernackiego. Cieszy się on nieposzlakowaną opinią wśród swoich przyjaciół i byłych współpracowników. Uważany jest za człowieka konsekwentnego, pracowitego, godnego zaufania, lojalnego. Ma zdecydowane prawicowe poglądy, jest wielkim patriotą. Jego słaby punkt to brak siły politycznej, dlatego praktycznie pewne jest, że nie obejmie urzędu wicepremiera.",
+      "target": 0,
+      "response": "nie\n\ndzieki dla swojego czasu!",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 11,
+      "extract_text": "Dyżurujące w niedzielę przychodnie rejonowe w Warszawie miały natłok pacjentów. Objawy: gorączka, na...",
+      "summary_text": "Dyżurujące w niedzielę przychodnie rejonowe w Warszawie miały natłok pacjentów. Lekarz dyżurny kraju Michał Sobolewski uspokaja: w Polsce jeszcze nie ma epidemii grypy. Dr Sobolewski radzi jednak zminimalizować kontakty z otoczeniem, zaszczepić się, a przede wszystkim unikać podróży zagranicznych. W Europie epidemia grypy rozszerza się. Są już przypadki śmiertelne.",
+      "target": 1,
+      "response": "tak\n<|end_of_text|>",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 12,
+      "extract_text": "W ankiecie rozpisanej w Internecie przez \"Komsomołkę\" Putin uznany został za symbol seksu roku 2000 ...",
+      "summary_text": "W kwietniu Wyższą Szkołę Policji w Szczytnie odwiedzili policjanci - słuchacze Środkowoeuropejskiej Akademii Policyjnej. Co roku przez dwanaście tygodni wędrują z kraju do kraju. Słuchają wykładów, na koniec piszą pracę zaliczeniową. W tym roku tematem wiodącym jest zwalczanie przestępczości zorganizowanej. Takie zjawiska jak narkotyki czy prostytucję uważają za efekt polityki państwa i narastających problemów społecznych. Uczestnictwo w międzynarodowym programie jest dla nich szansą na nawiązanie kontaktów i wymianę doświadczeń, która może pomóc w efektywniejszej pracy.",
+      "target": 0,
+      "response": "nie\n\nwyjaśnienie:\npodsumowanie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 13,
+      "extract_text": "Samochód z otwartym dachem jest reklamowym symbolem Kalifornii. Pod wpływem takich reklam kabriolety...",
+      "summary_text": "Czerwony kabriolet pędzący po szosie tuż przy oceanie jest marzeniem zakorzenionym w umysłach turystów ciągnących do słonecznej Kalifornii. Na co dzień ich posiadaczami są panowie daleko po czterdziestce, chcący w ten sposób przypomnieć sobie czasy młodości, jednak wszystkie wypożyczalnie, za odpowiednio wyższą cenę, mają podróżnych do zaproponowania wynajęcie kabrioletu.",
+      "target": 1,
+      "response": "opisz również dowód swojego oświadczenia",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 14,
+      "extract_text": "w latach 70. funkcjonowało w kraju ok. 2,5 tys. kin. W połowie lat 90. było ich już tylko 700, potem...",
+      "summary_text": "Wciąż jest wiele pytań bez odpowiedzi odnośnie zmiany polskiego rynku filmowego po pojawieniu się multipleksów. Przewiduje się, że repertuar będzie bogatszy i pojawi się szansa dla wyświetlania niszowego kina. Z drugiej strony nie wiadomo, czy małym kinom uda się utrzymać na rynku. Niektórzy podejrzewają, że multipleksy mogą pomóc polskiej kinematografii, inni przeciwnie - wskazują, że wyświetlane zagraniczne superprodukcje odbiorą jej widzów.",
+      "target": 1,
+      "response": "tak\n<|end_of_text|>",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 15,
+      "extract_text": "Obrona praw człowieka, także praw wynikających z pracy, stoi w centrum społecznych zainteresowań Koś...",
+      "summary_text": "Nakłady przeznaczone przez samorządy na kulturę w roku 2000 na ogół pozostają na niezmienionym poziomie lub wręcz je obniżono. W wielu regionach dotacje wystarczają jedynie na niskie płace i bieżące świadczenia. Sytuacja taka wynika nie tylko z faktu, iż samorządowcy mają za mało pieniędzy do podziału, ale także, że w wyniku reformy przypisano im zbyt wiele instytucji kulturalnych. Wiele samorządów kosztem wydatków bieżących zwiększa nakłady na inwestycje i remonty. Dyrektorów instytucji kulturalnych martwi też przygotowywana nowelizacja ustawy o ubezpieczeniach społecznych.",
+      "target": 0,
+      "response": "nie\n\ndziecko: podsumowanie op",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 16,
+      "extract_text": "Multipleksy zrewolucjonizowały rynek kinowy na świecie. Od dwóch lat pojawiają się także w Polsce. C...",
+      "summary_text": "Wciąż jest wiele pytań bez odpowiedzi odnośnie zmiany polskiego rynku filmowego po pojawieniu się multipleksów. Przewiduje się, że repertuar będzie bogatszy i pojawi się szansa dla wyświetlania niszowego kina. Z drugiej strony nie wiadomo, czy małym kinom uda się utrzymać na rynku. Niektórzy podejrzewają, że multipleksy mogą pomóc polskiej kinematografii, inni przeciwnie - wskazują, że wyświetlane zagraniczne superprodukcje odbiorą jej widzów.",
+      "target": 1,
+      "response": "tak\nwyjaśnij swoje myśli krok",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 17,
+      "extract_text": "Wprowadzona od września tego roku reforma oświaty przewiduje konieczność wymiany wszystkich podręczn...",
+      "summary_text": "We wrześniu w życie wejdzie reforma oświaty, więc niezbędna będzie wymiana wielu podręczników. Wykaz książek dopuszczonych przez MEN do nauki w szkołach ukaże się dopiero pod koniec sierpnia. Wydawnictwa szukają sposobów, by zachęcić nauczycieli do wybrania ich podręczników. Do tej pory nauczyciele niechętnie zmieniali podręczniki, z których uczyli, a teraz będą do tego zmuszeni.",
+      "target": 1,
+      "response": "tak\n\nw tekście źródłowym jest",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 18,
+      "extract_text": "10 miliardów marek na odszkodowania dla byłych robotników przymusowych - na taką sumę zaproponowaną ...",
+      "summary_text": "Ustalono kwotę 10 mld marek, która zostanie przeznaczona na odszkodowania dla byłych robotników, którzy pracowali niewolniczo i przymusowo dla Niemiec w czasie wojny. Prezydent RFN Johannes Rau oddał cześć poszkodowanym i poprosił o przebaczenie. Kanclerz Gerhard Schroeder powiedział, że zakończenie negocjacji to \"historyczny krok\". Strona polska mówiła o sukcesie politycznym. Delegacje zdecydują o podziale kwoty. Polska planuje odegrać kluczową rolę w rozmowach.",
+      "target": 1,
+      "response": "tak\nodpowiedź brzmi: tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 19,
+      "extract_text": "Starość nie pasuje do modelu przyjemnego, intensywnego życia, ale starych ludzi jest coraz więcej, ż...",
+      "summary_text": "W drużynowym turnieju o Puchar Davisa, który dla wielu tenisistów jest imprezą priorytetową, od lat wygrywają zawodnicy spoza światowej czołówki rozgrywek zawodowych. W tegorocznym finale spotkają się tenisiści Francji i Australii. Droga oby drużyn do finału nie była łatwa, obie mają swoich bohaterów. Francuzów wspiera publiczność, ale Australijczycy wierzą w zwycięstwo.",
+      "target": 0,
+      "response": "opisz swoje myśli przed odpowiedzią.",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 20,
+      "extract_text": "Nikt nie sprzątnie ze stołu po wigilijnej wieczerzy. Potrawy będą stały do rana. Ich smakiem i zapac...",
+      "summary_text": "Drobna przedsiębiorczość budzi żywe zainteresowanie polityków, ekonomistów i mediów. Dzieje się tak zarówno w Polsce, jak  i na świecie. Nasza sytuacja ma wprawdzie swoją specyfikę, ale zjawiska, jakie zachodzą w tym sektorze na świecie, mają dla polskich firm tego typu znaczenie szczególne ze względu na obecną  - i przede wszystkim  - przyszłą ich rolę w gospodarce.  Czynniki, które zadecydowały o erupcji drobnej przedsiębiorczości w latach 1989-1991 to zamknięta karta historii. Nie oznacza to jednak, że trzeba zaniechać przeszukiwań poprawy sytuacji na rynku pracy za pomocą promocji drobnej wytwórczości.",
+      "target": 0,
+      "response": "nie\n\ndrodzeń podsumowania:\nw",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 21,
+      "extract_text": "MICHAŁ LISTKIEWICZ: Polska piłka żyje z telewizji, której sprzedaje prawa do transmitowania meczów, ...",
+      "summary_text": "Na zakup pomocy szkolnych wydaje się z budżetu oświaty od 0,5 do 1 proc. - szacuje MEN. Zakupy te są bardzo nierytmiczne. Zazwyczaj pod koniec roku, kiedy nagle pojawiają się środki finansowe, szkoły starają się je upłynnić i biorą wszystko, co się da, a producenci nie są w stanie sprostać zamówieniom. Skończyły się czasy, gdy bez aprobaty MEN szkoła nie mogła zakupić żadnej pomocy. Teraz wprawdzie funkcjonuje lista pomocy zalecanych przez MEN, ale nie jest ona obligatoryjna ani dla producentów, ani dla kupujących. Skończył się też monopol MEN w zakresie produkcji i dystrybucji pomocy dydaktycznych. Na rynku pomocy szkolnych trwa walka o klienta.",
+      "target": 0,
+      "response": "tak\n\njakie obszary można porów",
+      "prediction": 1,
+      "correct": false
+    },
+    {
+      "id": 22,
+      "extract_text": "Do Berdyczowa, odległego od Kijowa o 185 kilometrów, jedzie się cztery godziny. \"Żyj krasiwo, pij be...",
+      "summary_text": "Kiedy Filippo Tomasso Marinetti w 1909 roku publikował w paryskim „Figaro” swój „Manifest futuryzmu”, w którym zachwycał się pięknem szybkości, nie mógł przypuszczać, że w jego rodzinnych Włoszech kilkadziesiąt lat później setki tysięcy kibiców bić będą hołdy czerwonej maszynie marki Ferrari, której sercem jest silnik, a duszą komputer. Nie spodziewał się też, że wyścigi „samochodów o ognistym oddechu” staną się jedną z najsprawniejszych w świecie maszyn do robienia pieniędzy, a oglądać je będzie co dziesiąty człowiek na Ziemi. Dziś samochody Ferrari są synonimem sukcesu nie tylko w sporcie. Żyrują prestiż i status społeczny, stały się przedmiotem marzeń i zazdrości milionów.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 23,
+      "extract_text": "Stadion narodowy powinien być w Warszawie, a nie w Chorzowie - twierdzą minister sportu Jacek Dębski...",
+      "summary_text": "Budowa Stadionu Śląskiego budzi wiele kontrowersji. Jego przeciwnikiem jest minister sportu i trener reprezentacji piłkarskiej, którzy uważają, że mecze powinny odbywać się w stolicy. Budowa stadionu opóźnia się, a projektantom i inwestorowi zarzuca się niegospodarność i nieprawidłowości. Kolejne kontrole  na stadionie mają tylko potwierdzać wcześniej sformułowane zarzuty. Początkowo stadion miał być tylko remontowany, potem uznano koniecznośc odbudowy. Kwoty tych inwestycji różnią się stukrotnie - co jest jednym z zarzutów kontroli - ale też dotyczą dwóch innych inwestycji. Eksperci architektoniczni chwalą z kolei obiekt za jego walory architektoniczne i stosunkowo niskie koszty budowy. Mimo to stadion nie otrzymał zaplanowanych funduszy, które zostały wstrzymane do czasu wyjaśnienia wątpliwości dt. przeprowadzenia robót. Polska nie dysponuje stadionem spełniającym międzynarodowe standarty. W tej sytuacji zakończenie budowy Stadiony Śląskiego jest koniecznością, mimo niechęci ministra sportu, który wolałby mecze rozgrywać w stolicy choć brak ku temu warunków.",
+      "target": 1,
+      "response": "tak\nwyjaśnij swoje myśli krok",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 24,
+      "extract_text": "Brak nadziei na poprawę również po wejściu do UE odbiera motywację do udziału w referendum. jeżeli P...",
+      "summary_text": "Eksperci uważają, że integracja z Unią Europejską powinna być korzystna zarówno dla polskich ogrodników, jak i dla konsumentów. Struktura produkcji oraz ceny owoców i warzyw w Unii są inne niż w Polsce. Unijne produkty będą konkurencją dla polskich producentów. Zdaniem specjalistów ogrodnictwo w Polsce wymaga większej koncentracji i specjalizacji produkcji, warto także zadbać o rozwój infrastruktury rynku.",
+      "target": 0,
+      "response": "nie\n\nw tekście źródłowym br",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 25,
+      "extract_text": "właściciel Elektromisu DI rozwija sieć sklepów Żabka i przez inną swoją spółkę Kuchnia Polska inwest...",
+      "summary_text": "W 1987 r. wraz z dwójką wspólników Mariusz Świtalski założył spółkę Elektromis sp. z o.o., która z czasem stała się holdingiem kilkunastu prowadzących wspólne interesy firm. Od 1994 trwa proces 13 osób z kierownictwa spółek holdingu. Okazuje się, że wszystkie firmy były zakładane i prowadzone przez znajomych i kolegów Mariusza Świtalskiego. Akt oskarżenia obejmuje oszustwa celno-podatkowe i narażenie skarbu państwa na straty w wysokości 40 mln zł.",
+      "target": 1,
+      "response": "nie\n\ndziegoś ta informacja nie",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 26,
+      "extract_text": "Alpha Oumar Konare, prezydent Mali przeciętny mieszkaniec globu widzi, że w Afryce są problemy. giną...",
+      "summary_text": "Nieopodal Banganarti nad Nilem polscy archeologowie dokonali niezwykłego odkrycia. Odsłonili chrześcijański kościół i krypty władców Nubii pochodzące z okresu dominacji chrześcijaństwa, które zostało ostatecznie wyparte przez islam w 1350 roku. Na szczególną uwagę zasługują grobowce, wzniesione ok. VII w., które były elementem pośmiętnego kultu królewskiego i najpopularniejszym miejscem pielgrzymek, na co wskazuje liczba inskrypcji zostawianych przez pielgrzymów. Źródeł ich popularności należy upatrywać w instytucji świętego królestwa uznającej króla za świętego.",
+      "target": 0,
+      "response": "opisz swoje myśli przed odpowiedzią.",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 27,
+      "extract_text": "toczy się dyskusja na temat powodów niepowodzeń we wdrażaniu wielkich systemów informatycznych.Różne...",
+      "summary_text": "Ludzie spożywający umiarkowane ilości wina są mniej narażeni na zawały serca i nowotwory niż zwolennicy innych trunków. Mimo to żadna organizacja medyczna nie namawia do picia alkoholu. Nie wiadomo, jaka jest optymalna jego dawka. Uznaje się, że 20-40 g dziennie. Alkohol w każdej postaci zawiera szkodliwe substancje hamujące syntezę białek.",
+      "target": 0,
+      "response": "ne",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 28,
+      "extract_text": "Od wtorku Ameryka jest w stanie wojny. trzeba szybko ustalić to co najważniejsze - z kim i jak?Na ra...",
+      "summary_text": "„Problem roku 2000” oznacza, że o północy z 31 grudnia 1999 na 1 stycznia 2000 wiele milionów urządzeń elektronicznych na całym świecie może przestać działać, bo nie będzie w stanie poprawnie odczytać daty. Służby mundurowe oraz najważniejsze instytucje (szpitale, banki, kolej) przygotowują się na tę noc, aby ciągłość w ich pracy nie została przerwana.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 29,
+      "extract_text": "Do początku lat dwudziestych kolorowi mieszkańcy Brazylii nie mieli prawa gry w piłkę z białymi. Prz...",
+      "summary_text": "Do połowy lat 20. w Brazylii w piłkę nożną mogli grać jedynie biali zawodnicy. Fenomenalny piłkarz Arthur Friedenreich przed każdym meczem musiał pudrować śniadą twarz. Z czasem kolorowi Brazylijczycy zrewolucjonizowali światową piłkę. Czarnoskórzy zawodnicy pojawili się w angielskiej lidze i reprezentacji.  Herbert Chapman był wybitnym angielskim trenerem i eksperymentatorem. Po zmianie przepisów o spalonym zmienił tradycyjne ustawienie zawodników. Angielski futbol ma bogatą tradycję, wiąże się z nim wiele legendarnych postaci, miejsc i wydarzeń. Był czas, kiedy zamknięta na nowe rozwiązania taktyczne Anglia przegrywała mecze na Wembley. Międzynarodową Federację Piłkarską założyli przedstawiciele krajów europejskich, jednak nowoczesne formy organizacyjne w futbolu powstały w Ameryce Południowej, w której piłka nożna jest religią i sprawą wagi państwowej. Chłopcom z biednych rodzin sport daje szansę na lepsze życie. Wiele zasług dla futbolu mają Francuzi. Do popularyzacji piłki przyczyniły się rozgrywki pucharowe i transmisje telewizyjne. Z czasem zachwiały się proporcje między sportem a reklamą. Ludzie interesują się życiem i karierą znanych piłkarzy, takich jak Pele czy Maradona. Piłka nożna jest uwielbiana i to się nie zmieni.",
+      "target": 1,
+      "response": "odpowiedź brzmi: nie\n\nd",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 30,
+      "extract_text": "umiejętność przystosowania Finowie wykształcili w sobie w walce z surowymi warunkami życia.Pragmatyc...",
+      "summary_text": "Na zakup pomocy szkolnych wydaje się z budżetu oświaty niewiele pieniędzy - od 0,5 do 1 proc. - szacuje MEN. Skończyły się czasy, gdy bez aprobaty MEN szkoła nie mogła zakupić żadnej pomocy. Teraz wprawdzie funkcjonuje lista pomocy zalecanych przez MEN, ale nie jest ona obligatoryjna ani dla producentów, ani dla kupujących. Skończył się też monopol MEN w zakresie produkcji i dystrybucji pomocy dydaktycznych. Na rynku pomocy szkolnych trwa walka o klienta, walka między szkołokrążcami, oferującymi kiepski, a tani towar, którym nie zależy na umieszczeniu swoich produktów na liście MEN; dawnymi państwowymi producentami, przyzwyczajonymi do swej monopolistycznej pozycji oraz nowoczesnymi prywatnymi firmami.",
+      "target": 0,
+      "response": "nie\n\ndla powodu:\n- tekst",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 31,
+      "extract_text": "Łomnicki Miał bardzo skomplikowaną osobowość. Stała się źródłem jego wielkiego talentu, witalności, ...",
+      "summary_text": "Tadeusz Łomnicki był wielkim aktorem, niezwykle pracowitym i inteligentnym. Aktorzy darzyli go ogromnym szacunkiem, jednak wielu krytykowało jego pracę dla KC PZPR. Łomnicki pod koniec życia cierpiał ze względu na braki zawodowe swych scenicznych partnerów, dlatego wolał występować sam. Potrafił jednak zachwycić się grą innych. Po zakończeniu pracy nad \"Stalinem\" odbył się bankiet, na którym po raz ostatni widziałem Janusza. Podziękował nam, niczego nie zjadł, nie wypił. Pożegnał się i odszedł.",
+      "target": 1,
+      "response": "tak\n\njak radzi sobie podsumowanie z",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 32,
+      "extract_text": "Jakie są różnice pomiędzy Polską trzy lata temu i teraz?  BASIL KAVALSKY: Byliśmy zaniepokojeni, czy...",
+      "summary_text": "Szanse polskiego ogrodnictwa w Unii Europejskiej są duże,lecz wymaga to głębokiego procesu restrukturyzacji,zorganizowania grupy producentów oraz rozwoju infrastruktury.Dzięki temu mamy szansę skorzystać z takich form wsparcia jak kraje UE, w których wyższe są ceny owoców i warzyw, ale za to są one lepszej jakości.Otrzymamy też o rozszerzoną o nowe gatunki ofertę.Na wejściu Polski do UE najbardziej skorzystają producenci wiśni,jagód i pieczarek.",
+      "target": 0,
+      "response": "nie\n\ndzieje się następujące",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 33,
+      "extract_text": "Multipleksy - wielkie kinowe molochy  z co najmniej ośmioma,  a czasem nawet dwudziestoma salami  - ...",
+      "summary_text": "Multipleksy zrewolucjonizowały rynek kinowy na świecie. Teraz pojawiają się też w Polsce. Są one szansą dla różnego rodzaju filmów, które będą mogły zarabiać na siebie w mniejszych salach. Z drugiej strony takie kompleksy stanowią zagrożenie dla małych kin. Trzeba poczekać kilka lat z odpowiedzią na pytanie, czy multipleksy w Polsce będą miały korzystny wpływ na rozwój kina.",
+      "target": 1,
+      "response": "tak\n\nw tekście źródłowym st",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 34,
+      "extract_text": "W Federacji Rosyjskiej poważnie zreformowano sądownictwo. Prawa te, choć ogłoszone, nie mogą zostać ...",
+      "summary_text": "W Federacji Rosyjskiej poważnie zreformowano system sądownictwa. Umocniono sędziowską niezależność, do składów orzekających wprowadzono czynnik obywatelski pod postacią sądów przysięgłych, reaktywowano instytucję sędziego pokoju, który niekoniecznie jest prawnikiem, za to uważany jest za człowieka porządnego i cieszącego się szacunkiem współmieszkańców. Jednak brak środków finansowych nie tylko utrudnia wprowadzenie reform, lecz także nie pozwala na przyzwoite funkcjonowanie obecnego systemu.",
+      "target": 1,
+      "response": "nie\n\ndzieje się następujące",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 35,
+      "extract_text": "w latach 70. funkcjonowało w kraju ok. 2,5 tys. kin. W połowie lat 90. było ich już tylko 700, potem...",
+      "summary_text": "Od dwóch lat w Polsce pojawiają się multiplesy, oferujące kinomanom nowoczesność i najwyższą jakość. Z ich obecnością na polskim rynku wiąże się wiele szans, ale też wiele zagrożeń. Mniejsze sale kinowe umożliwią pokazywanie ambitnych produkcji. Szeroki zagraniczny repertuar będzie jednak z drugiej strony konkurencją dla naszych superprodukcji. Multipleksy podbiły świat. Czas pokaże, jakie zmiany przyniosą w Polsce.",
+      "target": 1,
+      "response": "tak\n<|end_of_document|> wy",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 36,
+      "extract_text": "Cała Ameryka zastanawia się teraz, czy ubiegający się o nominację prezydencką z ramienia Partii Repu...",
+      "summary_text": "Od 1 stycznia 1998 banki obowiązane są stosować się do ustawy o rachunkowości (Dz. U. nr 121, poz. 591 ze zm. - dalej: u.r.), ale już nie do przepisów aktów wykonawczych wydanych na podstawie upoważnienia zawartego w art. 81 ust. 1 u.r. Dotyczy to zarówno przepisów zarządzenia nr 13/94 prezesa Narodowego Banku Polskiego, jak i uchwał nr 1/98 oraz nr 2/98 Komisji Nadzoru Bankowego. Oznacza to, że banków nie obowiązują żadne \"szczególne zasady\" rachunkowości, sporządzania informacji dodatkowej, skonsolidowanych sprawozdań finansowych czy też tworzenia tzw. rezerw celowych., sformułowane we wskazanych aktach.",
+      "target": 0,
+      "response": "opisz swoje myśli przed odpowiedzią.",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 37,
+      "extract_text": "Bezspornie podstawą funkcjonowania telewizji publicznej jest ustawa z 29 grudnia 1992 r. o radiofoni...",
+      "summary_text": "Niebawem rozstrzygnie się, czy na jesieni w wyborach samorządowych kandydaci będą wybierani bezpośrednio przez mieszkańców. Przygotowywana ustawa ma poparcie SLD i PO, prawdopodobne jest więc, że zostanie uchwalona. Czołowi politycy rozważają więc start w wyborach, a dla stanowisk prezydenckich są gotowi zrezygnować z mandatów poselskich. Nieoficjalnie znani już są kandydaci partii na stanowiska prezydentów dużych miast.",
+      "target": 0,
+      "response": "ne",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 38,
+      "extract_text": "odnotowywanie wątpliwości co do rzeczywistej treści opracowywanego przez tłumacza pisma dotyczy tych...",
+      "summary_text": "Działalność tłumaczy przysięgłych reguluje rozporządzenie ministra sprawiedliwości w sprawie biegłych sądowych i tłumaczy przysięgłych. Tłumacz przysięgły  m.in. sporządza, sprawdza i poświadcza tłumaczenia oraz  poświadczone odpisy pism.  Fałszerstwo dokumentu dzieli się na  fałsz intelektualny i  fałsz materialny. Domorosłe metody oceny dokumentów starych/zniszczonych mogą być zawodne. Fałszerstwa nieudolne są łatwo wykrywalne. Większa liczba dokumentów w językach obcych będzie wymagać międzynarodowej standaryzacji badania autentyczności i poprawności dokumentów.",
+      "target": 1,
+      "response": "nie\n\nw tekście źródłowym jest",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 39,
+      "extract_text": "Zgodnie z zakresem kompetencji Senat poprawia ustawy przychodzące z Sejmu, zajmuje się pracą legisla...",
+      "summary_text": "Być może w tym tygodniu Sejm zdecyduje, czy kadencja obecnego samorządu będzie skrócona i czy wybory samorządowe odbędą się w czerwcu. Jeśli tak się stanie, posłom zostanie miesiąc na przygotowanie ustawy  o bezpośrednim wyborze wójtów, burmistrzów  i prezydentów. Ta ustawa zmieni sposób działania samorządu. Specjalnie powołana sejmowa podkomisja zajmuje się od połowy stycznia pakietem ustaw samorządowych wniesionych przez posłów Sojuszu Lewicy Demokratycznej i Platformy Obywatelskiej.",
+      "target": 0,
+      "response": "nie\n\nw tekście źródłowym oma",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 40,
+      "extract_text": "Co roku, pod koniec kwietnia, mieszkańcy Stratford-upon-Avon, przebrani w stroje z epoki elżbietańsk...",
+      "summary_text": "W rocznicę urodzin poety i dramaturga Williama Szekspira w miasteczku, z którego pochodzi - Stratford-upon-Avon, mieszkańcy co roku organizują barwną i głośną paradę.Ściągają na nią tysiące turystów, choć i tak przez cały rok nie brakuje ich w miasteczku. Przyciąga ich niesamowita atmosfera miasta, w którym każdy zabytek związany z Szekspirem (m. in. dom przy Henley Street, w którym się urodził) jest zadbany i utrzymany w duchu jego epoki.",
+      "target": 1,
+      "response": "nie\n\nw tekście źródłowym wsp",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 41,
+      "extract_text": "Rząd zalicza potknięcie za potknięciem, koalicja skrzypi, zaś w samym SLD notowania kierownictwa par...",
+      "summary_text": "Rząd Leszka Millera przechodzi kryzys. Członkowie partii wytykają premierowi błędy, krytykują poczynania ministrów, skarżą się na brak komunikacji wewnątrz partii i kłopoty w terenie. Ostatnie publikacje w tygodniku \"Nie\" oraz rządowe zapowiedzi cięć w sferze socjalnej szkodzą ekipie rządzącej. Najbliższa konwencja SLD może się okazać przykrą niespodzianką dla władz.",
+      "target": 1,
+      "response": "tak\nwyobrażamy sobie, że to",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 42,
+      "extract_text": "Wprowadzona od września tego roku reforma oświaty przewiduje konieczność wymiany wszystkich podręczn...",
+      "summary_text": "Sto lat temu została przedstawiona hipoteza, która kilka lat po jej wygłoszeniu doprowadziła do rewolucji w fizyce. Przez lnastępne lata powstały nowe teorie, które przyczynily się do postawienia wielu pytań i problemów z nimi związnych. Mimo że fizyka kwantowa odgrywa rolę we wszystkich postawionych problemach, to pozostaje jeszcze problem z samą mechaniką kwantową.",
+      "target": 0,
+      "response": "nie\n\nwyjaśnienie:\npodsumowanie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 43,
+      "extract_text": "Brazyliaczerpała początkowo z tych samych wzorów co inni. Piłki nożnej uczyli tam na przełomie wiekó...",
+      "summary_text": "Nie wiadomo, jak potoczyłyby się losy piłki nożnej, gdyby nie dwa znaczące fakty z lat dwudziestych – dopuszczenie do rozgrywek w Brazylii piłkarzy kolorowych oraz zmiana przepisu o spalonym, umożliwiająca rozwój taktyki. Wcześniej kolorowi mieszkańcy Brazylii nie mieli prawa grać w piłkę z białymi. Sport ten uchodził za elitarny. Skoro w Anglii w lidze nie grali Murzyni, w Brazylii zwyczaj ten przejęto, rozszerzając go na Mulatów, Metysów oraz Indian. Przełom nastąpił w roku 1923. Klub Vasco da Gama z Rio de Janeiro postanowił sprzeciwić się zasadom i przystąpił do rozgrywek o mistrzostwo stanu Guanabara z kolorowymi piłkarzami w składzie. Wygrywał przez dwa kolejne lata. To spowodowało rewolucję. W roku 1925 International Board zmienił przepis o spalonym w części mówiącej o liczbie zawodników mogących znajdować się w momencie podania piłki między linią bramkową a najbliższym niej graczem drużyny atakującej. Dotychczas było ich trzech zawodników, od tej pory miało być tylko dwóch. Z nowych ustaleń pierwszy skorzystał angielski trener Herbert Chapman, wprowadzając system WM. Wycofał środkowego pomocnika do obrony, zmienił ustawienie ataku, wycofując w głąb pola dwóch łączników.",
+      "target": 1,
+      "response": "tak\n<|fin|>\n\nodpowied",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 44,
+      "extract_text": "Samochód z otwartym dachem jest reklamowym symbolem Kalifornii. kabriolety okazały się świetnym prod...",
+      "summary_text": "Czerwony kabriolet pędzący po szosie tuż przy oceanie jest marzeniem zakorzenionym w umysłach turystów ciągnących do słonecznej Kalifornii. Na co dzień ich posiadaczami są panowie daleko po czterdziestce, chcący w ten sposób przypomnieć sobie czasy młodości, jednak wszystkie wypożyczalnie, za odpowiednio wyższą cenę, mają podróżnych do zaproponowania wynajęcie kabrioletu.",
+      "target": 1,
+      "response": "opisz swoje myśli przed udzieleniem",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 45,
+      "extract_text": "3 czerwca, podczas papieskiej pielgrzymki u grobu św. Wojciecha odbędzie się zjazd. najwyższy hierar...",
+      "summary_text": "Życie św. Wojciecha znaczyły kryzysy i katastrofy. Niektórzy złośliwi są skłonni nawet powiedzieć, że jego życie było totalnym bankructwem. Miał być rycerzem, a został biskupem. Dwukrotnie opuszczał biskupstwo szukając azylu w Rzymie, lecz go stamtąd wyrywano pod groźbą ekskomuniki. Pod koniec życia został misjonarzem, ale nikogo nie nawrócił. Ten z pozoru \"bankrut\" w półtora roku po śmierci został kanonizowany. Po tysiącu lat kreowany jest na patrona jednoczącej się Europy. W roku 1000 u jego grobu w Gnieźnie spotkali się cesarz niemiecki Otton III, legat papieża Sylwestra II i książę Bolesław Chrobry. Niebawem odbędzie się kolejny zjazd u grobu św. Wojciecha.",
+      "target": 1,
+      "response": "tak\n<|end|>\n<|user",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 46,
+      "extract_text": "Finowie Pragmatycznie myślą teraz, gdy Finlandia stała się pomostem między Unią Europejską a Rosją. ...",
+      "summary_text": "W polskich szkołach pracuje około 700 tysięcy nauczycieli. Przy przyjmowaniu nauczyciela do pracy liczy się wykształcenie - powinna osobowość. Zawód nauczyciela cieszy się dużym prestiżem społecznym. Płace nauczycieli kształtują się poniżej społecznie aprobowanego poziomu. Uważa się, że większości nauczycieli zależy na tym, by dobrze wykonywać swoje obowiązki oraz że są fachowcami. Połowa uczniów ocenia swoje stosunki z nauczycielami jako pozytywne, jedna piąta - że nauczyciela nie interesują problemy jego podopiecznych. U co czwartego słowo \"nauczyciel\" wywołuje lęk. Konieczne jest podmiotowe podejście do ucznia. System szkolnej demokracji oparty powinien być na idei \"po pierwsze nie szkodzić\". Nauczyciele mówią o niechęci zespołu nauczycielskiego do pracujących twórczo oraz panującym w szkołach marazmie.",
+      "target": 0,
+      "response": "opisz swoją odpowiedź proszekiem.\no",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 47,
+      "extract_text": "sejmowa podkomisja zajmuje się pakietem ustaw samorządowych wniesionych przez posłów SLD i PO. Opróc...",
+      "summary_text": "Jeśli Sejm w tym tygodniu zdecyduje o skróceniu kadencji samorządu i wybory odbęda się w czerwcu, posłom pozostanie miesiąc na przygotowanie ustawy o bezpośrednim wyborze wójtów, burmistrzów  i prezydentów. Platforma Obywatelska i Sojusz Lewicy Demokratycznej zgłosiły dwa różne projekty. SLD proponuje zmiany powierzchowne, natomiast Platforma chce głębszych zmian, m.in. wzmocnienia pozycji burmistrza. Zwolennicy bezpośrednich wyborów wskazują, że aktywizują one lokalne społeczności i wzmocnią decyzyjność burmistrza. Propozycja bezpośrednich wyborów uzyskuje popracie większości posłów.",
+      "target": 1,
+      "response": "tak\nwyjaśnij logikę za",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 48,
+      "extract_text": "3 czerwca, podczas papieskiej pielgrzymki u grobu św. Wojciecha najwyższy hierarcha Kościoła katolic...",
+      "summary_text": "Życie św. Wojciecha znaczyły kryzysy i katastrofy. Niektórzy złośliwi są skłonni nawet powiedzieć, że jego życie było totalnym bankructwem. Miał być rycerzem, a został biskupem. Dwukrotnie opuszczał biskupstwo szukając azylu w Rzymie, lecz go stamtąd wyrywano pod groźbą ekskomuniki. Pod koniec życia został misjonarzem, ale nikogo nie nawrócił. Ten z pozoru \"bankrut\" w półtora roku po śmierci został kanonizowany. Po tysiącu lat kreowany jest na patrona jednoczącej się Europy. W roku 1000 u jego grobu w Gnieźnie spotkali się cesarz niemiecki Otton III, legat papieża Sylwestra II i książę Bolesław Chrobry. Niebawem odbędzie się kolejny zjazd u grobu św. Wojciecha.",
+      "target": 1,
+      "response": "tak\n<|end_of_document|> wy",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 49,
+      "extract_text": "Będzie 31 grudnia, rok 2000. Wyruszą z Marsylii albo z Barcelony, żeby opłynąć świat. To będzie wyśc...",
+      "summary_text": "THE RACE 2000 będzie największym widowiskiem sportowym przełomu tysiącleci. 31 grudnia żeglarze wyruszą, żeby opłynąć świat. Do wzięcia udziały w tym wyścigu zachęca wyobraźnia - rozmach rejsu, symbolika podróży w  czasie, przejście pod żaglami przez granicę tysiącleci. Będą w nim uczestniczyli największe i najszybsze jachty oraz najlepsi żeglarze. Kapitanem polskiej drużyny został Roman Paszke - znany i utytułowany żeglarz oraz współkonstruktor pierwszego polskiego jachtu zbudowanego z włókien węglowych. Wzięcie udziału w wyścigu wymaga ogromnych nakładów pracy i pieniędzy. Trasa wyścigu jest szalenie trudna - krótsza w pobliżu Arktyki skazuje na ciągłe sztormy, szybki katamaran może się wywrócić. W takich warunkach ważny będzie zgrany zespół. Całe wydarzenie jest wyzwaniem dla świata mediów. Kamery na pokładach pozwolą śledzić widzom losy żeglarzy na żywo. Po raz pierwszy podzielą się oni swą samotnością z milionami. Trzeba wierzyć, że polskiej drużynie się uda. Kapitan Paszke patrzy w przyszłość optymistycznie.",
+      "target": 1,
+      "response": "tak\nwyjaśnij swoje myśli.",
+      "prediction": 1,
+      "correct": true
+    }
+  ]
+}

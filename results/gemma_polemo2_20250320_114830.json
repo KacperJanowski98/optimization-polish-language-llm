@@ -1,0 +1,512 @@
+{
+  "model": "gemma",
+  "dataset": "polemo2",
+  "task": "sentiment analysis",
+  "accuracy": 0.26,
+  "f1": 0.10317460317460317,
+  "precision": 0.26,
+  "samples_evaluated": 50,
+  "evaluation_time": 32.45143103599548,
+  "details": [
+    {
+      "id": 0,
+      "text": "Jakie związki czynne zawierały leki wykorzystywane w Rzeczypospolitej od XVI do XVIII wieku ? Czy terapeutyki były wystarczająco aktywne biologicznie , żeby działać na dolegliwości , które nękały ówczesnych pacjentów ? Łączone badania historyczne i laboratoryjne przeprowadzi zespół pod kierownictwem dr . Jakuba Węglorza z Wydziału Nauk Historycznych i Pedagogicznych Uniwersytetu Wrocławskiego . Projekt otrzymał 1 , 57 mln zł ze środków programu Sonata Bis Narodowego Centrum Nauki . Przedmiotem badań historycznych będą staropolskie pamiętniki , listy , diariusze i prywatne notatki . Historycy wybiorą z nich informacje o stosowanych wówczas lekach . Następnie zidentyfikują owe terapeutyki i szczegółowo opiszą na podstawie medycznych źródeł historycznych : receptariuszy i kompendiów . Tak uzyskane recepty będą podstawą do szczegółowego odtworzenia dawnych medykamentów .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 1,
+      "text": "Jest to osoba , która potrafi w trakcie procesu diagnostycznego połączyć dane czysto teoretyczne i swoje doświadczenie życiowe , a diagnoza nie jest jedynie medycznym terminem ale wynikiem głębokiej analizy ( coś znaczy dla pacjenta ) . Nie tylko umie słuchać , umie radzić przed czym tak bardzo bronią się inni lekarze psychiatrzy nie chcąc brać odpowiedzialności za nasze decyzje . Decyzje są nasze ale jej wskazówki w momencie kiedy stoimy w miejscu i nie potrafimy postawić kroku albo boimy się nabrać powietrza w płuca są bezcenne . Samo spróbuj daje nadzieję , bo wiesz , że jest ktoś kto stoi obok i pomoże . Mi pomogła bardzo , dzięki jej profesjonalnej ale także czysto \" ludzkiej \" postawie mam odwagę nie tylko stawiać nieśmiałe kroki ale nawet biec . Jeśli strach przed kolejnym wdechem strasznie was paraliżuje to jest ona właściwą osobą do której należy się udać . Chyba najbardziej cenię jej \" życiowe \" podejście do problemu ogarniające całość obrazu w szerszym kontekście tak jakby stojąc w dolinie ( czasem mając tylko strzępy informacji ) miała zdolność oceny , której inni nie mając będąc na szcycie góry ( mając setki stron dokumentacji ) . Podziwiam ją a jednocześnie niezwykle cenię jako lekarza .",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 2,
+      "text": "Hotel o średnim standardzie . Pokoje z klimatyzacją i WIFI . Jedzenie szwedzki stół - dobre . Basen bardzo przyjemny , woda czysta chociaż zimna . Personel przyjemny i pomocny . l to wszystko co dobre . Morze ok 200 m od hotelu ciągle burzliwe , kąpanie utrudnione ze względu śliskie kamienie pokryte glonami . Plaży nie ma wcale , to jest brzeg morza . Do Agi Apostoła ok 2 km tak więc iść wieczorem ruchliwą drogą bez chodnika ba bez poboczy - niebezpieczne . Nie polecam tego hotelu na dłuższy wakacyjny pobyt .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 3,
+      "text": "Jeszcze dwa - trzy lata temu diagnoza zaawansowanego czerniaka , najbardziej złośliwego nowotworu skóry , oznaczała wyrok śmierci . Obecnie , dzięki wprowadzeniu nowych leków , w tym immunoterapii , coraz częściej mówi się , że dla wielu pacjentów „ będzie to choroba przewlekła ” - zwraca uwagę Wojtasiński . W swojej książce przytacza przykłady wielu innych nowotworów , w leczeniu których dokonał się ogromny postęp – przewlekła białaczka szpikowa , szpiczak mnogi , rak piersi . Opisuje doświadczenia wielu pacjentów - w tym osób znanych z pierwszych stron gazet – które bądź zostały wyleczone z choroby nowotworowej , bądź żyją z nią , jak z inną chorobą przewlekłą . „ W Stanach Zjednoczonych żyje już ponad 14 mln osób , które + przeżyły + raka ” - pisze autor książki . 15 proc . z nich żyje już co najmniej 20 lat od diagnozy . Dziennikarz przekonuje , że efekty leczenia nowotworów poprawiają się również w Polsce , choć ciągle następuje to wolniej niż na Zachodzie .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 4,
+      "text": "Zacznę od plusów . Hotel ma potencjał . . . Jest ładnie położony , pokoje są przestronne i nowoczesne . Personel na recepcji i w restauracji niby się stara , ale z tych starań nic nie wychodzi . . . Wina chyba leży w osobach zarządzających tym obiektem . Przyjechali śmy na romantyczny weekend , który z powodu nie wywiązania się hotelu z oferty , musieli śmy skrócić . Dopiero następnego dnia po przyjeździe , po naszych zapytaniach poinformowano nas , że oferta którą wykupili śmy nie zostanie zrealizowana z powodu zbyt małej liczby chętnych ! ! ! Romantyczna kolacja okazała się zimnym i niesmacznym bufetem . . . Wina , które miały być prezentowane przez sommeliera okazały się jednym gatunkiem , do tego kwaśnym i serwowanym przez przestraszonego kelnera . Zamiast wypocząć , byli śmy non stop niemile zaskakiwani podejściem hotelu do klientów . Przykro mi , ale ludziom ceniącym profesjonalizm i oczekującym adekwatnej obsługi w stosunku do zapłaconej ceny - NIE POLECAM HOTELU AUBRECHT ! ! !",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 5,
+      "text": "Szef zabrzańskiego programu przeszczepów płuc , dr Jacek Wojarski , przytoczył dane , zgodnie z którymi w ciągu minionych 15 lat na świecie wykonano ponad 1 , 3 tys . transplantacji tego organu u osób poniżej 18 roku życia , najwięcej u dzieci między 12 a 17 rokiem życia . Zwykle zajmujące się tym ośrodki operują 1 - 4 takie przypadki rocznie . Szacuje się , że roczne zapotrzebowanie na przeszczepy płuc u pacjentów z mukowiscydozą w Polsce to ok . 20 przypadków . Taka ilość będzie możliwa w Zabrzu , gdy w 2014 r . oddana będzie do użytku część C tego ośrodka – w praktyce będzie to oddzielny , niewielki szpital , bowiem pacjenci z tą chorobą muszą być po przeszczepach ściśle izolowani ze względów epidemiologicznych .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 6,
+      "text": "Hotel wygląda całkiem dobrze na zdjęciach , ale w rzeczywistości jest paskudny . Na pewno nie zasługuje na 4 * , może kilka lat temu było lepiej , ale teraz wymaga generalnego remontu . Nie wiadomo dlaczego nie łączyło mnie z wi - fi . Słabe śniadanie . . . Na szczęście była m tam tylko jedną noc , z pewnością dłużej by m nie wytrzymała - przestroga przed bardziej rozważnym wybieraniem hoteli na przyszłość . Jedyny plus to miła obsługa i bliskość do stacji centralnej w Bolonii .",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 7,
+      "text": "Hotel nowy , nie widać jeszcze śladów zuzycia . Check in bez problemow , pokoj na pierwszy rzut oka czysty ale po dokładniejszym rozgoszczeniu się dało się zauważyc pewne niedociągnięcia . Bardzo dobry bar z profesjonalistami po drugiej stronie , Drogi parking ( trudno trafic ) - windą zjeżdza sie do poziomu - 1 - duze auto moze miec problem ze zmieszczeniem sie",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 8,
+      "text": "Hotel wygląda na ładny i przyjemny . Obsługa w recepcji miła i uprzejma . Nawet udało się uzyskać rabat na opłatę parkingową . Pokój rodzinny ( apartament ) dosyć przestronny i czysty . Łazienka nie za duża , a drzwi od prysznica zapsute . Środki czystości - puste pojemniki z mydłem . Nakwiększą porażką było śniadanie , za które należało dodatkowo zapłacić 35 zł za osobę . Nie było ono warte tej ceny ze względu na bardzo mały wybór , duże braki i brudne kubki i talerze . Co prawda na śniadaniu było dużo osób , bo grupa kajkarska z Włoch akurat mieszkała w hotelu , ale kuchnia powinna być przygotowana z ilością jedzenie serwowanego na śniadanie . Kilka bułek , którte leżały w koszyku rozeszły się w 30 sekund i nikt nie doniósł więcej . Tak samo było z jogurtami , zabrakło dla dzieci . Obsługa sali donosiła łyżeczki w rękach zamiast na tacy . Brak serwetek , to już było wystarczająco dużo , aby móc powiedzieć , że nie warto płacić za \" posiłek \" poranny , bo trudno nazwać to śniadaniem . Hotel ogólnie robi dobre wrażenie na zewnątrz , ale czystość i kuchnia - to słabe punktu hotelu .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 9,
+      "text": "\" Jego technologia jest bardzo szeroko stosowana , gdyż jest prosta i skuteczna - podkreśla naukowiec . - Z dowolnej , dojrzałej komórki człowieka , np . komórki skóry albo krwi , pozwala w prosty sposób uzyskać tzw . komórkę pluripotentną - taką , z której da się otrzymać niemal wszystkie inne , dowolne tkanki i komórki - czy to neurony , krew , czy komórki wątroby \" . W niedalekiej przyszłości wyniki badań Yamanaki , wciąż rozwijane , mogą znaleźć zastosowanie m . in . w kardiologii - choćby u osób , u których dochodzi do martwicy mięśnia sercowego , w okulistyce - np . przy naprawach rogówki , a być może także w neurologii - w terapii chorób neurodegeneracyjnych czy uszkodzeniach rdzenia kręgowego - mówi dr Wiznerowicz .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 10,
+      "text": "Byli śmy u doktora na badaniu bioderek z naszą córeczką , od samego wejścia był bardzo nieuprzejmy . Badanie usg z konsultacją 230zł a nic konkretnego nie mogli śmy z niego wyciągnąć ! Trzeba go było dosłownie za język ciągnąć , byli śmy bardzo rozczarowani podejściem , zarówno do nas jako rodziców , jak i dziecka . Stwierdził dysplazję lewego bioderka i kazał natychmiast umówić się ponownie na założenie aparatu . Wydało mi się to dziwne bo wcześniej byli śmy u fizjoterapeuty , który bardzo dokładnie zbadał małą i powiedział że z biodrami jest wszystko w porządku . Skonsultowali śmy się więc z innym lekarzem , okazało się że mała wcale nie ma dysplazji ! Dodam że pod koniec wizyty ( podczas której próbował bardzo mocno podkreślić wagę problemu jakiego się doszukał ) zapytał : \" udało mi się was nastraszyć ? \" Eeeeee , przepraszam , myślała m że zadaniem lekarza jest leczenie i świadczenie usług medycznych a nie straszenie pacjentów ! Zwłaszcza za taką cenę . . .",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 11,
+      "text": "Pałac Saturna to niezwykłe miejsce . Zarówno hotel jak i Termy Rzymskie wywarły na nas ogromne wrażanie . Termy to raj na saunowiczów . Obiekt bardzo dobrze wyposażony , wspaniałe seanse saunowe . Z zabiegów również byli śmy bardzo zadowoleni . Korzystali śmy z pakietu wSPAniały relaks we dwoje . Restauracja serwuje pyszne jedzenie , chociaż ceny jak w Warszawie . Apartament ładnie urządzony , duży , przestronny . Ogromna wanna z hydromasażem . Jedynym minusem były łózka złączone z dwoma pojedynczymi materacami i dziurą w środku . W apartamencie tak wysokiej klasy myślę , że powinno być łózko z jednym dużym materacem . Poza łóżkiem i wysokimi cenami w szczególności napojów w restauracji nie mam zastrzeżeń . Wspaniały pobyt , rewelacyjne miejsce . Polecam !",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 12,
+      "text": "Hotel Zacisze zachęcił nas przede wszystkim ze względu na bliską lokalizację i pozytywne opinie . Nie było rozczarowania na miejscu , wprost przeciwnie . Miejsce idealne dla rodzin z dziećmi - plac zabaw , basen i grota solna . Dodatkowo - kawiarnia i godne polecenia desery . Pokoje przestronne i nowocześnie urządzone gwarantowały dobry wypoczynek . Duży plus za śniadanie - szeroki wybór i możliwość zjedzenia na dworze . Jeśli ktoś szuka kameralnego miejsca z całym zapleczem atrakcji to polecam właśnie ten hotel .",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 13,
+      "text": "Przed zawarciem umowy z WHG w planach Tristar było otwarcie 10 hoteli do końca roku 2015 . Eric Danziger , szef WHG uważa , że wprowadzenie marki Super 8 do Niemiec pozwoli na zwiększenie obecności grupy na tym kontynencie , a w dalszej perspektywie na ekspansję w całym regionie EMEA . Faktycznie , chociaż pod marką Super 8 w grudniu 2011 działało aż 2 249 obiektów z 142 254 pokojami , to żaden z nich nie był zlokalizowany na terenie Europy . W ciągu całego 2011 roku na świecie przybyło 75 obiektów Super 8 z niemal 6 tys . pokoi .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 14,
+      "text": "Ładny z zewnątrz . Lobby hotelowe też . Pokoje i czystość w pokojach to osobna bajka . Mieszkali śmy przez 7 - dni i spali śmy w tej samej pościeli ; bez wymiany a hotel 3 - gwiazdkowy . Czystość w łazience to masakra . Fetor i wiecznie cieknąca woda w łazience . Plaża za blisko portu czuć cały czas ropą a mazut leży na kamieniach . Jedzenie monotonne . Po trzech dniach mieli śmy go już dosyć . Nie polecay .",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 15,
+      "text": "Szczerze polecam Marcina . To profesjonalista w każdym calu . Zgłosił em się do niego z poważnym porażeniem nerwu promieniowego ( zespół sobotniej nocy - opadający nadgarstek , brak czynności prostowników palców ) . W badaniu EMG stwierdzono uszkodzenie typu neurapraxia / axonotmesis a neurolog ocenił ze pierwsza aktywność mięśni pojawi się po ok . 9 miesiącach od urazu . Pierwsze spotkanie z Marcinem odbyło się po ok . 1 , 5 miesiąca po urazie i już po nim pojawiła się pierwsza poprawa . Z każdym kolejnym spotkaniem było tylko lepiej . Po 10 spotkaniach ręka wróciła do pełnej sprawności ! Wiele miesięcy przed przewidywanym odzyskaniem sprawności . Marcin ma bardzo pozytywne podejście do pacjenta i udziela cennych wskazówek . Zależy mu również na zdaniu pacjenta , co powoduje że terapia staje się efektywną współpracą i prowadzi do szybkiej poprawy zdrowia .",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 16,
+      "text": "Dobra lokalizacja na zapleczu centrum miasta , blisko do Muzeum Śląskiego , płatny parking . Profesjonalna obsługa w recepcji podczas meldowania , gorzej z radzeniem sobie z prośbami gości dotyczącymi pobytu . W konsekwencji brak reakcji na wielokrotnie powtarzane życzenie dotyczące wymiany ręczników w innym terminie niż z góry przewidziany . W hotelu obowiązuje całkowity zakaz palenia tytoniu . W otrzymanym pokoju można było wyczuć zapach jak z popielniczki . Otwarcie okna , które można tylko uchylić nie poprawiło sytuacji . Źródłem zapachu okazała się klimatyzacja , która w tym momencie stała się bezużyteczna . Brak możliwości zmiany pokoju z powodu rzekomego całkowitego obłożenia . Sprzątanie pokoju pozostawia wiele do życzenia . W sumie nie wiadomo , czy obiekt chce być hotelem czy hostelem . Promocyjna oferta w atrakcyjnej cenie oraz wprowadzone niedawno płatne opcje za wymianę pościeli , ręczników oraz dostarczenie innych dodatków , wskazywały by na to drugie . Nie polecam , chyba że w cenie wyjątkowo atrakcyjnej . Tylko ona przemawia do rozumu , może nawet przemówi do mojego .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 17,
+      "text": "Jednak z ustaleń „ Hotelarstwa ” wynika , że rachunek działalności hotelarskiej w obu obiektach nie domykał się od lat . Np . nabyty na korzystnych warunkach szkielet obiektu rozpoczętego jeszcze w latach 70 . w Ostrowcu Świętokrzyskim , ukończony przez Gromadę i otworzony jako hotel na przełomie lat 80 . i 90 . XX w . odnotowywał wysokie przychody w latach 90 . Wówczas nie miał konkurencji i był jedynym hotelem w mieście .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 18,
+      "text": "Świetnie zlokalizowany , dojazd do targów to 10 min . Hotel czysty , dobre śniadania , Mogli by tylko popracować nad WI FI wieczorami nie chodzi , trzeba schodzić do baru tam jest nie przeciążone . Jest parking zarówno podziemny jak i obok hotelu . Można powiedzieć dobry hotel za dobrą cenę .",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 19,
+      "text": "Powstające tam bloki były pierwszymi w Warszawie , które montowano z prefabrykowanych elementów wielkowymiarowych ( wielkopłytowych ) , wyprodukowanych w Fabryce Domów na Służewcu . Zdjęcia : Czekający na przebudowę hotel Aramis – w głębi Portos z nową elewacją ; przed Aramisem parking na którego części spółka PUHIT SA , właściciel obiektów planuje budowę nowego hotelu z rozszerzoną funkcją konferencyjną . Hotele Portos i Atos przed modernizacją i niemal to samo ujęcie obiektów ze zmodernizowanym już Portosem i trwającym remontem Atosa .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 20,
+      "text": "Hotel na dobrym poziomie . Może nie zasługuje na 5 gwiazdek ale mocna 4 . Bardzo rozległy teren hotelowy . Niestety usytuowany na wzniesieniach więc trzeba się nachodzić . . . z góry . . . pod górę . Piękna panorama widokowa . Niestety brak plaży . Windy tylko w budynku głównym i do zjazdu na pomosty nad może . Obiekt bardzo duży . . . . więc i turystów bardzo dużo . W sierpniu . . . wręcz masakra . Bardzo dużo dzieci : małych , większych . Ja osobiście z takimi maluchami nie wybrał by m się tam . . . bo trzeba naprawdę sporo się nachodzić . Samo Bodrum to miejsce wypoczynku Turków z całej Turcji . Miasto strasznie zakorkowane . Polecam polskie biuro turystyczne KLS Voyages pani Doroty z Bodrum . Najtańsze wycieczki , sprawdzone . Ceny o połowę tańsze niż u rezydentów . Co do samego hotelu to w miarę utrzymują czystość . Przy takiej ilości turystów i dzieci . . . . to chyba i Hilton by poległ . Trzeba w sezonie o tym pamiętać . Jedzenie bardzo dobre . . . . śniadania troszkę monotonne , ale obiady i kolacje . . . . Super . Po za tym wszystko spoko . Fajne zjeżdżalnie . Aczkolwiek nie polecam sztywnym turystom . Miejsce do zabawy i dla dużych i dla małych . . . . hehehehe . Generalnie polecam osobom z dziećmi ale troszkę starszymi . Fajne miejsce .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 21,
+      "text": "Powyższa ( negatywna ) opinia może zniechęcać jednakże warte zauważenia jest to iż lekarz rzeczowo odniósł się do postawionego zarzutu co z pewnością pozwala na poznanie sytuacji z obu stron . Logiczne wydaje się , iż skierowanie do szpitala powinno mieć podstawy ( skierowań nie wydaję się \" ot tak \" ) a podstawy biorą się z oceny sytuacji - zatem taka ocena i rozpoznanie musiało się odbyć . Osobiście po dzisiejszej ( pierwszej ) wizycie uważam , iż lekarz przeprowadził ze mną rozmowę w sposób konkretny i fachowy zadając istotne pytania . Po zapoznaniu się z problemem wyjaśnił w jaki sposób należy dalej postępować , pytając wielokrotnie czy wszystkie kwestie są zrozumiałe . Na koniec mocno podkreślił , iż w każdej chwili mogę zadzwonić ( na komórkę ) jeśli mój problem zdrowotny będzie niepokojący . Z czystym sumieniem mogę polecić tego lekarza .",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 22,
+      "text": "Uwaga ! Ostrzegam przed nieuczciwym hotelem . Dojeżdżamy do Szklarskiej i jesteśmy przekierowywani na inny adres . Odległość od stoku na Szrenicę różni się 6x ! Jakość hotelu również . W pokojach jest tyle kurzu , że nocami mam ataki astmy na którą nie choruję . Rozdeptane ziemniaki pod łóżkiem to taki detal . Na zdjęciach niestety nie czuć \" zapachu \" . Oceńcie sami .",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 23,
+      "text": "Komercjalizacja IT była dla resortu skarbu jedną z bardziej udanych pod względem zyskowności sprzedaży spółek z grupy turystycznej . Bowiem z 15 spółek związanych z branżą turystyczną i noclegową , które znalazły się w planie prywatyzacji na lata 2008 - 2011 , do połowy roku 2010 sprzedano tylko dwie , w tym właśnie IT . Czy jednak państwo zrobiło dobry interes ? Nauka i wiedza kosztują , nawet dużo , ale bez nich trudno nie tylko mówić , ale nawet marzyć o rozwoju i postępie . Zdjęcie : Obecna siedziba Instytutu Turystyki mieści się przy ulicy Grochowskiej na warszawskiej Pradze . Budynek ( pierwszy z prawej – za drzewami ) sąsiaduje z malowniczym Jeziorem Kamionkowskim położonym przy jednym z najładniejszych parków Europy – Parku Skaryszewskim .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 24,
+      "text": "Polecam dr Szymulę , jest moim lekarzem od 23 lat , prowadził moje dwie ciąże i odbierał porody , zawsze fachowo i rzetelnie podchodzi do tematu . Cechuje go wielka cierpliwość , jest miły i zawsze ma czas dla pacjentki , by wyjaśnić jej problem . Tyle lat zaufania do lekarza chyba o czymś świadczyąAAAAle",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 25,
+      "text": "Pokój czysty , dostęp do wszystkich elementów które oferują na stronie www . Właścicielka miła i pomocna , umie dobrze doradzić w kwestii restauracji czy atrakcji do zwiedzania . Miejsce leży w doskonałym punkcie , 400m do morza , 400m do biedronki i bezpośredni tramwaj na dworzec główny i na stare miasto . Bardzo przyjemna wizyta , chętnie tu wrócę .",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 26,
+      "text": "KOMÓRKI MACIERZYSTE I INNE NADZIEJE W ramach projektu BioMed realizowane są również badania nad powłokami endoprotez czy sposobami naprawy uszkodzeń rdzenia kręgowego . Komórki macierzyste są wielką nadzieją medycyny regeneracyjnej i znajdują coraz więcej zastosowań we współczesnej medycynie . Potrafią dzielić się ogromną liczbę razy i mogą różnicować się do innych typów , czyli po prostu zmieniać się w komórki , jakich potrzebują pacjenci . W projekcie BioMed zajmuje się nimi dr hab . Krzysztof Marycz z Uniwersytetu Przyrodniczego we Wrocławiu oraz prof . Lidia Bużańska z Instytutu Medycyny Doświadczalnej i Klinicznej im . M . Mossakowskiego PAN w Warszawie . Zespół ocenia m . in . możliwości regeneracji uszkodzeń tkanki kostnej i nerwowej przy pomocy komórek macierzystych izolowanych z tkanki tłuszczowej i szpiku kostnego z zastosowaniem biomateriałów .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 27,
+      "text": "Cudowne miejsce - zwłaszcza dla rodzin z dziećmi . Animatorzy robili przez cały dzień super pracę , aby wszyscy czuli się świetnie ! Gratuluję i podziwiam ! Wieczorami super programy - aktywności dla dzieci , które uwielbiały tańce , zabawy , itd . MARTYNA - DZIĘKUJĘ ZA CIEPŁO , ŻYCZLIWOŚĆ < ZAANGAŻOWANIE ! ! ! Życzę sobie i innym takich kolejnych wakacji !",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 28,
+      "text": "Chciała by m wszystkich przestrzec przed Hotelem Jasmine . Na początku pobytu płaci się kaucje 30 euro od zniszczeń . Nas Pani rezydent i cała grupę około 30 osobową zapewniała ze zniszczenia zdarzają się bardzo rzadko . Pod koniec pobytu u wielu osób okazało się ze zniknely sztućce , wieszaki , filiżanki a w naszym wypadku jakaś miska której nie widzieli śmy na oczy . Ja rozumiem żeby w pojedynczym przypadku coś się nie zgadzało bo pomyłki się zdarzają , ale bardzo dużo osobom coś zagineło . Nikomu nawet do głowy nie przyszło żeby przyjść z pracownikiem na początku i zrobić podglad całego pokoju , totalna komedia . Niestety my byli śmy jako pierwsi i zapłacili śmy 5 leva . Niby mała kwota , ale chodzi o zasady i zszarpane nerwy a w tym hotelu najwyraźniej nie maja pojęcia co to jest . Żeby opinia była obiektywna do plusów mogę zaliczyć dobre położenie , przestronny pokój i miłego Pana barmana .",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 29,
+      "text": "Był em z rodziną w styczniu 4 osoby pokój w porządku duży czysty wygodny . Baseny generalnie w porządku Nie zawsze była taka sama temperatura wody . Recepcja nie do końca dobrze zorganizowana nikt nie potrafił powiedzieć kiedy będą wolne miejsca w garażu . Najsłabszym punktem jest restauracja fala gdzie Jedna pani ze ściereczką w ręku stara się utrzymać czystość na całych dwóch sala jadalnych kelnerzy z małymi tackami próbują pozbierać wszystkie talerze , często brakuje herbaty albo cytryny lub innych drobnostek . Oczywiście obsługa reaguje na prośby klientów ale nie o to chodzi żeby co 5 minut prosić o kolejną rzecz . Wybór dań umiarkowany dużo różnych dodatków jak dla wiewiórek na pewno fajnie bo dużo orzechów ja wolę konkrety . Dobre ciasta . W kawiarni ceny umiarkowane . Fatalna wentylacja na stołówce wszystkie ubrania pachną palonym olejem . Generalnie na 5 * trochę słabo . Jeśli będzie super oferta tzn dużo taniej niż u konkurencji można skorzystać ale jeśli szukasz prawdziwych 5 * to jeszcze nie tu . Mam nadzieje ze pomoże ta opinia głównie hotelowi i kiedyś będzie można wrócić bo jest potencjał .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 30,
+      "text": "Hotel na wypasie jak to sie mówi : ) Super basen i strefa saun , dbają o czystość i szczegóły . Pokoje duże , przestronne , ciepłe i komfortowe . Śniadania - najlepsze które jadłem w hotelach . Robi wrażenie i wybór i jakość i dobór dań . Drobny minus za jaskinię nocną - bar w piwnicy . Wystrój i klimat typowo burd . . . przepraszam : ) buduarowy . Barman mógł by potrenować klasyczne drinki . Ogólnie - super .",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 31,
+      "text": "Własciciele to Gburowaci oszuści ! ! ! z dnia na dzien bez słowa wyjasnien odwołali moją rezerwacje a gdy dzwoniła m zeby wyjaśnić dlaczego taka sytuacja zaistniała włascicielka była oprysklliwa i niemiła mówiąc \" ze ją to nie obchodzi gdzie teraz znajde nocleg to mój kłopot itp \" Już z wczesniejszych rozmów telefonicznych dało sie odczuć że to niezbyt przyjazni ludzie . . . odniosła m wrażenie że tak naprawde to łaskę mi robią że dają mi nocleg . Masakra co za podejscie do klienta . Na szczeście udało mi sie poszukać noocleg na termin moich wakacji po długich poszukiwaniach gdyż większości juz brak wolnych miejsc . Życze udanego wypoczynku byle nie w ' Tatarzance \" Pozdrawiam ! !",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 32,
+      "text": "Była m u Pana Mateusza w związku z bólem kolan w Szpitalu Bocheńskim ( wizyta w ramach NFZ ) . Biedny Pan Doktor nie mógł poświecić pacjentom tyle czasu ile by należało i ile pewnie by chciał . Czekała m na wizytę około pół roku a okazało się że wizyty odbywają się w tempie taśmy produkcyjnej , mało przestrzeni na nawiązanie podmiotowego kontaktu . Byle szybko , byle sprawnie . . . nie było źle , jednak czegoś zabrakło - czasu .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 33,
+      "text": "Pani Doktor już na pierwszej wizycie przypisała antybiotyk doustny i miejscowy do ucha . Po tygodniu na wizycie kontrolnej wobec niewielkiej poprawy zdecydowała się zrobić wymaz . Okazało się , że bakteria była oporna na antybiotyk doustny i nie było sensu go podawać . Żona karmiła w tym czasie piersią i dziecko było niepotrzebnie wystawione na działanie antybiotyku . Dwie kolejne wizyty polegały na zmianie kropli do ucha na inne z antybiotykami . Niestety po ponad 3 tygodniach leczenia nie było znaczącej poprawy . Zmiana lekarza i zastosowanie kropli recepturowych i w dodatku bez antybiotyku sprawiła , że problem zniknął po niecałych 2 tygodniach leczenia . Nie polecamy .",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 34,
+      "text": "W poprzednich badaniach osoby poddane eksperymentowi zwykle dobrze widziały miejsce , w które podawano im bodziec bólowy . Z innych badań wynika zaś , że gdy znamy moment zadania nam bólu lub widzimy część swojego ciała , w które jest nam dostarczany , to wówczas ból staje się mniejszy . Dlatego naukowcy z UJ postanowili , że obie ręce badanych będą przysłonięte podczas podawania bodźca bólowego . „ Sądzimy , że w naszym badaniu głównym czynnikiem powodującym , że ból odczuwany był jako większy , była bardzo duża niepewność badanych wobec tego , co się dzieje po prawej stronie ich ciała . Nie potrafili poprawnie wskazać gdzie jest ich prawa ręka ; nie widzieli bodźca bólowego i nie potrafili poprawnie wskazać jego lokalizacji . Ta niepewność mogła spotęgować ich subiektywne odczucie bólu ” – wyjaśnia dr Siedlecka .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 35,
+      "text": "Może kiedyś 20 lat temu było to fajne miejsce ale teraz masakra.jedyny plus to jedzenie . wszystko stare i zdezelowane , W pokojach brudno a w całym Hotelu wali stęchlizną . Już chyba wszystko było napisane o tym miejscu . Niestety to prawdaNIE POLECAM , utopiona kasa , zwalony urlop . Mam dzieci alergiczne i do dziś staramy się wyzdrowieć . WI - FI działa tylko w recepcji",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 36,
+      "text": "Prawie luksusowy hotel , prawie znakomita obsługa , prawie świetne jedzenie . Interesujące pokoje ( zatrzymała m się w części gotyckiej ) z ceglaną ścianą i piękną łazienką ( w której jednak nie działa ogrzewanie podłogowe ani elektryczny grzejnik ) . Obiad - bufet obfity , ogromny wybór , ale warzywa tak al dente że aż niesmaczne , a niektóre z potraw bez smaku . Interesująca biblioteka zamkowa - ale nieczynna wieczorami . Reklamowany taras widokowy - nieczynny i rano i wieczorem . Bar na mostku - zamknięty z powodu deszczu , nawet gdy deszcz przestał padać . I pracownik obsługi , który nie potrafi odpowiedzieć na pytanie - ponieważ \" pracuje tu tylko na umowę zlecenie \" . . . Innymi słowy - świetny hotel lecz z niedoróbkami , niedociągnięciami , które rażą przy wysokiej cenie za dobę . Bez zarzutu basen , sauny , jacuzzi ( choć trzeba pilnować specjalnych kart na ręczniki i szlafroki , bo straszą karami - bardzo stresujące ) . Największy plus - tuż obok zabytkowy zamek biskupów , do zwiedzania od piwnic aż po piętra . Jest na co popatrzeć .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 37,
+      "text": "„ Z danych publikowanych na świecie wynika , że problem anafilaksji narasta . W ciągu ostatnich 10 - 15 lat liczba jej przypadków zwiększyła się 5 - cio , a nawet 7 - krotnie ” – powiedział dr Raciborski . Dane europejskie wskazują , że jedna na 300 osób doznała w przeszłości lub dozna wstrząsu anafilaktycznego . Z danych przedstawionych w najnowszym raporcie , przy tworzeniu którego korzystano z rejestrów Narodowego Funduszu Zdrowia ( NFZ ) , wynika , że i w Polsce liczba osób , które otrzymały świadczenia medyczne w związku z reakcją anafilaktyczną , wzrosła w ostatnich kilku latach . Na przykład w 2015 r . liczba pacjentów po przebytym wstrząsie anafilaktycznym wskutek reakcji na pożywienie była prawie trzykrotnie wyższa niż w roku 2008 .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 38,
+      "text": "Wystawię neutralną ocenę , bo lekarz ma jednocześnie plusy i minusy , mniej więcej na podobnym poziomie . Może lekarz ma wiedzę medyczną i umie dobrać odpowiednie zabiegi rehabilitacyjne , ale z drugiej strony nie ma podejścia do pacjenta . Trafiła m na jego oddział na rehabilitację ( była m już po operacji kręgosłupa , ale dr Łukaniec nie był moim lekarzem prowadzącym ) . Jako , , obca \" osoba bardzo źle się czuła m , po prostu po każdym obchodzie na oddziale rehabilitacyjnym płakała m ze zdenerwowania , a później na ćwiczeniach rehabilitantki musiały mnie uspokajać . Robił mi różne przytyki tylko dlatego , że nie była m jego pacjentką i stwierdził , że nie powinna m być na jego oddziale rehabilitacyjnym , tylko powinna m pojechać do Warszawy na Kliniki Akademii Medycznej - do Kliniki Ortopedii i Traumatologii na ul . Lindleya w Warszawie i niech tam mnie rehabilitują , na nic się nie zdawało tłumaczenie , że tam nie ma oddziału rehabilitacyjnego i klinika nie ma rehabilitantów . Dodatkowo lekarz robił sobie żarty z lekarza , który mnie zoperował i jak dla mnie to jest niekulturalne . W medycynie nie liczy się tylko wiedza medyczna , ale ważne też jest podejście do pacjenta . A ten lekarz był dla mnie niemiły tylko dlatego , że leczyła m się u innego ortopedy i nie liczyło się , że na oddział rehabilitacyjny skierował mnie jego kolega z oddziału ortopedycznego .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 39,
+      "text": "Hotel jest położony niedaleko lasu , zacisze i świeże powietrze budzi dużą satysfakcje gości . Jeżeli chodzi o hotel jego standardy są jak najbardziej adekwatne do ceny . Pokój w szczególności zrobił na mnie dobre wrażenie , był przestronny przy czym przytulny i umeblowany na piątkę . Bardzo miła obsługa w towarzystwie której czujemy się bardzo przyjemnie . Również warto wspomnieć o bogatym menu które każdy powinien spróbować , na prawdę polecam \" bon appetit \" . Czas spędzony w \" HOTEL POSTA \" wspominam bardzo mile i na pewno niedługo znów go odwiedzę .",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 40,
+      "text": "Zrobilam wstepna rezerwacje apartamentu z mozliwoscia odwolania . Hotel zrobil preautoryzacje karty a nastepnie autoryzacje - pieniadze sciagneli z konta . Rezerwacje odwolalam 1 . 08Hotel na moja prosbe napisal ze od razu 1 . 08 zrobil zwrot na moja karte . Czekalam do 11 . 08 - zwrotu brakNa moje maile hotele nie odpowiadal wcale badz po dwoch dniach . Prosilam o wyslanie potwierdzenia zwrotu . Dopiero po postraszeniu ich prawnikiem dostalam potwoerdzenie - ale zwrot zrobili dopiero 11 . 08Dla mnie to zlodziejstwo .",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 41,
+      "text": "Pokoje i lokalizacja bez zarzutów , gorzej z all Inclucive , kawa czy herbata tylko do śniadania , kelnerki przy każdym posiłku pytają o numer pokoju , a przecież mieli śmy opaski , czuli śmy się jak intruzi prosząc o coś do picia w barze , nawet cola czy sok sprawiły problem . Rada kawę trzeba kupić w sklepie - czajnik w pokoju działa , kupionego wina też najłatwiej napić się na balkonie , kieliszki również dostępne w pokoju .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 42,
+      "text": "O dr . Neicu mam jak najlepsze zdanie . W maju 2008r . zostalem przyjety na oddzial . Operacje przeprowadzil dr . Neic . Po miesiacu mialem powtornie operacje poniewaz wyniki histopatologiczne wskazywaly na nowotwor skory . Ponownie operacje przeprowadzil dr . Neic . Rekonwalescencja po operacji przebiegala prawidlowo . Obecnie jestem w trakcie radioterapi . Od chwili spotkania sie z dr . Neicem jestem pod jego stala opieka . Jest to dr . przjaznie nastawiony do pacjeta oraz szczerze informujacy o przebiegu leczenia . Szczerze polecam Marek Dobrzycki",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 43,
+      "text": "Niewątpliwie największym plusem hotelu jest widok z pokoi zlokalizowanych od strony portu , szczegolnie z wysokich pięter . Budynek ma świetna lokalizacje , tuż przy porcie , wokoło jest mnóstwo restauracji , do centrum dzieli nas odległość ok 15 minutowego spaceru . Minusem jest nieco przestarzały juz design pokoi .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 44,
+      "text": "Witam , jestem w trakcie leczenia od końca października . Bardzo szybko zareagowała m na niepokojące mnie zachowania mojej osoby szukając pomocy . Potrzebowała m nie tylko wsparcia farmakololigcznego , ale zrozumienia drugiej osoby , rozmowy i wyjaśnienia , co w rezultacie pozwoli zaakceptować siebie , nie lękać się , uspokoić swój wewnętrzny niepokój . Cenne okazało sie również wspólne spotkanie z małżonkiem , Pani Ania sama wyszła z tą propozycją , co dużo pomogło . Co istotne , nie chce jedynie przez leki pomóc , ale również rozwiązać problem u źródła . W efekcie tamto , to już przeszłość . Patrzę pozytywnie w przyszłość . Pani Ania jest nie tylko lekarzem , ale powiernikiem naszych trosk i problemów , potrafi słuchać i wczuć się w problem pacjenta , daje poczucie bezpieczeństwa , myślę że jest to jej sukces zawodowy , bo ta praca jest jej spełnieniem , a my jako pacjenci czerpiemy z tego korzyści . Bardzo szanuję to co Pani robi , serdecznie pozdrawiam : )",
+      "target_class": "plus",
+      "target_idx": 2,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 45,
+      "text": "Zajmowała m pokój w budynku głównym . Standard pozostawia wiele do życzenia . Łazienka jest bardzo mała , nie posiada nawet kabiny prysznicowej , tylko niewielki brodzik z zagrzybioną zasłonką ( załączam zdjęcia ) . Odpływ w brodziku był zapchany i podczas korzystania z prysznica stała m po kostki w wodzie . Mimo WIELOKTOTNEGO zgłaszania tego problemu recepcjonistce , odpływ nie został udrożniony ! Ręczniki nie są zmieniane codziennie , tylko CO TRZECI DZIEŃ ! Łóżka niewygodne , wyposażone w stare , twarde materace z uwierającymi sprężynami . Zaletą mojego pokoju był ładny widok – przed balkonem rosło piękne drzewo limonkowe . Mój pokój sąsiadował z recepcją i dzięki temu mogła m korzystać z bezprzewodowego internetu . Lokalizacja hotelu jest dobra . Dojście do plaży zajmuje ok 5 min . Jedzenie mało urozmaicone . Największym problemem był bardzo długi czas oczekiwania na podanie kolacji . Dania wybierane są z karty . Po niemal godzinnym oczekiwaniu , zwróciła m uwagę kelnerowi . Dopiero po mojej drugiej interwencji ( upłynęła godzina i 15 min ! ) otrzymała m zamówione danie ! Jedzenie było zimne a kelner zapomniał o przyniesieniu sztućców ! Zgłosiła m skargę w recepcji ale zamiast przeprosin recepcjonistka zasugerowała mi kontakt z rezydentką TUI w celu … ZMIANY HOTELU ! Nie polecam tego hotelu !",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 46,
+      "text": "Hotel położony w miłej okolicy . Dogodny dojazd . Jedzenie przeciętne . Kawa marna . Obsługa pozostawia wiele do życzenia . W spa praktycznie samoobsługa - częściowo samodzielne wykonywanie zabiegów . Brak zainteresowania gościem podczas zabiegu . Gdyby nie towarzystwo był by to zmarnowany czas .",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    },
+    {
+      "id": 47,
+      "text": "Jest to lekarz , który nie rozumie , co to są zmiany wymagające pilnej wizyty u lekarza . Chodziło o krwawienie w czasie ciąży . Jak sam nie ma możliwości szybkiego przyjęcia kobiety w takim stanie , to powinien przynajmniej od razu powiedzieć , żeby szukała pomocy , w innym gabinecie . Nie powinien kazać wydzwaniać do swoich gabinetów i dopytywać się o inne wolne terminy . A po paru dniach dzwonienia oświadczyć , że nie ma już wolnych terminów . Poza tym ma bardzo niemiłą rejestratorkę w gabinecie .",
+      "target_class": "minus",
+      "target_idx": 1,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 48,
+      "text": "\" Alergie , astma , nieswoiste zapalenie jelita , choroby autoimmunologiczne takie jak reumatoidalne zapalenie stawów , cukrzyca typu I , toczeń , stwardnienie rozsiane to bardzo niebezpieczne choroby spowodowane nadmierną aktywnością układu immunologicznego . Obserwuje się coraz większą zapadalność na niektóre z tych chorób . Tendencja ta jest szczególnie widoczna w krajach rozwiniętych \" - mówi PAP dr Piotr Bąska ze Szkoły Głównej Gospodarstwa Wiejskiego w Warszawie . Remedium na te choroby mogą się okazać . . . pasożyty , bo aby przeżyć w człowieku , musiały nauczyć się hamować działanie ludzkiego układu immunologicznego . \" W toku ewolucji były naszymi nieodłącznymi towarzyszami , stając się - podobnie jak niektóre bakterie saprofityczne - nauczycielem układu immunologicznego , aby ten nie był nadaktywny . Wszystko było w porządku do początku ubiegłego stulecia , kiedy standardy życia i warunki higieniczno - sanitarne większości społeczeństwa nie były zbyt wysokie , a antybiotyki i leki przeciw pasożytnicze nie były tak często stosowane jak dziś . Inwazje pasożytnicze były wtedy na porządku dziennym . Teraz w krajach rozwiniętych : w Europie i Stanach Zjednoczonych , pozbyli śmy się części z nich . W efekcie nasz układ immunologiczny nie ma nauczyciela , który hamował by jego wybryki \" - wyjaśnia Piotr Bąska .",
+      "target_class": "amb",
+      "target_idx": 3,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": false
+    },
+    {
+      "id": 49,
+      "text": "Zapłaciła m za wizytę 100zł z czego Pani wypisała mi lek na receptę , który dostępny był w aptece normalnie sprzedawany bez recepty , ale 100zł zapłaciła m za receptę : ( Plus taki iż otrzymała m paragon za wizytę , co było dla mnie wielkim zdziwieniem w gabinecie lekarza ; ) Moim zdaniem lekarz jak lekarz , rewelacji nie było ; ) Ale polecam za miłą obsługę",
+      "target_class": "zero",
+      "target_idx": 0,
+      "response": "",
+      "prediction_class": "zero",
+      "prediction_idx": 0,
+      "correct": true
+    }
+  ]
+}

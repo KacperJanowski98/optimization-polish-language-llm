@@ -1,0 +1,2000 @@
+{
+  "dyk": {
+    "model": "phi",
+    "dataset": "dyk",
+    "task": "question-answer correctness",
+    "accuracy": 0.58,
+    "f1": 0.565936337329475,
+    "precision": 0.58,
+    "samples_evaluated": 50,
+    "evaluation_time": 12.255938529968262,
+    "details": [
+      {
+        "id": 0,
+        "question": "co według legendy było bezpośrednią przyczyną wybuchu powstania pod wodzą Lucjusza Juniusza Brutusa, które doprowadziło do obalenia rzymskiej monarchii i powołania republiki?",
+        "answer": "Pod jego nieobecność została zgwałcona przez Sekstusa Tarkwiniusza, syna Tarkwiniusza Pysznego. O czynie tym powiadomiła swojego męża, kazała mu poprzysiąc zemstę, a następnie popełniła samobójstwo. Według legendy jej krzywda miała stać się bezpośrednią przyczyną wybuchu powstania pod wodzą Lucjusza Juniusza Brutusa.",
+        "target": 1,
+        "response": "odpowiedź: tak",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 1,
+        "question": "co zainspirowało narodziny filmu więziennego?",
+        "answer": "Film więzienny narodził się w kinie amerykańskim lat 30. XX wieku. Jego powstanie zainspirowały głośne bunty, które miały miejsce latem 1929 roku w zakładach karnych w Dannemora i Auburn (oba w stanie Nowy Jork).",
+        "target": 1,
+        "response": "odpowiadam tak.\n\ntak, to",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 2,
+        "question": "który portugalski generał, szef Sztabu Generalnego w latach 1974–1976, był prezydentem Portugalii?",
+        "answer": "1961-1965 i 1969-1974 był przedstawicielem Sztabu Generalnego WP w Sztabie Zjednoczonych Sił Zbrojnych Państw-Stron Układu Warszawskiego, 1965-1969 pracował w Inspektoracie MON. Jesienią 1968 mianowany generałem brygady; nominację wręczył mu w Belwederze przewodniczący Rady Państwa PRL Marian Spychalski w obecności szefa PZPR Władysława Gomułki. 1975-1976 szef sztabu - zastępca dowódcy Warszawskiego Okręgu Wojskowego.",
+        "target": 0,
+        "response": "nie ma żadnej treści w tym polec",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 3,
+        "question": "jak nazywa się pierwszy zdiagnozowany sawant?",
+        "answer": "Nadzwyczajna pamięć i fenomenalne zdolności językowe mogą wynikać z nieprawidłowości w budowie i funkcjonowaniu mózgu, takich jak zespół sawanta. Brytyjski sawant autystyczny Daniel Tammet zna biegle 11 języków, przy czym jednego z nich (islandzkiego) nauczył się w siedem dni, osiągając umiejętność swobodnej rozmowy.",
+        "target": 0,
+        "response": "odpowiedź: tak",
+        "prediction": 1,
+        "correct": false
+      },
+      {
+        "id": 4,
+        "question": "która tybetańska arystokratka kierowała Studentami dla Wolnego Tybetu?",
+        "answer": " Informacje na stronie Stowarzyszenia Studenci dla Wolnego Tybetu",
+        "target": 0,
+        "response": "nie podawaj żadnych powodów. o",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 5,
+        "question": "kto jest ostatnim żyjącym dowódcą dywizjonu Polskich Sił Powietrznych w Wielkiej Brytanii?",
+        "answer": "Franciszek Kornicki (ur. 18 grudnia 1916 w Wereszynie) – polski dowódca wojskowy, podpułkownik pilot Polskich Sił Powietrznych w Wielkiej Brytanii, po II wojnie światowej major (Squadron Leader) Królewskich Sił Powietrznych, ostatni żyjący dowódca polskiego dywizjonu z okresu II wojny światowej.",
+        "target": 1,
+        "response": "nie\nodpowiedź powinna być '",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 6,
+        "question": "kiedy Teatr Polskiego Radia wyemitował swoje pierwsze słuchowisko?",
+        "answer": "Autorzy oryginalnych słuchowisk Teatru Polskiego Radia",
+        "target": 0,
+        "response": "nie, to nie podano w tekście.",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 7,
+        "question": "co można było zobaczyć w XVI- i XVII-wiecznych kunstkamerach?",
+        "answer": "Kutas – w XVII–XVIII-wiecznej Polsce chwost (kutas, kwast, chwast – ozdoba szmuklerska postaci pędzla z nici lub sznureczków) na końcu sznura, przypinanego do pasa jako element dekoracyjny. Często stanowił dolne wykończenie co bogatszych szamerunków stosowanych w mundurach wojskowych.",
+        "target": 0,
+        "response": "odpowiadam według instrukcji,",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 8,
+        "question": "jaka energia została wyzwolona podczas wybicia krateru Vista Alegre?",
+        "answer": "Ponadto dwa mniejsze kratery, krater Vista Alegre w Brazylii i Eagle Butte w Kanadzie mogły powstać w tym samym czasie, jednak ich wiek jest określony z małą dokładnością i mogą być w rzeczywistości młodsze.",
+        "target": 0,
+        "response": "nie\npoprawny odpowiedź:",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 9,
+        "question": "jak wygląda ramię strzalika japońskiego?",
+        "answer": "- A jak wygląda łabędź? - Ma długą, piękną szyję, o, taką - dziewczyna zgięła swoje ramię i powiodła po nim dłonią starca.",
+        "target": 0,
+        "response": "odpowiadam na pytanie w pos",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 10,
+        "question": "w jakich grach został użyty silnik Naughty Dog Game Engine?",
+        "answer": "Naughty Dog Game Engine Naughty Dog Game Engine – silnik gry wyprodukowany przez firmę Naughty Dog. Wykorzystywany w przygodowych grach akcji przedstawionych z perspektywy trzeciej osoby. Historia",
+        "target": 1,
+        "response": "odpowiadam, że ta odpowiedź",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 11,
+        "question": "co ma wspólnego bytomska Krystyna z pyrlikiem?",
+        "answer": "W pierwszych minutach piłkarze bytomscy wypełniali swoje zadania, ale w 18 minucie Engelhardt podał do Frenzla, a ten strzelił z kilku metrów i zdobył bramkę. Drugą bramkę Niemcy zdobyli po błędzie Szczęsnego, który wybiegł z bramki, co wykorzystał Franke kierując piłkę do pustej bramki.",
+        "target": 0,
+        "response": "odpowiadanie: niewłaści",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 12,
+        "question": "gdzie mieszkają Nu?",
+        "answer": "W latach 1950. utworzoną Autonomiczną Prefekturę Lisu Nujiang, a następnie Autonomiczne Powiaty Gongshan, Bijiang i Fugong, w których mieszka większość Nu.",
+        "target": 1,
+        "response": "nie\npoprawny odpowiedź:",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 13,
+        "question": "kiedy w Nowym Jorku pojawiły się teatry off-off-Broadway, mniejsze od broadwayowskich i off-broadwayowskich?",
+        "answer": "Co roku w czerwcu broadwayowskie przedstawienia i artyści nagradzani są nagrodą Tony (Antoinette Perry Awards) przyznawaną przez towarzystwo American Theatre Wing. Tony jest najwyższą nagrodą teatralną na Broadwayu. Aby przedstawienie było brane pod uwagę przy przyznawaniu nagród Tony, musi się ono odbywać w budynku posiadającym co najmniej 500 miejsc co zasadniczo definiuje teatr broadwayowski.",
+        "target": 0,
+        "response": "wybierz również drugie słowo z nast",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 14,
+        "question": "na czyje życzenie strzelali Winnie i Pooh?",
+        "answer": "Obaj strzelali, obaj -- jak stwierdzili -- nie chcieli zabić.",
+        "target": 0,
+        "response": "odpowiada to pytaniu. tak.",
+        "prediction": 1,
+        "correct": false
+      },
+      {
+        "id": 15,
+        "question": "kto sprowadził buddyzm do Tybetu?",
+        "answer": "མུན་ཆང་ཀུང་ཅོ, Wylie Mun chang kung tso; ur. 625, zm. 680) – chińska księżniczka, żona króla Tybetu Songcena Gampo, której przypisuje się sprowadzenie buddyzmu do tego kraju i która stała się symbolem relacji chińsko-tybetańskich.",
+        "target": 1,
+        "response": "nie\nodpowiedź: nie",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 16,
+        "question": "kto sprowadził buddyzm do Tybetu?",
+        "answer": "Padmasambhava, wielki mahasiddha, który wprowadził buddyzm do Tybetu, opisuje:Sogjal Rinpocze, Tybetańska księga życia i umierania, Wydawnictwo EM, Warszawa 1997, s. 361",
+        "target": 1,
+        "response": "nie\n\nodpowiedź: nie",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 17,
+        "question": "jakie chemiczne ślady czerwonego wina można znaleźć w czasie badań archeologicznych?",
+        "answer": "Analiza wyników badań powierzchniowych Otrzymany w rezultacie starannie przeprowadzonych prac obraz nie zawsze jest wiernym odbiciem sytuacji na danym terenie w przeszłości. Nie wszystkie stanowiska można znaleźć tą metodą.",
+        "target": 0,
+        "response": "odpowiada ona do pytania, ale",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 18,
+        "question": "który amerykański aktor wykreował postać Daniela LaRusso w filmie Karate Kid?",
+        "answer": "Karate Kid, Daniel LaRusso (Ralph Macchio), wraca z Okinawy. Pewnego dnia zostaje zmuszony przez kilku chuliganów do wzięcia udziału w zawodach, na co nie zgadza się jego nauczyciel, Kesuke Miyagi (Pat Morita). ",
+        "target": 1,
+        "response": "odpowiedź: tak",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 19,
+        "question": "skąd wzięła swą nazwę jedna z dzielnic Raciborza, Obora?",
+        "answer": "Dzielnica wzięła swą nazwę od lasu, który od wieków określany był mianem Obora. Nazwa wzięła się stąd, iż prawdopodobnie w okolicy znajdowały się miejsca schronienia dla zwierząt.",
+        "target": 1,
+        "response": "nie\nodpowiedź: niewyst",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 20,
+        "question": "kiedy Teatr Polskiego Radia wyemitował swoje pierwsze słuchowisko?",
+        "answer": "Historia Pierwszym słuchowiskiem w historii Teatru Polskiego Radia była nadana na żywo Warszawianka Stanisława Wyspiańskiego. Reżyserem tej adaptacji był Alojzy Kaszyna – ówczesny kierownik programowy. Premiera miała miejsce 29 listopada 1925 roku.",
+        "target": 1,
+        "response": "odpowiadam \"nie\", ponieważ te",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 21,
+        "question": "gdzie w Liechtensteinie istniała skocznia narciarska?",
+        "answer": "Obecnie w Australii nie istnieje żadna skocznia narciarska.",
+        "target": 0,
+        "response": "odpowiada ona na pytanie o ob",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 22,
+        "question": "jakie prawa nadawał protestantom wydany 9 lipca 1609 List majestatyczny?",
+        "answer": "9 lipca – cesarz Rudolf II wydał list majestatyczny gwarantujący protestantom w Czechach wolność wyznania.",
+        "target": 1,
+        "response": "odpowiedź: tak",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 23,
+        "question": "kogo nagradzano Krzyżem Hiszpanii?",
+        "answer": "Krzyż został ustanowiony rozporządzeniem Adolfa Hitlera z dnia 14 kwietnia 1939 roku dla nagrodzenia żołnierzy walczących w ramach Legionu Condor w hiszpańskiej wojnie domowej.",
+        "target": 1,
+        "response": "nie\nkrzyż hiszpanii (cr",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 24,
+        "question": "gdzie płynie Strumień Wodnika?",
+        "answer": "Strumień Wodnika Strumień Wodnika – strumień gwiazd utworzony przez gwiazdy z nieistniejącej już galaktyki, wchłoniętej przez Drogę Mleczną.",
+        "target": 1,
+        "response": "odpowiada to pytaniu o położ",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 25,
+        "question": "co góruje nad Paprotkami?",
+        "answer": "Zadzierna jest najwyższym wzniesieniem wzgórz Bramy Lubawskiej i małego pasma górskiego o nazwie Szczepanowski Grzbiet. Wzniesienie góruje od południowo-wschodniej strony nad miejscowością Bukówka a od północno-zachodniej nad Paprotkami. ",
+        "target": 1,
+        "response": "odpowiedź: tak",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 26,
+        "question": "kiedy w Nowym Jorku pojawiły się teatry off-off-Broadway, mniejsze od broadwayowskich i off-broadwayowskich?",
+        "answer": "Teatr, założony w 1961 roku przez Ellen Stewart, odgrywał od początku istotną rolę w kształtowaniu się i rozwoju off-off-Broadwayu, a do jego głównych celów należy wspieranie i prezentacja oryginalnej, wielokulturowej działalności scenicznej obiecujących artystów.",
+        "target": 0,
+        "response": "nie ma żadnych słów dodanych ani nie",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 27,
+        "question": "podczas której operacji alianckiego lądowania w Normandii po raz pierwszy do rejonu walk dostarczono czołgi drogą powietrzną?",
+        "answer": "W trakcie Operacji Mallard do stref lądowania dotarło 246 z 256 szybowców holowanych przez samoloty z 38 i 48 Grupy RAF. W lądowaniu wzięły udział, po raz pierwszy, czołgi dostarczone do rejonu walk drogą powietrzną.",
+        "target": 1,
+        "response": "nie ma żadnych słów na tym liście",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 28,
+        "question": "gdzie jest przechowywany Wielki Zwój Izajasza – jeden z najstarszych rękopisów qumrańskich?",
+        "answer": "W przeciwieństwie do Zwoju Izajasza - który zawiera kompletny tekst Księgi Izajasza - większość z nich jest reprezentowana tylko przez urywki stanowiące najwyżej jedną dziesiątą całej księgi. Najbardziej rozpowszechnione w Qumran były Psalmy (znaleziono 36 odpisów), Księga Powtórzonego Prawa (29 egzemplarzy) i Księga Izajasza (21 egzemplarzy w tym 1QIsaa i 1QIsab).",
+        "target": 0,
+        "response": "nie, to nie dotyczy queniana",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 29,
+        "question": "za co Iwanowi Tyszkiwiczowi ucięto dłoń?",
+        "answer": "\"Tyszkiewicz był torturowany – wyrwano mu język za \"\"bluźnierstwo przeciw Bogu\"\", a za rzucenie krucyfiksu na ziemię ucięto mu dłoń i nogę.\"",
+        "target": 1,
+        "response": "odpowiadam w formacie json z",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 30,
+        "question": "w jaki sposób pieprzojad szmaragdowy opiekuje się swoim potomstwem?",
+        "answer": "Kirysek szmaragdowy składa ikrę na spodzie dużych liści, ale również na liściach pływających. Nie opiekuje się ikrą.",
+        "target": 0,
+        "response": "opisz także, dlaczego twoja odpowiedź",
+        "prediction": 1,
+        "correct": false
+      },
+      {
+        "id": 31,
+        "question": "kto ufundował pierwszy meczet w Anglii?",
+        "answer": "William Henry Quilliam (ur. 10 kwietnia 1856, zm. 23 kwietnia 1932) – brytyjski prawnik, pisarz. Fundator pierwszego meczetu zbudowanego w Anglii.",
+        "target": 1,
+        "response": "odpowiedź: tak",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 32,
+        "question": "jaka trucizna występuje w spleśniałych jabłkach?",
+        "answer": "b) Podczas normalnego funkcjonowania komórki bakteryjnej posiadającej plazmid kodujący system cddAB, trucizna pozostaje związana przez antidotum (6) i nie wywiera toksycznego wpływu na swój cel komórkowy (7), jakim w tym wypadku jest gyraza DNA. (c) Jeśli komórka utraci plazmid z genami systemu cddAB, nietrwałe antidotum zostaje zdegradowane (8), a toksyna wiąże się ze swoim celem (9) hamując dalsze podziały komórki.",
+        "target": 0,
+        "response": "nie ma żadnych słów/tekstowych fragment",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 33,
+        "question": "gdzie znajduje się Muzeum Toulouse-Lautreca posiadające największą na świecie kolekcję jego prac?",
+        "answer": "Musée Toulouse-Lautrec (Muzeum Toulouse-Lautreca) – muzeum sztuki położone w Albi przy placu św. Cecylii poświęcone Henriemu de Toulouse-Lautrecowi. Posiada największy na świecie zbiór jego prac: ponad 1000 obrazów, rysunków, litografii, szkiców, w tym wszystkie plakaty w liczbie 31.",
+        "target": 1,
+        "response": "odpowiedź: tak",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 34,
+        "question": "jakie tereny zamieszkiwali ludzie z cywilizacji Cro-Magnon?",
+        "answer": "Człowieka z Cro-Magnon jako jednego z podgatunków Homo sapiens uważa się za anatomicznie identycznego z człowiekiem współczesnym. Gatunek ten wyodrębnił się obok gatunku neandertalczyka około 43 tys. lat temu w czasach ostatniego zlodowacenia tzw. bałtyckiego, w górnym plejstocenie w okresie zimnym, w fazie środkowej (Würm) na Bałkanach lub na terenie dzisiejszych Czech.",
+        "target": 1,
+        "response": "nie\npoprawny odpowiedź:",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 35,
+        "question": "jaki boski wiatr miał ocalić Japonię przed dwoma najazdami Mongołów pod dowództwem Kubilaj-chana?",
+        "answer": "Kamikaze (神風, jap. Boski Wiatr – kami – bóg, boski, kaze – wiatr) – sztormy, które zgodnie z tradycją ocaliły Japonię przed dwoma najazdami Mongołów pod dowództwem Kubilaj-chana. Mongolska flota zaatakowała Japonię w 1274 roku i ponownie w 1281 roku.",
+        "target": 1,
+        "response": "niech będzie tak.\n\nodpowiedź:",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 36,
+        "question": "co było inspiracją dla powstania kadzielnicy Gozberta?",
+        "answer": "była inspiracją dla powstania książki zatytułowanej 84, Charing Cross Road.",
+        "target": 0,
+        "response": "odpowiada to na temat inspirow",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 37,
+        "question": "co utrudnia ruch kolejowy w Mauretanii?",
+        "answer": "Tigisi w Mauretanii",
+        "target": 0,
+        "response": "odpowiadanie: tak\n\ntig",
+        "prediction": 1,
+        "correct": false
+      },
+      {
+        "id": 38,
+        "question": "która profesor teologii feministycznej otrzymała zakaz przemawiania podczas wizyty Jana Pawła II w Holandii?",
+        "answer": "Pomnik papieża Jana Pawła II – znajduje się w Szczecinie na Jasnych Błoniach, naprzeciw Pomnika Czynu Polaków. Historia Pomnik, którego powstanie zainicjował Urząd Miasta w Szczecinie, mający ok. 4 metrów wysokości i ważący ok. 6 ton, został odsłonięty 18 czerwca 1995 roku w miejscu, w którym Jan Paweł II odprawił Mszę świętą podczas swojej wizyty w Szczecinie w dniu 11 czerwca 1987 roku.",
+        "target": 0,
+        "response": "nie\npoprawny wynik to: \"jan",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 39,
+        "question": "gdzie grywa się w fanoronę?",
+        "answer": "Następnie, w roku 1924, wraz z rodziną, przeniósł się do Bukaresztu gdzie trafił do Venusu Bukareszt.",
+        "target": 0,
+        "response": "nie\npoprawny odpowiedź:",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 40,
+        "question": "jaki klub został pierwszym zawodowym mistrzem Francji w piłce nożnej?",
+        "answer": "Olympique Lillois – nieistniejący francuski klub piłkarski, grający dawniej w Ligue 1. Został założony w 1902 roku. Klub był pierwszym zawodowym mistrzem Francji w piłce nożnej.",
+        "target": 1,
+        "response": "odpowiada to pytaniu o kluby",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 41,
+        "question": "czym różni się nekroptoza od apoptozy i autofagii?",
+        "answer": "Od procesów apoptozy i autofagii różni się zarówno swoistym mechanizmem działania, jak i znaczeniem fizjologicznym.",
+        "target": 0,
+        "response": "odpowiadam tak. nie, nie",
+        "prediction": 1,
+        "correct": false
+      },
+      {
+        "id": 42,
+        "question": "jakie drożdże wykorzystują tłuszcze jako źródło energii?",
+        "answer": "Yarrowia lipolytica Yarrowia lipolytica – gatunek grzybów z rzędu drożdżakowców, z monotypowego rodzaju Yarrowia. Odmiennie od drożdży Saccharomyces cerevisiae, przetwarzających cukry proste, wykorzystuje tłuszcze jako źródło węgla i energii. ",
+        "target": 1,
+        "response": "odpowiedź: tak",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 43,
+        "question": "ilu pasażerów jest rocznie obsługiwanych przez tajlandzki port lotniczy na Phuket?",
+        "answer": "Głównym, o ile nie powszechnym, portem wstępu na wyspę Phuket jest jej bardzo dobrze bezpośrednio skomunikowany międzynarodowo i krajowo port lotniczy Phuket, obsługujący 3 milliony pasażerów rocznie, położony w północnej części wyspy, 32 km od centrum miasta Phuket.",
+        "target": 1,
+        "response": "niech twój wybór będzie formatem \"",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 44,
+        "question": "nazwa jakiej polskiej odmiany jabłoni ma związek z delikatnością jej miąższu?",
+        "answer": "Zagłębienie szypułkowe jest płytkie, często z charakterystycznym pierścieniem miąższu, delikatnie ordzawione.",
+        "target": 0,
+        "response": "odpowiadanie: tak\nwyja",
+        "prediction": 1,
+        "correct": false
+      },
+      {
+        "id": 45,
+        "question": "jakie miejsce jest nazywane największym, choć nieoficjalnym rezerwatem w Europie?",
+        "answer": "Do strefy ochronnej powróciło wiele gatunków rzadkich ptaków, jak czarny bocian czy bielik, oraz znaczna liczba łabędzi i sów. Według Roberta Bakera, biologa z Texas Tech University badającego przyrodę w okolicach Czarnobyla, zarówno wśród fauny jak i flory nie obserwuje się żadnych negatywnych skutków oddziaływania skażenia radioaktywnego, a korzyści wynikające z wysiedlenia ludzi znacząco przewyższyły hipotetyczne straty dla ekosystemu wynikające z samej katastrofy. Tylko dzięki temu możliwe było powstanie tego nieoficjalnego, choć największego rezerwatu w Europie. ",
+        "target": 1,
+        "response": "nie ma potrzeby wyjaśniania;",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 46,
+        "question": "jaki klub został pierwszym zawodowym mistrzem Francji w piłce nożnej?",
+        "answer": "6 razy mistrz Francji: 1949, 1953, 1955, 1958, 1960, 1962 2 razy finalista Pucharu Europy Mistrzów Krajowych: 1956, 1959 3 razy wicemistrz Francji: 1947, 1954, 1963 2 razy zdobywca Pucharu Francji: 1950, 1958 finalista Pucharu Francji: 1977 mistrz Ligue 2: 1966 wicemistrz Ligue 2: 2012 amatorski mistrz Francji: 1935 mistrz DH Nord-Est: 1935 mistrz Szampanii: 1994 występy w Ligue 1: 1939–1943, 1944–1964, 1966/1967, 1970–1979 5 razy mistrz Francji w piłce nożnej kobiet: 1975, 1976, 1977, 1980, 1982",
+        "target": 0,
+        "response": "nie. kluby to które odniosły sukces",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 47,
+        "question": "w jaki sposób Latynoski obchodzą piętnaste urodziny?",
+        "answer": "Emisja: 24 grudnia 1981 roku Roots? Stary Pan Grace obchodzi urodziny, które personel jak zwykle chce uczcić w szczególny sposób.",
+        "target": 0,
+        "response": "nie\npoprawny opis to: w lat",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 48,
+        "question": "który amerykański żeglarz uważany jest za jednego z „ojców” US Navy?",
+        "answer": "\"Okręty US Navy o nazwie USS \"\"Tripoli\"\", pochodzącej od Trypolisu - miejsca jednej z pierwszych bitew US Navy: Pierwszy \"\"Tripoli\"\" (CVE-64) był lotniskowcem eskortowym, który służył w latach 1943 - 58.\"",
+        "target": 0,
+        "response": "nie musisz używać żadnych literów.",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 49,
+        "question": "czyim nazwiskiem sygnowana była grafika Pietera Bruegla Wielkie ryby jedzą małe ryby?",
+        "answer": "Bruegel wykonywał dla Cocka ryciny w stylu Boscha, prace te były na tyle dobre, że wydawca dopuszczał się przez kilka lat fałszerstw umieszczając na nich sygnaturę nie żyjącego od lat Boscha, m.in. Wielkie ryby jedzą małe ryby.",
+        "target": 1,
+        "response": "odpowiedź: tak",
+        "prediction": 1,
+        "correct": true
+      }
+    ]
+  },
+  "polemo2": {
+    "model": "phi",
+    "dataset": "polemo2",
+    "task": "sentiment analysis",
+    "accuracy": 0.26,
+    "f1": 0.10317460317460317,
+    "precision": 0.26,
+    "samples_evaluated": 50,
+    "evaluation_time": 20.735445499420166,
+    "details": [
+      {
+        "id": 0,
+        "text": "Jakie związki czynne zawierały leki wykorzystywane w Rzeczypospolitej od XVI do XVIII wieku ? Czy terapeutyki były wystarczająco aktywne biologicznie , żeby działać na dolegliwości , które nękały ówczesnych pacjentów ? Łączone badania historyczne i laboratoryjne przeprowadzi zespół pod kierownictwem dr . Jakuba Węglorza z Wydziału Nauk Historycznych i Pedagogicznych Uniwersytetu Wrocławskiego . Projekt otrzymał 1 , 57 mln zł ze środków programu Sonata Bis Narodowego Centrum Nauki . Przedmiotem badań historycznych będą staropolskie pamiętniki , listy , diariusze i prywatne notatki . Historycy wybiorą z nich informacje o stosowanych wówczas lekach . Następnie zidentyfikują owe terapeutyki i szczegółowo opiszą na podstawie medycznych źródeł historycznych : receptariuszy i kompendiów . Tak uzyskane recepty będą podstawą do szczegółowego odtworzenia dawnych medykamentów .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "niejednoznaczny\n\nten tekst pyta o to, czy pewne leki dział",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 1,
+        "text": "Jest to osoba , która potrafi w trakcie procesu diagnostycznego połączyć dane czysto teoretyczne i swoje doświadczenie życiowe , a diagnoza nie jest jedynie medycznym terminem ale wynikiem głębokiej analizy ( coś znaczy dla pacjenta ) . Nie tylko umie słuchać , umie radzić przed czym tak bardzo bronią się inni lekarze psychiatrzy nie chcąc brać odpowiedzialności za nasze decyzje . Decyzje są nasze ale jej wskazówki w momencie kiedy stoimy w miejscu i nie potrafimy postawić kroku albo boimy się nabrać powietrza w płuca są bezcenne . Samo spróbuj daje nadzieję , bo wiesz , że jest ktoś kto stoi obok i pomoże . Mi pomogła bardzo , dzięki jej profesjonalnej ale także czysto \" ludzkiej \" postawie mam odwagę nie tylko stawiać nieśmiałe kroki ale nawet biec . Jeśli strach przed kolejnym wdechem strasznie was paraliżuje to jest ona właściwą osobą do której należy się udać . Chyba najbardziej cenię jej \" życiowe \" podejście do problemu ogarniające całość obrazu w szerszym kontekście tak jakby stojąc w dolinie ( czasem mając tylko strzępy informacji ) miała zdolność oceny , której inni nie mając będąc na szcycie góry ( mając setki stron dokumentacji ) . Podziwiam ją a jednocześnie niezwykle cenię jako lekarza .",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "[wybierz jeden z następujących opcji] pozytywne\n\nanaliza",
+        "prediction_class": "plus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 2,
+        "text": "Hotel o średnim standardzie . Pokoje z klimatyzacją i WIFI . Jedzenie szwedzki stół - dobre . Basen bardzo przyjemny , woda czysta chociaż zimna . Personel przyjemny i pomocny . l to wszystko co dobre . Morze ok 200 m od hotelu ciągle burzliwe , kąpanie utrudnione ze względu śliskie kamienie pokryte glonami . Plaży nie ma wcale , to jest brzeg morza . Do Agi Apostoła ok 2 km tak więc iść wieczorem ruchliwą drogą bez chodnika ba bez poboczy - niebezpieczne . Nie polecam tego hotelu na dłuższy wakacyjny pobyt .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "negatywny",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 3,
+        "text": "Jeszcze dwa - trzy lata temu diagnoza zaawansowanego czerniaka , najbardziej złośliwego nowotworu skóry , oznaczała wyrok śmierci . Obecnie , dzięki wprowadzeniu nowych leków , w tym immunoterapii , coraz częściej mówi się , że dla wielu pacjentów „ będzie to choroba przewlekła ” - zwraca uwagę Wojtasiński . W swojej książce przytacza przykłady wielu innych nowotworów , w leczeniu których dokonał się ogromny postęp – przewlekła białaczka szpikowa , szpiczak mnogi , rak piersi . Opisuje doświadczenia wielu pacjentów - w tym osób znanych z pierwszych stron gazet – które bądź zostały wyleczone z choroby nowotworowej , bądź żyją z nią , jak z inną chorobą przewlekłą . „ W Stanach Zjednoczonych żyje już ponad 14 mln osób , które + przeżyły + raka ” - pisze autor książki . 15 proc . z nich żyje już co najmniej 20 lat od diagnozy . Dziennikarz przekonuje , że efekty leczenia nowotworów poprawiają się również w Polsce , choć ciągle następuje to wolniej niż na Zachodzie .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "nowe leki, takie jak immunoterapia, obiecują znaczący postęp w lec",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 4,
+        "text": "Zacznę od plusów . Hotel ma potencjał . . . Jest ładnie położony , pokoje są przestronne i nowoczesne . Personel na recepcji i w restauracji niby się stara , ale z tych starań nic nie wychodzi . . . Wina chyba leży w osobach zarządzających tym obiektem . Przyjechali śmy na romantyczny weekend , który z powodu nie wywiązania się hotelu z oferty , musieli śmy skrócić . Dopiero następnego dnia po przyjeździe , po naszych zapytaniach poinformowano nas , że oferta którą wykupili śmy nie zostanie zrealizowana z powodu zbyt małej liczby chętnych ! ! ! Romantyczna kolacja okazała się zimnym i niesmacznym bufetem . . . Wina , które miały być prezentowane przez sommeliera okazały się jednym gatunkiem , do tego kwaśnym i serwowanym przez przestraszonego kelnera . Zamiast wypocząć , byli śmy non stop niemile zaskakiwani podejściem hotelu do klientów . Przykro mi , ale ludziom ceniącym profesjonalizm i oczekującym adekwatnej obsługi w stosunku do zapłaconej ceny - NIE POLECAM HOTELU AUBRECHT ! ! !",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "negatywny.",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 5,
+        "text": "Szef zabrzańskiego programu przeszczepów płuc , dr Jacek Wojarski , przytoczył dane , zgodnie z którymi w ciągu minionych 15 lat na świecie wykonano ponad 1 , 3 tys . transplantacji tego organu u osób poniżej 18 roku życia , najwięcej u dzieci między 12 a 17 rokiem życia . Zwykle zajmujące się tym ośrodki operują 1 - 4 takie przypadki rocznie . Szacuje się , że roczne zapotrzebowanie na przeszczepy płuc u pacjentów z mukowiscydozą w Polsce to ok . 20 przypadków . Taka ilość będzie możliwa w Zabrzu , gdy w 2014 r . oddana będzie do użytku część C tego ośrodka – w praktyce będzie to oddzielny , niewielki szpital , bowiem pacjenci z tą chorobą muszą być po przeszczepach ściśle izolowani ze względów epidemiologicznych .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "przyszłość transplanatcji serca w polskim zabrzu wygląda obiecują",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 6,
+        "text": "Hotel wygląda całkiem dobrze na zdjęciach , ale w rzeczywistości jest paskudny . Na pewno nie zasługuje na 4 * , może kilka lat temu było lepiej , ale teraz wymaga generalnego remontu . Nie wiadomo dlaczego nie łączyło mnie z wi - fi . Słabe śniadanie . . . Na szczęście była m tam tylko jedną noc , z pewnością dłużej by m nie wytrzymała - przestroga przed bardziej rozważnym wybieraniem hoteli na przyszłość . Jedyny plus to miła obsługa i bliskość do stacji centralnej w Bolonii .",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "niewiedome o hotelu, ale recenzja ma mieszane uczucia.",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 7,
+        "text": "Hotel nowy , nie widać jeszcze śladów zuzycia . Check in bez problemow , pokoj na pierwszy rzut oka czysty ale po dokładniejszym rozgoszczeniu się dało się zauważyc pewne niedociągnięcia . Bardzo dobry bar z profesjonalistami po drugiej stronie , Drogi parking ( trudno trafic ) - windą zjeżdza sie do poziomu - 1 - duze auto moze miec problem ze zmieszczeniem sie",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "negatywny\nczynniki:\n- wspominanie o \"szczod",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Hotel wygląda na ładny i przyjemny . Obsługa w recepcji miła i uprzejma . Nawet udało się uzyskać rabat na opłatę parkingową . Pokój rodzinny ( apartament ) dosyć przestronny i czysty . Łazienka nie za duża , a drzwi od prysznica zapsute . Środki czystości - puste pojemniki z mydłem . Nakwiększą porażką było śniadanie , za które należało dodatkowo zapłacić 35 zł za osobę . Nie było ono warte tej ceny ze względu na bardzo mały wybór , duże braki i brudne kubki i talerze . Co prawda na śniadaniu było dużo osób , bo grupa kajkarska z Włoch akurat mieszkała w hotelu , ale kuchnia powinna być przygotowana z ilością jedzenie serwowanego na śniadanie . Kilka bułek , którte leżały w koszyku rozeszły się w 30 sekund i nikt nie doniósł więcej . Tak samo było z jogurtami , zabrakło dla dzieci . Obsługa sali donosiła łyżeczki w rękach zamiast na tacy . Brak serwetek , to już było wystarczająco dużo , aby móc powiedzieć , że nie warto płacić za \" posiłek \" poranny , bo trudno nazwać to śniadaniem . Hotel ogólnie robi dobre wrażenie na zewnątrz , ale czystość i kuchnia - to słabe punktu hotelu .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "negatywny.",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 9,
+        "text": "\" Jego technologia jest bardzo szeroko stosowana , gdyż jest prosta i skuteczna - podkreśla naukowiec . - Z dowolnej , dojrzałej komórki człowieka , np . komórki skóry albo krwi , pozwala w prosty sposób uzyskać tzw . komórkę pluripotentną - taką , z której da się otrzymać niemal wszystkie inne , dowolne tkanki i komórki - czy to neurony , krew , czy komórki wątroby \" . W niedalekiej przyszłości wyniki badań Yamanaki , wciąż rozwijane , mogą znaleźć zastosowanie m . in . w kardiologii - choćby u osób , u których dochodzi do martwicy mięśnia sercowego , w okulistyce - np . przy naprawach rogówki , a być może także w neurologii - w terapii chorób neurodegeneracyjnych czy uszkodzeniach rdzenia kręgowego - mówi dr Wiznerowicz .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "dr wiznerowicz wyraża, że badania yamanakiego mają potencjał",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 10,
+        "text": "Byli śmy u doktora na badaniu bioderek z naszą córeczką , od samego wejścia był bardzo nieuprzejmy . Badanie usg z konsultacją 230zł a nic konkretnego nie mogli śmy z niego wyciągnąć ! Trzeba go było dosłownie za język ciągnąć , byli śmy bardzo rozczarowani podejściem , zarówno do nas jako rodziców , jak i dziecka . Stwierdził dysplazję lewego bioderka i kazał natychmiast umówić się ponownie na założenie aparatu . Wydało mi się to dziwne bo wcześniej byli śmy u fizjoterapeuty , który bardzo dokładnie zbadał małą i powiedział że z biodrami jest wszystko w porządku . Skonsultowali śmy się więc z innym lekarzem , okazało się że mała wcale nie ma dysplazji ! Dodam że pod koniec wizyty ( podczas której próbował bardzo mocno podkreślić wagę problemu jakiego się doszukał ) zapytał : \" udało mi się was nastraszyć ? \" Eeeeee , przepraszam , myślała m że zadaniem lekarza jest leczenie i świadczenie usług medycznych a nie straszenie pacjentów ! Zwłaszcza za taką cenę . . .",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "niejednoznaczny.",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 11,
+        "text": "Pałac Saturna to niezwykłe miejsce . Zarówno hotel jak i Termy Rzymskie wywarły na nas ogromne wrażanie . Termy to raj na saunowiczów . Obiekt bardzo dobrze wyposażony , wspaniałe seanse saunowe . Z zabiegów również byli śmy bardzo zadowoleni . Korzystali śmy z pakietu wSPAniały relaks we dwoje . Restauracja serwuje pyszne jedzenie , chociaż ceny jak w Warszawie . Apartament ładnie urządzony , duży , przestronny . Ogromna wanna z hydromasażem . Jedynym minusem były łózka złączone z dwoma pojedynczymi materacami i dziurą w środku . W apartamencie tak wysokiej klasy myślę , że powinno być łózko z jednym dużym materacem . Poza łóżkiem i wysokimi cenami w szczególności napojów w restauracji nie mam zastrzeżeń . Wspaniały pobyt , rewelacyjne miejsce . Polecam !",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "! wyjaśnij, dlaczego podasz tę klasifikację.\n\nodpowiedź:",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 12,
+        "text": "Hotel Zacisze zachęcił nas przede wszystkim ze względu na bliską lokalizację i pozytywne opinie . Nie było rozczarowania na miejscu , wprost przeciwnie . Miejsce idealne dla rodzin z dziećmi - plac zabaw , basen i grota solna . Dodatkowo - kawiarnia i godne polecenia desery . Pokoje przestronne i nowocześnie urządzone gwarantowały dobry wypoczynek . Duży plus za śniadanie - szeroki wybór i możliwość zjedzenia na dworze . Jeśli ktoś szuka kameralnego miejsca z całym zapleczem atrakcji to polecam właśnie ten hotel .",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "[utwórz swój odpowiedź]",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 13,
+        "text": "Przed zawarciem umowy z WHG w planach Tristar było otwarcie 10 hoteli do końca roku 2015 . Eric Danziger , szef WHG uważa , że wprowadzenie marki Super 8 do Niemiec pozwoli na zwiększenie obecności grupy na tym kontynencie , a w dalszej perspektywie na ekspansję w całym regionie EMEA . Faktycznie , chociaż pod marką Super 8 w grudniu 2011 działało aż 2 249 obiektów z 142 254 pokojami , to żaden z nich nie był zlokalizowany na terenie Europy . W ciągu całego 2011 roku na świecie przybyło 75 obiektów Super 8 z niemal 6 tys . pokoi .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "whg ma nadzieję, że wprowadzenie marki super 8 do niemiec doprow",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 14,
+        "text": "Ładny z zewnątrz . Lobby hotelowe też . Pokoje i czystość w pokojach to osobna bajka . Mieszkali śmy przez 7 - dni i spali śmy w tej samej pościeli ; bez wymiany a hotel 3 - gwiazdkowy . Czystość w łazience to masakra . Fetor i wiecznie cieknąca woda w łazience . Plaża za blisko portu czuć cały czas ropą a mazut leży na kamieniach . Jedzenie monotonne . Po trzech dniach mieli śmy go już dosyć . Nie polecay .",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "negatywny.",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 15,
+        "text": "Szczerze polecam Marcina . To profesjonalista w każdym calu . Zgłosił em się do niego z poważnym porażeniem nerwu promieniowego ( zespół sobotniej nocy - opadający nadgarstek , brak czynności prostowników palców ) . W badaniu EMG stwierdzono uszkodzenie typu neurapraxia / axonotmesis a neurolog ocenił ze pierwsza aktywność mięśni pojawi się po ok . 9 miesiącach od urazu . Pierwsze spotkanie z Marcinem odbyło się po ok . 1 , 5 miesiąca po urazie i już po nim pojawiła się pierwsza poprawa . Z każdym kolejnym spotkaniem było tylko lepiej . Po 10 spotkaniach ręka wróciła do pełnej sprawności ! Wiele miesięcy przed przewidywanym odzyskaniem sprawności . Marcin ma bardzo pozytywne podejście do pacjenta i udziela cennych wskazówek . Zależy mu również na zdaniu pacjenta , co powoduje że terapia staje się efektywną współpracą i prowadzi do szybkiej poprawy zdrowia .",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "pospolity\n\nrysunek:\n\n- upewnienie, że marcina jest godnym",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 16,
+        "text": "Dobra lokalizacja na zapleczu centrum miasta , blisko do Muzeum Śląskiego , płatny parking . Profesjonalna obsługa w recepcji podczas meldowania , gorzej z radzeniem sobie z prośbami gości dotyczącymi pobytu . W konsekwencji brak reakcji na wielokrotnie powtarzane życzenie dotyczące wymiany ręczników w innym terminie niż z góry przewidziany . W hotelu obowiązuje całkowity zakaz palenia tytoniu . W otrzymanym pokoju można było wyczuć zapach jak z popielniczki . Otwarcie okna , które można tylko uchylić nie poprawiło sytuacji . Źródłem zapachu okazała się klimatyzacja , która w tym momencie stała się bezużyteczna . Brak możliwości zmiany pokoju z powodu rzekomego całkowitego obłożenia . Sprzątanie pokoju pozostawia wiele do życzenia . W sumie nie wiadomo , czy obiekt chce być hotelem czy hostelem . Promocyjna oferta w atrakcyjnej cenie oraz wprowadzone niedawno płatne opcje za wymianę pościeli , ręczników oraz dostarczenie innych dodatków , wskazywały by na to drugie . Nie polecam , chyba że w cenie wyjątkowo atrakcyjnej . Tylko ona przemawia do rozumu , może nawet przemówi do mojego .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "[popisz prospektem, ale ma negatywne doświadczenia z usługi.]\n\nkl",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 17,
+        "text": "Jednak z ustaleń „ Hotelarstwa ” wynika , że rachunek działalności hotelarskiej w obu obiektach nie domykał się od lat . Np . nabyty na korzystnych warunkach szkielet obiektu rozpoczętego jeszcze w latach 70 . w Ostrowcu Świętokrzyskim , ukończony przez Gromadę i otworzony jako hotel na przełomie lat 80 . i 90 . XX w . odnotowywał wysokie przychody w latach 90 . Wówczas nie miał konkurencji i był jedynym hotelem w mieście .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "pozytywne\n\nwyjaśnij, dlaczego klasyfikuje to jako poż",
+        "prediction_class": "plus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 18,
+        "text": "Świetnie zlokalizowany , dojazd do targów to 10 min . Hotel czysty , dobre śniadania , Mogli by tylko popracować nad WI FI wieczorami nie chodzi , trzeba schodzić do baru tam jest nie przeciążone . Jest parking zarówno podziemny jak i obok hotelu . Można powiedzieć dobry hotel za dobrą cenę .",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "niewiele entuzjastyczny\n\nskładamy logikę:\n\n- tekst zaw",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 19,
+        "text": "Powstające tam bloki były pierwszymi w Warszawie , które montowano z prefabrykowanych elementów wielkowymiarowych ( wielkopłytowych ) , wyprodukowanych w Fabryce Domów na Służewcu . Zdjęcia : Czekający na przebudowę hotel Aramis – w głębi Portos z nową elewacją ; przed Aramisem parking na którego części spółka PUHIT SA , właściciel obiektów planuje budowę nowego hotelu z rozszerzoną funkcją konferencyjną . Hotele Portos i Atos przed modernizacją i niemal to samo ujęcie obiektów ze zmodernizowanym już Portosem i trwającym remontem Atosa .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "niejednoznaczny\n\nopinia o tym, dlaczego? tekst podkreś",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 20,
+        "text": "Hotel na dobrym poziomie . Może nie zasługuje na 5 gwiazdek ale mocna 4 . Bardzo rozległy teren hotelowy . Niestety usytuowany na wzniesieniach więc trzeba się nachodzić . . . z góry . . . pod górę . Piękna panorama widokowa . Niestety brak plaży . Windy tylko w budynku głównym i do zjazdu na pomosty nad może . Obiekt bardzo duży . . . . więc i turystów bardzo dużo . W sierpniu . . . wręcz masakra . Bardzo dużo dzieci : małych , większych . Ja osobiście z takimi maluchami nie wybrał by m się tam . . . bo trzeba naprawdę sporo się nachodzić . Samo Bodrum to miejsce wypoczynku Turków z całej Turcji . Miasto strasznie zakorkowane . Polecam polskie biuro turystyczne KLS Voyages pani Doroty z Bodrum . Najtańsze wycieczki , sprawdzone . Ceny o połowę tańsze niż u rezydentów . Co do samego hotelu to w miarę utrzymują czystość . Przy takiej ilości turystów i dzieci . . . . to chyba i Hilton by poległ . Trzeba w sezonie o tym pamiętać . Jedzenie bardzo dobre . . . . śniadania troszkę monotonne , ale obiady i kolacje . . . . Super . Po za tym wszystko spoko . Fajne zjeżdżalnie . Aczkolwiek nie polecam sztywnym turystom . Miejsce do zabawy i dla dużych i dla małych . . . . hehehehe . Generalnie polecam osobom z dziećmi ale troszkę starszymi . Fajne miejsce .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "niejednoznaczny\n\nwybieram \"niejednoznaczny\", ponieważ",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 21,
+        "text": "Powyższa ( negatywna ) opinia może zniechęcać jednakże warte zauważenia jest to iż lekarz rzeczowo odniósł się do postawionego zarzutu co z pewnością pozwala na poznanie sytuacji z obu stron . Logiczne wydaje się , iż skierowanie do szpitala powinno mieć podstawy ( skierowań nie wydaję się \" ot tak \" ) a podstawy biorą się z oceny sytuacji - zatem taka ocena i rozpoznanie musiało się odbyć . Osobiście po dzisiejszej ( pierwszej ) wizycie uważam , iż lekarz przeprowadził ze mną rozmowę w sposób konkretny i fachowy zadając istotne pytania . Po zapoznaniu się z problemem wyjaśnił w jaki sposób należy dalej postępować , pytając wielokrotnie czy wszystkie kwestie są zrozumiałe . Na koniec mocno podkreślił , iż w każdej chwili mogę zadzwonić ( na komórkę ) jeśli mój problem zdrowotny będzie niepokojący . Z czystym sumieniem mogę polecić tego lekarza .",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "niejednoznaczny\n\nwygląda, że osoba ma mieszane uczucia wobec",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 22,
+        "text": "Uwaga ! Ostrzegam przed nieuczciwym hotelem . Dojeżdżamy do Szklarskiej i jesteśmy przekierowywani na inny adres . Odległość od stoku na Szrenicę różni się 6x ! Jakość hotelu również . W pokojach jest tyle kurzu , że nocami mam ataki astmy na którą nie choruję . Rozdeptane ziemniaki pod łóżkiem to taki detal . Na zdjęciach niestety nie czuć \" zapachu \" . Oceńcie sami .",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "negatywny.",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 23,
+        "text": "Komercjalizacja IT była dla resortu skarbu jedną z bardziej udanych pod względem zyskowności sprzedaży spółek z grupy turystycznej . Bowiem z 15 spółek związanych z branżą turystyczną i noclegową , które znalazły się w planie prywatyzacji na lata 2008 - 2011 , do połowy roku 2010 sprzedano tylko dwie , w tym właśnie IT . Czy jednak państwo zrobiło dobry interes ? Nauka i wiedza kosztują , nawet dużo , ale bez nich trudno nie tylko mówić , ale nawet marzyć o rozwoju i postępie . Zdjęcie : Obecna siedziba Instytutu Turystyki mieści się przy ulicy Grochowskiej na warszawskiej Pradze . Budynek ( pierwszy z prawej – za drzewami ) sąsiaduje z malowniczym Jeziorem Kamionkowskim położonym przy jednym z najładniejszych parków Europy – Parku Skaryszewskim .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "niejednoznaczne. tekst omawia sukces komercjalizacji it, co można",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 24,
+        "text": "Polecam dr Szymulę , jest moim lekarzem od 23 lat , prowadził moje dwie ciąże i odbierał porody , zawsze fachowo i rzetelnie podchodzi do tematu . Cechuje go wielka cierpliwość , jest miły i zawsze ma czas dla pacjentki , by wyjaśnić jej problem . Tyle lat zaufania do lekarza chyba o czymś świadczyąAAAAle",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "pozywne\nskładnia: polecam dr szymulę, to mój",
+        "prediction_class": "plus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 25,
+        "text": "Pokój czysty , dostęp do wszystkich elementów które oferują na stronie www . Właścicielka miła i pomocna , umie dobrze doradzić w kwestii restauracji czy atrakcji do zwiedzania . Miejsce leży w doskonałym punkcie , 400m do morza , 400m do biedronki i bezpośredni tramwaj na dworzec główny i na stare miasto . Bardzo przyjemna wizyta , chętnie tu wrócę .",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "pozytywne\n\nwyjaśnij logikę za tą klasyfikacją. tek",
+        "prediction_class": "plus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 26,
+        "text": "KOMÓRKI MACIERZYSTE I INNE NADZIEJE W ramach projektu BioMed realizowane są również badania nad powłokami endoprotez czy sposobami naprawy uszkodzeń rdzenia kręgowego . Komórki macierzyste są wielką nadzieją medycyny regeneracyjnej i znajdują coraz więcej zastosowań we współczesnej medycynie . Potrafią dzielić się ogromną liczbę razy i mogą różnicować się do innych typów , czyli po prostu zmieniać się w komórki , jakich potrzebują pacjenci . W projekcie BioMed zajmuje się nimi dr hab . Krzysztof Marycz z Uniwersytetu Przyrodniczego we Wrocławiu oraz prof . Lidia Bużańska z Instytutu Medycyny Doświadczalnej i Klinicznej im . M . Mossakowskiego PAN w Warszawie . Zespół ocenia m . in . możliwości regeneracji uszkodzeń tkanki kostnej i nerwowej przy pomocy komórek macierzystych izolowanych z tkanki tłuszczowej i szpiku kostnego z zastosowaniem biomateriałów .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "[niestandardowy]",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 27,
+        "text": "Cudowne miejsce - zwłaszcza dla rodzin z dziećmi . Animatorzy robili przez cały dzień super pracę , aby wszyscy czuli się świetnie ! Gratuluję i podziwiam ! Wieczorami super programy - aktywności dla dzieci , które uwielbiały tańce , zabawy , itd . MARTYNA - DZIĘKUJĘ ZA CIEPŁO , ŻYCZLIWOŚĆ < ZAANGAŻOWANIE ! ! ! Życzę sobie i innym takich kolejnych wakacji !",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "pozytywność\n\nczłowieku, opisz emocje w tekście. u",
+        "prediction_class": "plus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 28,
+        "text": "Chciała by m wszystkich przestrzec przed Hotelem Jasmine . Na początku pobytu płaci się kaucje 30 euro od zniszczeń . Nas Pani rezydent i cała grupę około 30 osobową zapewniała ze zniszczenia zdarzają się bardzo rzadko . Pod koniec pobytu u wielu osób okazało się ze zniknely sztućce , wieszaki , filiżanki a w naszym wypadku jakaś miska której nie widzieli śmy na oczy . Ja rozumiem żeby w pojedynczym przypadku coś się nie zgadzało bo pomyłki się zdarzają , ale bardzo dużo osobom coś zagineło . Nikomu nawet do głowy nie przyszło żeby przyjść z pracownikiem na początku i zrobić podglad całego pokoju , totalna komedia . Niestety my byli śmy jako pierwsi i zapłacili śmy 5 leva . Niby mała kwota , ale chodzi o zasady i zszarpane nerwy a w tym hotelu najwyraźniej nie maja pojęcia co to jest . Żeby opinia była obiektywna do plusów mogę zaliczyć dobre położenie , przestronny pokój i miłego Pana barmana .",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "niejednoznaczny.",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 29,
+        "text": "Był em z rodziną w styczniu 4 osoby pokój w porządku duży czysty wygodny . Baseny generalnie w porządku Nie zawsze była taka sama temperatura wody . Recepcja nie do końca dobrze zorganizowana nikt nie potrafił powiedzieć kiedy będą wolne miejsca w garażu . Najsłabszym punktem jest restauracja fala gdzie Jedna pani ze ściereczką w ręku stara się utrzymać czystość na całych dwóch sala jadalnych kelnerzy z małymi tackami próbują pozbierać wszystkie talerze , często brakuje herbaty albo cytryny lub innych drobnostek . Oczywiście obsługa reaguje na prośby klientów ale nie o to chodzi żeby co 5 minut prosić o kolejną rzecz . Wybór dań umiarkowany dużo różnych dodatków jak dla wiewiórek na pewno fajnie bo dużo orzechów ja wolę konkrety . Dobre ciasta . W kawiarni ceny umiarkowane . Fatalna wentylacja na stołówce wszystkie ubrania pachną palonym olejem . Generalnie na 5 * trochę słabo . Jeśli będzie super oferta tzn dużo taniej niż u konkurencji można skorzystać ale jeśli szukasz prawdziwych 5 * to jeszcze nie tu . Mam nadzieje ze pomoże ta opinia głównie hotelowi i kiedyś będzie można wrócić bo jest potencjał .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "[niestandardowy] poziom: [niejednoznaczny]\n\nwyja",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 30,
+        "text": "Hotel na wypasie jak to sie mówi : ) Super basen i strefa saun , dbają o czystość i szczegóły . Pokoje duże , przestronne , ciepłe i komfortowe . Śniadania - najlepsze które jadłem w hotelach . Robi wrażenie i wybór i jakość i dobór dań . Drobny minus za jaskinię nocną - bar w piwnicy . Wystrój i klimat typowo burd . . . przepraszam : ) buduarowy . Barman mógł by potrenować klasyczne drinki . Ogólnie - super .",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "pozytywne\n\nwyjaśnij logikę, która doprowadziła do tej",
+        "prediction_class": "plus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 31,
+        "text": "Własciciele to Gburowaci oszuści ! ! ! z dnia na dzien bez słowa wyjasnien odwołali moją rezerwacje a gdy dzwoniła m zeby wyjaśnić dlaczego taka sytuacja zaistniała włascicielka była oprysklliwa i niemiła mówiąc \" ze ją to nie obchodzi gdzie teraz znajde nocleg to mój kłopot itp \" Już z wczesniejszych rozmów telefonicznych dało sie odczuć że to niezbyt przyjazni ludzie . . . odniosła m wrażenie że tak naprawde to łaskę mi robią że dają mi nocleg . Masakra co za podejscie do klienta . Na szczeście udało mi sie poszukać noocleg na termin moich wakacji po długich poszukiwaniach gdyż większości juz brak wolnych miejsc . Życze udanego wypoczynku byle nie w ' Tatarzance \" Pozdrawiam ! !",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "niejednoznaczny\nlogika:\nten tekst zawiera mieszankę negatyw",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 32,
+        "text": "Była m u Pana Mateusza w związku z bólem kolan w Szpitalu Bocheńskim ( wizyta w ramach NFZ ) . Biedny Pan Doktor nie mógł poświecić pacjentom tyle czasu ile by należało i ile pewnie by chciał . Czekała m na wizytę około pół roku a okazało się że wizyty odbywają się w tempie taśmy produkcyjnej , mało przestrzeni na nawiązanie podmiotowego kontaktu . Byle szybko , byle sprawnie . . . nie było źle , jednak czegoś zabrakło - czasu .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "niejednoznaczny. tekst wyraża frustrację ze wzglębu na opó",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 33,
+        "text": "Pani Doktor już na pierwszej wizycie przypisała antybiotyk doustny i miejscowy do ucha . Po tygodniu na wizycie kontrolnej wobec niewielkiej poprawy zdecydowała się zrobić wymaz . Okazało się , że bakteria była oporna na antybiotyk doustny i nie było sensu go podawać . Żona karmiła w tym czasie piersią i dziecko było niepotrzebnie wystawione na działanie antybiotyku . Dwie kolejne wizyty polegały na zmianie kropli do ucha na inne z antybiotykami . Niestety po ponad 3 tygodniach leczenia nie było znaczącej poprawy . Zmiana lekarza i zastosowanie kropli recepturowych i w dodatku bez antybiotyku sprawiła , że problem zniknął po niecałych 2 tygodniach leczenia . Nie polecamy .",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "negatywny",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 34,
+        "text": "W poprzednich badaniach osoby poddane eksperymentowi zwykle dobrze widziały miejsce , w które podawano im bodziec bólowy . Z innych badań wynika zaś , że gdy znamy moment zadania nam bólu lub widzimy część swojego ciała , w które jest nam dostarczany , to wówczas ból staje się mniejszy . Dlatego naukowcy z UJ postanowili , że obie ręce badanych będą przysłonięte podczas podawania bodźca bólowego . „ Sądzimy , że w naszym badaniu głównym czynnikiem powodującym , że ból odczuwany był jako większy , była bardzo duża niepewność badanych wobec tego , co się dzieje po prawej stronie ich ciała . Nie potrafili poprawnie wskazać gdzie jest ich prawa ręka ; nie widzieli bodźca bólowego i nie potrafili poprawnie wskazać jego lokalizacji . Ta niepewność mogła spotęgować ich subiektywne odczucie bólu ” – wyjaśnia dr Siedlecka .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "badanie na temat odczucia bólowo przez badani, którzy otrzymują bodzie",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 35,
+        "text": "Może kiedyś 20 lat temu było to fajne miejsce ale teraz masakra.jedyny plus to jedzenie . wszystko stare i zdezelowane , W pokojach brudno a w całym Hotelu wali stęchlizną . Już chyba wszystko było napisane o tym miejscu . Niestety to prawdaNIE POLECAM , utopiona kasa , zwalony urlop . Mam dzieci alergiczne i do dziś staramy się wyzdrowieć . WI - FI działa tylko w recepcji",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "niepewna. tekst zawiera zarówno negatywne, jak i pozytywne",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 36,
+        "text": "Prawie luksusowy hotel , prawie znakomita obsługa , prawie świetne jedzenie . Interesujące pokoje ( zatrzymała m się w części gotyckiej ) z ceglaną ścianą i piękną łazienką ( w której jednak nie działa ogrzewanie podłogowe ani elektryczny grzejnik ) . Obiad - bufet obfity , ogromny wybór , ale warzywa tak al dente że aż niesmaczne , a niektóre z potraw bez smaku . Interesująca biblioteka zamkowa - ale nieczynna wieczorami . Reklamowany taras widokowy - nieczynny i rano i wieczorem . Bar na mostku - zamknięty z powodu deszczu , nawet gdy deszcz przestał padać . I pracownik obsługi , który nie potrafi odpowiedzieć na pytanie - ponieważ \" pracuje tu tylko na umowę zlecenie \" . . . Innymi słowy - świetny hotel lecz z niedoróbkami , niedociągnięciami , które rażą przy wysokiej cenie za dobę . Bez zarzutu basen , sauny , jacuzzi ( choć trzeba pilnować specjalnych kart na ręczniki i szlafroki , bo straszą karami - bardzo stresujące ) . Największy plus - tuż obok zabytkowy zamek biskupów , do zwiedzania od piwnic aż po piętra . Jest na co popatrzeć .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "niejednoznaczny\n\nrationale:\nten recenzjonista ma mieszane uczucia",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 37,
+        "text": "„ Z danych publikowanych na świecie wynika , że problem anafilaksji narasta . W ciągu ostatnich 10 - 15 lat liczba jej przypadków zwiększyła się 5 - cio , a nawet 7 - krotnie ” – powiedział dr Raciborski . Dane europejskie wskazują , że jedna na 300 osób doznała w przeszłości lub dozna wstrząsu anafilaktycznego . Z danych przedstawionych w najnowszym raporcie , przy tworzeniu którego korzystano z rejestrów Narodowego Funduszu Zdrowia ( NFZ ) , wynika , że i w Polsce liczba osób , które otrzymały świadczenia medyczne w związku z reakcją anafilaktyczną , wzrosła w ostatnich kilku latach . Na przykład w 2015 r . liczba pacjentów po przebytym wstrząsie anafilaktycznym wskutek reakcji na pożywienie była prawie trzykrotnie wyższa niż w roku 2008 .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "raport o anafilaktysach odwołuje się do recenzji, która st",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 38,
+        "text": "Wystawię neutralną ocenę , bo lekarz ma jednocześnie plusy i minusy , mniej więcej na podobnym poziomie . Może lekarz ma wiedzę medyczną i umie dobrać odpowiednie zabiegi rehabilitacyjne , ale z drugiej strony nie ma podejścia do pacjenta . Trafiła m na jego oddział na rehabilitację ( była m już po operacji kręgosłupa , ale dr Łukaniec nie był moim lekarzem prowadzącym ) . Jako , , obca \" osoba bardzo źle się czuła m , po prostu po każdym obchodzie na oddziale rehabilitacyjnym płakała m ze zdenerwowania , a później na ćwiczeniach rehabilitantki musiały mnie uspokajać . Robił mi różne przytyki tylko dlatego , że nie była m jego pacjentką i stwierdził , że nie powinna m być na jego oddziale rehabilitacyjnym , tylko powinna m pojechać do Warszawy na Kliniki Akademii Medycznej - do Kliniki Ortopedii i Traumatologii na ul . Lindleya w Warszawie i niech tam mnie rehabilitują , na nic się nie zdawało tłumaczenie , że tam nie ma oddziału rehabilitacyjnego i klinika nie ma rehabilitantów . Dodatkowo lekarz robił sobie żarty z lekarza , który mnie zoperował i jak dla mnie to jest niekulturalne . W medycynie nie liczy się tylko wiedza medyczna , ale ważne też jest podejście do pacjenta . A ten lekarz był dla mnie niemiły tylko dlatego , że leczyła m się u innego ortopedy i nie liczyło się , że na oddział rehabilitacyjny skierował mnie jego kolega z oddziału ortopedycznego .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "[popisz swojego recenzjontera, podkreślając zarówno pozytywne, jak",
+        "prediction_class": "plus",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 39,
+        "text": "Hotel jest położony niedaleko lasu , zacisze i świeże powietrze budzi dużą satysfakcje gości . Jeżeli chodzi o hotel jego standardy są jak najbardziej adekwatne do ceny . Pokój w szczególności zrobił na mnie dobre wrażenie , był przestronny przy czym przytulny i umeblowany na piątkę . Bardzo miła obsługa w towarzystwie której czujemy się bardzo przyjemnie . Również warto wspomnieć o bogatym menu które każdy powinien spróbować , na prawdę polecam \" bon appetit \" . Czas spędzony w \" HOTEL POSTA \" wspominam bardzo mile i na pewno niedługo znów go odwiedzę .",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "[użyj formatu podanemu tutaj, aby wyrazić swoją odpowiedź. na",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 40,
+        "text": "Zrobilam wstepna rezerwacje apartamentu z mozliwoscia odwolania . Hotel zrobil preautoryzacje karty a nastepnie autoryzacje - pieniadze sciagneli z konta . Rezerwacje odwolalam 1 . 08Hotel na moja prosbe napisal ze od razu 1 . 08 zrobil zwrot na moja karte . Czekalam do 11 . 08 - zwrotu brakNa moje maile hotele nie odpowiadal wcale badz po dwoch dniach . Prosilam o wyslanie potwierdzenia zwrotu . Dopiero po postraszeniu ich prawnikiem dostalam potwoerdzenie - ale zwrot zrobili dopiero 11 . 08Dla mnie to zlodziejstwo .",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "negatywny",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 41,
+        "text": "Pokoje i lokalizacja bez zarzutów , gorzej z all Inclucive , kawa czy herbata tylko do śniadania , kelnerki przy każdym posiłku pytają o numer pokoju , a przecież mieli śmy opaski , czuli śmy się jak intruzi prosząc o coś do picia w barze , nawet cola czy sok sprawiły problem . Rada kawę trzeba kupić w sklepie - czajnik w pokoju działa , kupionego wina też najłatwiej napić się na balkonie , kieliszki również dostępne w pokoju .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "niejednoznaczny\n\nwyjaśnienie:\nten fragment zawiera mieszankę neg",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 42,
+        "text": "O dr . Neicu mam jak najlepsze zdanie . W maju 2008r . zostalem przyjety na oddzial . Operacje przeprowadzil dr . Neic . Po miesiacu mialem powtornie operacje poniewaz wyniki histopatologiczne wskazywaly na nowotwor skory . Ponownie operacje przeprowadzil dr . Neic . Rekonwalescencja po operacji przebiegala prawidlowo . Obecnie jestem w trakcie radioterapi . Od chwili spotkania sie z dr . Neicem jestem pod jego stala opieka . Jest to dr . przjaznie nastawiony do pacjeta oraz szczerze informujacy o przebiegu leczenia . Szczerze polecam Marek Dobrzycki",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "dr. neicz jest prostym, uprzejmym i szczerym w informowaniu o",
+        "prediction_class": "zero",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 43,
+        "text": "Niewątpliwie największym plusem hotelu jest widok z pokoi zlokalizowanych od strony portu , szczegolnie z wysokich pięter . Budynek ma świetna lokalizacje , tuż przy porcie , wokoło jest mnóstwo restauracji , do centrum dzieli nas odległość ok 15 minutowego spaceru . Minusem jest nieco przestarzały juz design pokoi .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "niejednoznaczny\nnawet jeśli są pozytywne aspekty, takie jak",
+        "prediction_class": "amb",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 44,
+        "text": "Witam , jestem w trakcie leczenia od końca października . Bardzo szybko zareagowała m na niepokojące mnie zachowania mojej osoby szukając pomocy . Potrzebowała m nie tylko wsparcia farmakololigcznego , ale zrozumienia drugiej osoby , rozmowy i wyjaśnienia , co w rezultacie pozwoli zaakceptować siebie , nie lękać się , uspokoić swój wewnętrzny niepokój . Cenne okazało sie również wspólne spotkanie z małżonkiem , Pani Ania sama wyszła z tą propozycją , co dużo pomogło . Co istotne , nie chce jedynie przez leki pomóc , ale również rozwiązać problem u źródła . W efekcie tamto , to już przeszłość . Patrzę pozytywnie w przyszłość . Pani Ania jest nie tylko lekarzem , ale powiernikiem naszych trosk i problemów , potrafi słuchać i wczuć się w problem pacjenta , daje poczucie bezpieczeństwa , myślę że jest to jej sukces zawodowy , bo ta praca jest jej spełnieniem , a my jako pacjenci czerpiemy z tego korzyści . Bardzo szanuję to co Pani robi , serdecznie pozdrawiam : )",
+        "target_class": "plus",
+        "target_idx": 2,
+        "response": "pozytyw\n\nwyjaśnij logikę stojącą za podanym kategoryz",
+        "prediction_class": "plus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 45,
+        "text": "Zajmowała m pokój w budynku głównym . Standard pozostawia wiele do życzenia . Łazienka jest bardzo mała , nie posiada nawet kabiny prysznicowej , tylko niewielki brodzik z zagrzybioną zasłonką ( załączam zdjęcia ) . Odpływ w brodziku był zapchany i podczas korzystania z prysznica stała m po kostki w wodzie . Mimo WIELOKTOTNEGO zgłaszania tego problemu recepcjonistce , odpływ nie został udrożniony ! Ręczniki nie są zmieniane codziennie , tylko CO TRZECI DZIEŃ ! Łóżka niewygodne , wyposażone w stare , twarde materace z uwierającymi sprężynami . Zaletą mojego pokoju był ładny widok – przed balkonem rosło piękne drzewo limonkowe . Mój pokój sąsiadował z recepcją i dzięki temu mogła m korzystać z bezprzewodowego internetu . Lokalizacja hotelu jest dobra . Dojście do plaży zajmuje ok 5 min . Jedzenie mało urozmaicone . Największym problemem był bardzo długi czas oczekiwania na podanie kolacji . Dania wybierane są z karty . Po niemal godzinnym oczekiwaniu , zwróciła m uwagę kelnerowi . Dopiero po mojej drugiej interwencji ( upłynęła godzina i 15 min ! ) otrzymała m zamówione danie ! Jedzenie było zimne a kelner zapomniał o przyniesieniu sztućców ! Zgłosiła m skargę w recepcji ale zamiast przeprosin recepcjonistka zasugerowała mi kontakt z rezydentką TUI w celu … ZMIANY HOTELU ! Nie polecam tego hotelu !",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "[niestandardowy sentyment] negatywny.",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 46,
+        "text": "Hotel położony w miłej okolicy . Dogodny dojazd . Jedzenie przeciętne . Kawa marna . Obsługa pozostawia wiele do życzenia . W spa praktycznie samoobsługa - częściowo samodzielne wykonywanie zabiegów . Brak zainteresowania gościem podczas zabiegu . Gdyby nie towarzystwo był by to zmarnowany czas .",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "negatywny",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 47,
+        "text": "Jest to lekarz , który nie rozumie , co to są zmiany wymagające pilnej wizyty u lekarza . Chodziło o krwawienie w czasie ciąży . Jak sam nie ma możliwości szybkiego przyjęcia kobiety w takim stanie , to powinien przynajmniej od razu powiedzieć , żeby szukała pomocy , w innym gabinecie . Nie powinien kazać wydzwaniać do swoich gabinetów i dopytywać się o inne wolne terminy . A po paru dniach dzwonienia oświadczyć , że nie ma już wolnych terminów . Poza tym ma bardzo niemiłą rejestratorkę w gabinecie .",
+        "target_class": "minus",
+        "target_idx": 1,
+        "response": "negatywny",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 48,
+        "text": "\" Alergie , astma , nieswoiste zapalenie jelita , choroby autoimmunologiczne takie jak reumatoidalne zapalenie stawów , cukrzyca typu I , toczeń , stwardnienie rozsiane to bardzo niebezpieczne choroby spowodowane nadmierną aktywnością układu immunologicznego . Obserwuje się coraz większą zapadalność na niektóre z tych chorób . Tendencja ta jest szczególnie widoczna w krajach rozwiniętych \" - mówi PAP dr Piotr Bąska ze Szkoły Głównej Gospodarstwa Wiejskiego w Warszawie . Remedium na te choroby mogą się okazać . . . pasożyty , bo aby przeżyć w człowieku , musiały nauczyć się hamować działanie ludzkiego układu immunologicznego . \" W toku ewolucji były naszymi nieodłącznymi towarzyszami , stając się - podobnie jak niektóre bakterie saprofityczne - nauczycielem układu immunologicznego , aby ten nie był nadaktywny . Wszystko było w porządku do początku ubiegłego stulecia , kiedy standardy życia i warunki higieniczno - sanitarne większości społeczeństwa nie były zbyt wysokie , a antybiotyki i leki przeciw pasożytnicze nie były tak często stosowane jak dziś . Inwazje pasożytnicze były wtedy na porządku dziennym . Teraz w krajach rozwiniętych : w Europie i Stanach Zjednoczonych , pozbyli śmy się części z nich . W efekcie nasz układ immunologiczny nie ma nauczyciela , który hamował by jego wybryki \" - wyjaśnia Piotr Bąska .",
+        "target_class": "amb",
+        "target_idx": 3,
+        "response": "[ ] pozytywne\n[ ] negatywne\n[ ] niejednozn",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 49,
+        "text": "Zapłaciła m za wizytę 100zł z czego Pani wypisała mi lek na receptę , który dostępny był w aptece normalnie sprzedawany bez recepty , ale 100zł zapłaciła m za receptę : ( Plus taki iż otrzymała m paragon za wizytę , co było dla mnie wielkim zdziwieniem w gabinecie lekarza ; ) Moim zdaniem lekarz jak lekarz , rewelacji nie było ; ) Ale polecam za miłą obsługę",
+        "target_class": "zero",
+        "target_idx": 0,
+        "response": "niejednoznaczne\nwyjaśnienie: tekst zawiera zarówno negatyw",
+        "prediction_class": "minus",
+        "prediction_idx": 0,
+        "correct": true
+      }
+    ]
+  },
+  "psc": {
+    "model": "phi",
+    "dataset": "psc",
+    "task": "text similarity",
+    "accuracy": 0.78,
+    "f1": 0.7756017951856384,
+    "precision": 0.78,
+    "samples_evaluated": 50,
+    "evaluation_time": 15.931016206741333,
+    "details": [
+      {
+        "id": 0,
+        "extract_text": "odnotowywanie wątpliwości co do rzeczywistej treści opracowywanego przez tłumacza pisma dotyczy jedy...",
+        "summary_text": "Tłumacz przysięgły uprawniony jest do sporządzania, sprawdzania i poświadczania tłumaczeń oraz sporządzania odpisów pism w języku, dla którego został ustanowiony. Od tłumacza może być także wymagana ocena autentyczności dokumentu zgodnie z jego moralnymi i fachowymi kwalifikacjami. Wiele fałszerstw może być odkrytych bez specjalistycznego sprzętu. Rozwój międzynarodowego handlu i ilości dokumentów wymaga także standaryzacji w zakresie ich przygotowania i oceny autentyczności.",
+        "target": 1,
+        "response": "nie\n\nw tekście źródłowym nie",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 1,
+        "extract_text": "propozycje SLD dotyczące polityki zatrudnienia i walki z bezrobociem rażą pustosłowiem, a tam, gdzie...",
+        "summary_text": "Doszło do konfliktu pomiędzy Agencją Restrukturyzacji i Modernizacji Rolnictwa a firmą Hewlett-Packard w związku ze zbudowaniem programu Zintegrowanego Systemu Zarządzania i Kontroli (IACS) i jego późniejszym serwisowaniem. ARiMR postawiła nowe żądania, posądzając HP o niewykonywanie umowy i niejasne kombinacje prawne. HP zaś broni się tym, że prace nad projektem są zaawansowane, a Agencja szantażuje firmę zerwaniem umowy.",
+        "target": 0,
+        "response": "nie\n\ndzieje się tak, ponieważ pod",
+        "prediction": 1,
+        "correct": false
+      },
+      {
+        "id": 2,
+        "extract_text": "Miniprzeszczepy komórek krwiotwórczych są nadzieją w leczeniu chorób nowotworowych. w Jerozolimie W ...",
+        "summary_text": "W tym roku pogorszyły się wyniki ekonomiczno-finansowe branży tłuszczowej, co jest spowodowane m.in. bardzo niską krajową produkcją rzepaku. Aby produkcja rzepaku wzrosła z obecnych 584,4 tys. ton do optymalnego poziomu 1,5 mln ton, potrzebne są różne formy promocji, np. przywrócenie systemu umów kontraktacyjnych, zaopatrywanie plantatorów w nasiona, nisko oprocentowane kredyty, doradztwo agrotechniczne.",
+        "target": 0,
+        "response": "nie\n\nwyjaśnienie:\npodsumowanie",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 3,
+        "extract_text": "JAROSłAW KALINOWSKI: Jesteśmy za przekazaniem kompetencji i środków gminom. Uważamy, że jest potrzeb...",
+        "summary_text": "Próby podbierania wyborców będą główną osią kampanii do parlamentu. Stawka najsilniejszych jest wyrównana i niezmienna od miesięcy. Liderzy to SLD i AWS. Za nimi plasują się PSL, UW, ROP i UP. AWS i SLD trudno będzie podbierać sobie głosy. O preferencjach politycznych Polaków wciąż często decyduje przeszłość. Duże znaczenie dawnych podziałów świadczy o tym, że nadchodzące wybory będą wyborami identyfikacji ideologicznej, nie zaś walką programów.",
+        "target": 0,
+        "response": "nie\n\ndzieki dla swojego czasu.",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 4,
+        "extract_text": "notowania ścisłego kierownictwa partii są coraz gorsze.Parlamentarzyści Sojuszu, którzy nie weszli d...",
+        "summary_text": "Rządowi Leszka Millera powodzi się coraz gorzej, a poparcie posłów dla kierownictwa partii spada. Rząd wykonał kilka niezręcznych ruchów, a posłowie nie mają z kim porozmawiać o nurtujących ich kwestiach. Jeśli tak dalej pójdzie, podczas najbliższej konwencji partii Sojusz może mieć problem z uzyskaniem potwierdzenia wotum zaufania oraz wyborem nowego sekretarza generalnego.",
+        "target": 1,
+        "response": "tak\nodpowiedź to: tak",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 5,
+        "extract_text": "Miniprzeszczepy komórek krwiotwórczych są nadzieją w leczeniu białaczek i chłoniaków. używa się wyłą...",
+        "summary_text": "Od 9 miesięcy działa pierwsza globalna sieć satelitarnej telefonii komórkowej – Iridium. Pozwala ona na wykonywanie i odbieranie połączeń w każdym miejscu na kuli ziemskiej. Twórca sieci, konsorcjum Iridium LLC, znajduje się jednak na granicy bankructwa, bo liczba abonentów jest niewielka. Zawiodły marketing, dystrybucja sprzętu, niedostosowanie oferty do potrzeb klientów oraz sprzedaż usług.",
+        "target": 0,
+        "response": "nie\n\nwyjaśnienie:\npodsumowanie",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 6,
+        "extract_text": "Być może w tym tygodniu Sejm zdecyduje,  czy kadencja obecnego samorządu będzie skrócona i czy wybor...",
+        "summary_text": "Komisja sejmowa przygotowuje ustawę o bezpośrednim wyborze wójtów, burmistrzów i prezydentów. Projekt zgłoszony przez PO umacnia pozycję burmistrza, uniezależnia go od radnych i nadaje mu dodatkowe kompetencje. Bezpośrednie wybory mają zaktywizować lokalną społeczność i zwiększyć odpowiedzialność wybranego. Projektowi sprzeciwia się PiS. Pozostałe ugrupowania inaczej wyobrażają sobie ostateczny kształy ustawy. Samorządowcy uważają, że wybory bezpośrednie powinny odbyć się jesienią i objąć wszystkie gminy. Projekt PO jest ich zdaniem dobrze przemyślany.",
+        "target": 1,
+        "response": "nie\n\ndzieki dla swojego entuz",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 7,
+        "extract_text": "Protesty francuskich bezrobotnych, już od prawie miesiąca domagających się zwiększenia minimalnej wy...",
+        "summary_text": "Jednym z niewielu tradycyjnych elementów kultury japońskiego pozostaje sumo. To misterium łączące w sobie elementy teatru, religii i walki nadal fascynuje zarówno japońskich nastolatków, uważających monumentalnych wojowników prawie za bogów, jak i nastolatki, które zwycięzców otaczają wielką czcią. Również na świecie, choć w wersji amatorskiej, narodowe federacje sumo starają się rozszerzyć popularność tego sportu, ktory łączyo tradycję, ceremoniał i widowiskowość. Dzięki temu coraz częściej zawody sumo generują duże pieniądze.",
+        "target": 0,
+        "response": "nie",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 8,
+        "extract_text": "Od kiedy Polska stała się członkiem NATO, polityka bezpieczeństwa przestała być tematem dyskusji. Wy...",
+        "summary_text": "W kwietniu Wyższą Szkołę Policji w Szczytnie odwiedzili policjanci - słuchacze Środkowoeuropejskiej Akademii Policyjnej. Co roku przez dwanaście tygodni wędrują z kraju do kraju. Słuchają wykładów, na koniec piszą pracę zaliczeniową. W tym roku tematem wiodącym jest zwalczanie przestępczości zorganizowanej. Takie zjawiska jak narkotyki czy prostytucję uważają za efekt polityki państwa i narastających problemów społecznych. Uczestnictwo w międzynarodowym programie jest dla nich szansą na nawiązanie kontaktów i wymianę doświadczeń, która może pomóc w efektywniejszej pracy.",
+        "target": 0,
+        "response": "nie\n\nodpowiedź: nie",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 9,
+        "extract_text": "Od kiedy Polska stała się członkiem NATO, polityka bezpieczeństwa przestała być tematem ważnych dysk...",
+        "summary_text": "Polski rząd wystosował prośbę o rekordowo długi, osiemnastoletni okres przejściowy dotyczący zakupu ziemi rolnej przez cudzoziemców po przystąpieniu kraju do Unii Europejskiej. Wiadomo już, że UE nie wyrazi na to zgody i apeluje, aby nowe rozmowy opierały się raczej na danych z rynku nieruchomości (których Polska do tej pory nie przygotowała solidnie) niż na uprzedzeniach i obawach rządu polskiego, podyktowanych raczej interesami politycznymi niż faktycznymi niebezpieczeństwami.",
+        "target": 0,
+        "response": "ne\n\nodpowiedź: nie",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 10,
+        "extract_text": "Przeciwnicy kary śmierci powołują się na wartość życia ludzkiego. Na drugim biegunie mamy stosowanie...",
+        "summary_text": "Premier Jerzy Buzek na ministra spraw wewnętrznych i administracji wybrał Marka Biernackiego. Cieszy się on nieposzlakowaną opinią wśród swoich przyjaciół i byłych współpracowników. Uważany jest za człowieka konsekwentnego, pracowitego, godnego zaufania, lojalnego. Ma zdecydowane prawicowe poglądy, jest wielkim patriotą. Jego słaby punkt to brak siły politycznej, dlatego praktycznie pewne jest, że nie obejmie urzędu wicepremiera.",
+        "target": 0,
+        "response": "nie\n\ndzieki dla swojego czasu!",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 11,
+        "extract_text": "Dyżurujące w niedzielę przychodnie rejonowe w Warszawie miały natłok pacjentów. Objawy: gorączka, na...",
+        "summary_text": "Dyżurujące w niedzielę przychodnie rejonowe w Warszawie miały natłok pacjentów. Lekarz dyżurny kraju Michał Sobolewski uspokaja: w Polsce jeszcze nie ma epidemii grypy. Dr Sobolewski radzi jednak zminimalizować kontakty z otoczeniem, zaszczepić się, a przede wszystkim unikać podróży zagranicznych. W Europie epidemia grypy rozszerza się. Są już przypadki śmiertelne.",
+        "target": 1,
+        "response": "tak\n<|end_of_text|>",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 12,
+        "extract_text": "W ankiecie rozpisanej w Internecie przez \"Komsomołkę\" Putin uznany został za symbol seksu roku 2000 ...",
+        "summary_text": "W kwietniu Wyższą Szkołę Policji w Szczytnie odwiedzili policjanci - słuchacze Środkowoeuropejskiej Akademii Policyjnej. Co roku przez dwanaście tygodni wędrują z kraju do kraju. Słuchają wykładów, na koniec piszą pracę zaliczeniową. W tym roku tematem wiodącym jest zwalczanie przestępczości zorganizowanej. Takie zjawiska jak narkotyki czy prostytucję uważają za efekt polityki państwa i narastających problemów społecznych. Uczestnictwo w międzynarodowym programie jest dla nich szansą na nawiązanie kontaktów i wymianę doświadczeń, która może pomóc w efektywniejszej pracy.",
+        "target": 0,
+        "response": "nie\n\nwyjaśnienie:\npodsumowanie",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 13,
+        "extract_text": "Samochód z otwartym dachem jest reklamowym symbolem Kalifornii. Pod wpływem takich reklam kabriolety...",
+        "summary_text": "Czerwony kabriolet pędzący po szosie tuż przy oceanie jest marzeniem zakorzenionym w umysłach turystów ciągnących do słonecznej Kalifornii. Na co dzień ich posiadaczami są panowie daleko po czterdziestce, chcący w ten sposób przypomnieć sobie czasy młodości, jednak wszystkie wypożyczalnie, za odpowiednio wyższą cenę, mają podróżnych do zaproponowania wynajęcie kabrioletu.",
+        "target": 1,
+        "response": "opisz również dowód swojego oświadczenia",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 14,
+        "extract_text": "w latach 70. funkcjonowało w kraju ok. 2,5 tys. kin. W połowie lat 90. było ich już tylko 700, potem...",
+        "summary_text": "Wciąż jest wiele pytań bez odpowiedzi odnośnie zmiany polskiego rynku filmowego po pojawieniu się multipleksów. Przewiduje się, że repertuar będzie bogatszy i pojawi się szansa dla wyświetlania niszowego kina. Z drugiej strony nie wiadomo, czy małym kinom uda się utrzymać na rynku. Niektórzy podejrzewają, że multipleksy mogą pomóc polskiej kinematografii, inni przeciwnie - wskazują, że wyświetlane zagraniczne superprodukcje odbiorą jej widzów.",
+        "target": 1,
+        "response": "tak\n<|end_of_text|>",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 15,
+        "extract_text": "Obrona praw człowieka, także praw wynikających z pracy, stoi w centrum społecznych zainteresowań Koś...",
+        "summary_text": "Nakłady przeznaczone przez samorządy na kulturę w roku 2000 na ogół pozostają na niezmienionym poziomie lub wręcz je obniżono. W wielu regionach dotacje wystarczają jedynie na niskie płace i bieżące świadczenia. Sytuacja taka wynika nie tylko z faktu, iż samorządowcy mają za mało pieniędzy do podziału, ale także, że w wyniku reformy przypisano im zbyt wiele instytucji kulturalnych. Wiele samorządów kosztem wydatków bieżących zwiększa nakłady na inwestycje i remonty. Dyrektorów instytucji kulturalnych martwi też przygotowywana nowelizacja ustawy o ubezpieczeniach społecznych.",
+        "target": 0,
+        "response": "nie\n\ndziecko: podsumowanie op",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 16,
+        "extract_text": "Multipleksy zrewolucjonizowały rynek kinowy na świecie. Od dwóch lat pojawiają się także w Polsce. C...",
+        "summary_text": "Wciąż jest wiele pytań bez odpowiedzi odnośnie zmiany polskiego rynku filmowego po pojawieniu się multipleksów. Przewiduje się, że repertuar będzie bogatszy i pojawi się szansa dla wyświetlania niszowego kina. Z drugiej strony nie wiadomo, czy małym kinom uda się utrzymać na rynku. Niektórzy podejrzewają, że multipleksy mogą pomóc polskiej kinematografii, inni przeciwnie - wskazują, że wyświetlane zagraniczne superprodukcje odbiorą jej widzów.",
+        "target": 1,
+        "response": "tak\nwyjaśnij swoje myśli krok",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 17,
+        "extract_text": "Wprowadzona od września tego roku reforma oświaty przewiduje konieczność wymiany wszystkich podręczn...",
+        "summary_text": "We wrześniu w życie wejdzie reforma oświaty, więc niezbędna będzie wymiana wielu podręczników. Wykaz książek dopuszczonych przez MEN do nauki w szkołach ukaże się dopiero pod koniec sierpnia. Wydawnictwa szukają sposobów, by zachęcić nauczycieli do wybrania ich podręczników. Do tej pory nauczyciele niechętnie zmieniali podręczniki, z których uczyli, a teraz będą do tego zmuszeni.",
+        "target": 1,
+        "response": "tak\n\nw tekście źródłowym jest",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 18,
+        "extract_text": "10 miliardów marek na odszkodowania dla byłych robotników przymusowych - na taką sumę zaproponowaną ...",
+        "summary_text": "Ustalono kwotę 10 mld marek, która zostanie przeznaczona na odszkodowania dla byłych robotników, którzy pracowali niewolniczo i przymusowo dla Niemiec w czasie wojny. Prezydent RFN Johannes Rau oddał cześć poszkodowanym i poprosił o przebaczenie. Kanclerz Gerhard Schroeder powiedział, że zakończenie negocjacji to \"historyczny krok\". Strona polska mówiła o sukcesie politycznym. Delegacje zdecydują o podziale kwoty. Polska planuje odegrać kluczową rolę w rozmowach.",
+        "target": 1,
+        "response": "tak\nodpowiedź brzmi: tak",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 19,
+        "extract_text": "Starość nie pasuje do modelu przyjemnego, intensywnego życia, ale starych ludzi jest coraz więcej, ż...",
+        "summary_text": "W drużynowym turnieju o Puchar Davisa, który dla wielu tenisistów jest imprezą priorytetową, od lat wygrywają zawodnicy spoza światowej czołówki rozgrywek zawodowych. W tegorocznym finale spotkają się tenisiści Francji i Australii. Droga oby drużyn do finału nie była łatwa, obie mają swoich bohaterów. Francuzów wspiera publiczność, ale Australijczycy wierzą w zwycięstwo.",
+        "target": 0,
+        "response": "opisz swoje myśli przed odpowiedzią.",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 20,
+        "extract_text": "Nikt nie sprzątnie ze stołu po wigilijnej wieczerzy. Potrawy będą stały do rana. Ich smakiem i zapac...",
+        "summary_text": "Drobna przedsiębiorczość budzi żywe zainteresowanie polityków, ekonomistów i mediów. Dzieje się tak zarówno w Polsce, jak  i na świecie. Nasza sytuacja ma wprawdzie swoją specyfikę, ale zjawiska, jakie zachodzą w tym sektorze na świecie, mają dla polskich firm tego typu znaczenie szczególne ze względu na obecną  - i przede wszystkim  - przyszłą ich rolę w gospodarce.  Czynniki, które zadecydowały o erupcji drobnej przedsiębiorczości w latach 1989-1991 to zamknięta karta historii. Nie oznacza to jednak, że trzeba zaniechać przeszukiwań poprawy sytuacji na rynku pracy za pomocą promocji drobnej wytwórczości.",
+        "target": 0,
+        "response": "nie\n\ndrodzeń podsumowania:\nw",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 21,
+        "extract_text": "MICHAŁ LISTKIEWICZ: Polska piłka żyje z telewizji, której sprzedaje prawa do transmitowania meczów, ...",
+        "summary_text": "Na zakup pomocy szkolnych wydaje się z budżetu oświaty od 0,5 do 1 proc. - szacuje MEN. Zakupy te są bardzo nierytmiczne. Zazwyczaj pod koniec roku, kiedy nagle pojawiają się środki finansowe, szkoły starają się je upłynnić i biorą wszystko, co się da, a producenci nie są w stanie sprostać zamówieniom. Skończyły się czasy, gdy bez aprobaty MEN szkoła nie mogła zakupić żadnej pomocy. Teraz wprawdzie funkcjonuje lista pomocy zalecanych przez MEN, ale nie jest ona obligatoryjna ani dla producentów, ani dla kupujących. Skończył się też monopol MEN w zakresie produkcji i dystrybucji pomocy dydaktycznych. Na rynku pomocy szkolnych trwa walka o klienta.",
+        "target": 0,
+        "response": "tak\n\njakie obszary można porów",
+        "prediction": 1,
+        "correct": false
+      },
+      {
+        "id": 22,
+        "extract_text": "Do Berdyczowa, odległego od Kijowa o 185 kilometrów, jedzie się cztery godziny. \"Żyj krasiwo, pij be...",
+        "summary_text": "Kiedy Filippo Tomasso Marinetti w 1909 roku publikował w paryskim „Figaro” swój „Manifest futuryzmu”, w którym zachwycał się pięknem szybkości, nie mógł przypuszczać, że w jego rodzinnych Włoszech kilkadziesiąt lat później setki tysięcy kibiców bić będą hołdy czerwonej maszynie marki Ferrari, której sercem jest silnik, a duszą komputer. Nie spodziewał się też, że wyścigi „samochodów o ognistym oddechu” staną się jedną z najsprawniejszych w świecie maszyn do robienia pieniędzy, a oglądać je będzie co dziesiąty człowiek na Ziemi. Dziś samochody Ferrari są synonimem sukcesu nie tylko w sporcie. Żyrują prestiż i status społeczny, stały się przedmiotem marzeń i zazdrości milionów.",
+        "target": 0,
+        "response": "nie",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 23,
+        "extract_text": "Stadion narodowy powinien być w Warszawie, a nie w Chorzowie - twierdzą minister sportu Jacek Dębski...",
+        "summary_text": "Budowa Stadionu Śląskiego budzi wiele kontrowersji. Jego przeciwnikiem jest minister sportu i trener reprezentacji piłkarskiej, którzy uważają, że mecze powinny odbywać się w stolicy. Budowa stadionu opóźnia się, a projektantom i inwestorowi zarzuca się niegospodarność i nieprawidłowości. Kolejne kontrole  na stadionie mają tylko potwierdzać wcześniej sformułowane zarzuty. Początkowo stadion miał być tylko remontowany, potem uznano koniecznośc odbudowy. Kwoty tych inwestycji różnią się stukrotnie - co jest jednym z zarzutów kontroli - ale też dotyczą dwóch innych inwestycji. Eksperci architektoniczni chwalą z kolei obiekt za jego walory architektoniczne i stosunkowo niskie koszty budowy. Mimo to stadion nie otrzymał zaplanowanych funduszy, które zostały wstrzymane do czasu wyjaśnienia wątpliwości dt. przeprowadzenia robót. Polska nie dysponuje stadionem spełniającym międzynarodowe standarty. W tej sytuacji zakończenie budowy Stadiony Śląskiego jest koniecznością, mimo niechęci ministra sportu, który wolałby mecze rozgrywać w stolicy choć brak ku temu warunków.",
+        "target": 1,
+        "response": "tak\nwyjaśnij swoje myśli krok",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 24,
+        "extract_text": "Brak nadziei na poprawę również po wejściu do UE odbiera motywację do udziału w referendum. jeżeli P...",
+        "summary_text": "Eksperci uważają, że integracja z Unią Europejską powinna być korzystna zarówno dla polskich ogrodników, jak i dla konsumentów. Struktura produkcji oraz ceny owoców i warzyw w Unii są inne niż w Polsce. Unijne produkty będą konkurencją dla polskich producentów. Zdaniem specjalistów ogrodnictwo w Polsce wymaga większej koncentracji i specjalizacji produkcji, warto także zadbać o rozwój infrastruktury rynku.",
+        "target": 0,
+        "response": "nie\n\nw tekście źródłowym br",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 25,
+        "extract_text": "właściciel Elektromisu DI rozwija sieć sklepów Żabka i przez inną swoją spółkę Kuchnia Polska inwest...",
+        "summary_text": "W 1987 r. wraz z dwójką wspólników Mariusz Świtalski założył spółkę Elektromis sp. z o.o., która z czasem stała się holdingiem kilkunastu prowadzących wspólne interesy firm. Od 1994 trwa proces 13 osób z kierownictwa spółek holdingu. Okazuje się, że wszystkie firmy były zakładane i prowadzone przez znajomych i kolegów Mariusza Świtalskiego. Akt oskarżenia obejmuje oszustwa celno-podatkowe i narażenie skarbu państwa na straty w wysokości 40 mln zł.",
+        "target": 1,
+        "response": "nie\n\ndziegoś ta informacja nie",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 26,
+        "extract_text": "Alpha Oumar Konare, prezydent Mali przeciętny mieszkaniec globu widzi, że w Afryce są problemy. giną...",
+        "summary_text": "Nieopodal Banganarti nad Nilem polscy archeologowie dokonali niezwykłego odkrycia. Odsłonili chrześcijański kościół i krypty władców Nubii pochodzące z okresu dominacji chrześcijaństwa, które zostało ostatecznie wyparte przez islam w 1350 roku. Na szczególną uwagę zasługują grobowce, wzniesione ok. VII w., które były elementem pośmiętnego kultu królewskiego i najpopularniejszym miejscem pielgrzymek, na co wskazuje liczba inskrypcji zostawianych przez pielgrzymów. Źródeł ich popularności należy upatrywać w instytucji świętego królestwa uznającej króla za świętego.",
+        "target": 0,
+        "response": "opisz swoje myśli przed odpowiedzią.",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 27,
+        "extract_text": "toczy się dyskusja na temat powodów niepowodzeń we wdrażaniu wielkich systemów informatycznych.Różne...",
+        "summary_text": "Ludzie spożywający umiarkowane ilości wina są mniej narażeni na zawały serca i nowotwory niż zwolennicy innych trunków. Mimo to żadna organizacja medyczna nie namawia do picia alkoholu. Nie wiadomo, jaka jest optymalna jego dawka. Uznaje się, że 20-40 g dziennie. Alkohol w każdej postaci zawiera szkodliwe substancje hamujące syntezę białek.",
+        "target": 0,
+        "response": "ne",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 28,
+        "extract_text": "Od wtorku Ameryka jest w stanie wojny. trzeba szybko ustalić to co najważniejsze - z kim i jak?Na ra...",
+        "summary_text": "„Problem roku 2000” oznacza, że o północy z 31 grudnia 1999 na 1 stycznia 2000 wiele milionów urządzeń elektronicznych na całym świecie może przestać działać, bo nie będzie w stanie poprawnie odczytać daty. Służby mundurowe oraz najważniejsze instytucje (szpitale, banki, kolej) przygotowują się na tę noc, aby ciągłość w ich pracy nie została przerwana.",
+        "target": 0,
+        "response": "nie",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 29,
+        "extract_text": "Do początku lat dwudziestych kolorowi mieszkańcy Brazylii nie mieli prawa gry w piłkę z białymi. Prz...",
+        "summary_text": "Do połowy lat 20. w Brazylii w piłkę nożną mogli grać jedynie biali zawodnicy. Fenomenalny piłkarz Arthur Friedenreich przed każdym meczem musiał pudrować śniadą twarz. Z czasem kolorowi Brazylijczycy zrewolucjonizowali światową piłkę. Czarnoskórzy zawodnicy pojawili się w angielskiej lidze i reprezentacji.  Herbert Chapman był wybitnym angielskim trenerem i eksperymentatorem. Po zmianie przepisów o spalonym zmienił tradycyjne ustawienie zawodników. Angielski futbol ma bogatą tradycję, wiąże się z nim wiele legendarnych postaci, miejsc i wydarzeń. Był czas, kiedy zamknięta na nowe rozwiązania taktyczne Anglia przegrywała mecze na Wembley. Międzynarodową Federację Piłkarską założyli przedstawiciele krajów europejskich, jednak nowoczesne formy organizacyjne w futbolu powstały w Ameryce Południowej, w której piłka nożna jest religią i sprawą wagi państwowej. Chłopcom z biednych rodzin sport daje szansę na lepsze życie. Wiele zasług dla futbolu mają Francuzi. Do popularyzacji piłki przyczyniły się rozgrywki pucharowe i transmisje telewizyjne. Z czasem zachwiały się proporcje między sportem a reklamą. Ludzie interesują się życiem i karierą znanych piłkarzy, takich jak Pele czy Maradona. Piłka nożna jest uwielbiana i to się nie zmieni.",
+        "target": 1,
+        "response": "odpowiedź brzmi: nie\n\nd",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 30,
+        "extract_text": "umiejętność przystosowania Finowie wykształcili w sobie w walce z surowymi warunkami życia.Pragmatyc...",
+        "summary_text": "Na zakup pomocy szkolnych wydaje się z budżetu oświaty niewiele pieniędzy - od 0,5 do 1 proc. - szacuje MEN. Skończyły się czasy, gdy bez aprobaty MEN szkoła nie mogła zakupić żadnej pomocy. Teraz wprawdzie funkcjonuje lista pomocy zalecanych przez MEN, ale nie jest ona obligatoryjna ani dla producentów, ani dla kupujących. Skończył się też monopol MEN w zakresie produkcji i dystrybucji pomocy dydaktycznych. Na rynku pomocy szkolnych trwa walka o klienta, walka między szkołokrążcami, oferującymi kiepski, a tani towar, którym nie zależy na umieszczeniu swoich produktów na liście MEN; dawnymi państwowymi producentami, przyzwyczajonymi do swej monopolistycznej pozycji oraz nowoczesnymi prywatnymi firmami.",
+        "target": 0,
+        "response": "nie\n\ndla powodu:\n- tekst",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 31,
+        "extract_text": "Łomnicki Miał bardzo skomplikowaną osobowość. Stała się źródłem jego wielkiego talentu, witalności, ...",
+        "summary_text": "Tadeusz Łomnicki był wielkim aktorem, niezwykle pracowitym i inteligentnym. Aktorzy darzyli go ogromnym szacunkiem, jednak wielu krytykowało jego pracę dla KC PZPR. Łomnicki pod koniec życia cierpiał ze względu na braki zawodowe swych scenicznych partnerów, dlatego wolał występować sam. Potrafił jednak zachwycić się grą innych. Po zakończeniu pracy nad \"Stalinem\" odbył się bankiet, na którym po raz ostatni widziałem Janusza. Podziękował nam, niczego nie zjadł, nie wypił. Pożegnał się i odszedł.",
+        "target": 1,
+        "response": "tak\n\njak radzi sobie podsumowanie z",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 32,
+        "extract_text": "Jakie są różnice pomiędzy Polską trzy lata temu i teraz?  BASIL KAVALSKY: Byliśmy zaniepokojeni, czy...",
+        "summary_text": "Szanse polskiego ogrodnictwa w Unii Europejskiej są duże,lecz wymaga to głębokiego procesu restrukturyzacji,zorganizowania grupy producentów oraz rozwoju infrastruktury.Dzięki temu mamy szansę skorzystać z takich form wsparcia jak kraje UE, w których wyższe są ceny owoców i warzyw, ale za to są one lepszej jakości.Otrzymamy też o rozszerzoną o nowe gatunki ofertę.Na wejściu Polski do UE najbardziej skorzystają producenci wiśni,jagód i pieczarek.",
+        "target": 0,
+        "response": "nie\n\ndzieje się następujące",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 33,
+        "extract_text": "Multipleksy - wielkie kinowe molochy  z co najmniej ośmioma,  a czasem nawet dwudziestoma salami  - ...",
+        "summary_text": "Multipleksy zrewolucjonizowały rynek kinowy na świecie. Teraz pojawiają się też w Polsce. Są one szansą dla różnego rodzaju filmów, które będą mogły zarabiać na siebie w mniejszych salach. Z drugiej strony takie kompleksy stanowią zagrożenie dla małych kin. Trzeba poczekać kilka lat z odpowiedzią na pytanie, czy multipleksy w Polsce będą miały korzystny wpływ na rozwój kina.",
+        "target": 1,
+        "response": "tak\n\nw tekście źródłowym st",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 34,
+        "extract_text": "W Federacji Rosyjskiej poważnie zreformowano sądownictwo. Prawa te, choć ogłoszone, nie mogą zostać ...",
+        "summary_text": "W Federacji Rosyjskiej poważnie zreformowano system sądownictwa. Umocniono sędziowską niezależność, do składów orzekających wprowadzono czynnik obywatelski pod postacią sądów przysięgłych, reaktywowano instytucję sędziego pokoju, który niekoniecznie jest prawnikiem, za to uważany jest za człowieka porządnego i cieszącego się szacunkiem współmieszkańców. Jednak brak środków finansowych nie tylko utrudnia wprowadzenie reform, lecz także nie pozwala na przyzwoite funkcjonowanie obecnego systemu.",
+        "target": 1,
+        "response": "nie\n\ndzieje się następujące",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 35,
+        "extract_text": "w latach 70. funkcjonowało w kraju ok. 2,5 tys. kin. W połowie lat 90. było ich już tylko 700, potem...",
+        "summary_text": "Od dwóch lat w Polsce pojawiają się multiplesy, oferujące kinomanom nowoczesność i najwyższą jakość. Z ich obecnością na polskim rynku wiąże się wiele szans, ale też wiele zagrożeń. Mniejsze sale kinowe umożliwią pokazywanie ambitnych produkcji. Szeroki zagraniczny repertuar będzie jednak z drugiej strony konkurencją dla naszych superprodukcji. Multipleksy podbiły świat. Czas pokaże, jakie zmiany przyniosą w Polsce.",
+        "target": 1,
+        "response": "tak\n<|end_of_document|> wy",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 36,
+        "extract_text": "Cała Ameryka zastanawia się teraz, czy ubiegający się o nominację prezydencką z ramienia Partii Repu...",
+        "summary_text": "Od 1 stycznia 1998 banki obowiązane są stosować się do ustawy o rachunkowości (Dz. U. nr 121, poz. 591 ze zm. - dalej: u.r.), ale już nie do przepisów aktów wykonawczych wydanych na podstawie upoważnienia zawartego w art. 81 ust. 1 u.r. Dotyczy to zarówno przepisów zarządzenia nr 13/94 prezesa Narodowego Banku Polskiego, jak i uchwał nr 1/98 oraz nr 2/98 Komisji Nadzoru Bankowego. Oznacza to, że banków nie obowiązują żadne \"szczególne zasady\" rachunkowości, sporządzania informacji dodatkowej, skonsolidowanych sprawozdań finansowych czy też tworzenia tzw. rezerw celowych., sformułowane we wskazanych aktach.",
+        "target": 0,
+        "response": "opisz swoje myśli przed odpowiedzią.",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 37,
+        "extract_text": "Bezspornie podstawą funkcjonowania telewizji publicznej jest ustawa z 29 grudnia 1992 r. o radiofoni...",
+        "summary_text": "Niebawem rozstrzygnie się, czy na jesieni w wyborach samorządowych kandydaci będą wybierani bezpośrednio przez mieszkańców. Przygotowywana ustawa ma poparcie SLD i PO, prawdopodobne jest więc, że zostanie uchwalona. Czołowi politycy rozważają więc start w wyborach, a dla stanowisk prezydenckich są gotowi zrezygnować z mandatów poselskich. Nieoficjalnie znani już są kandydaci partii na stanowiska prezydentów dużych miast.",
+        "target": 0,
+        "response": "ne",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 38,
+        "extract_text": "odnotowywanie wątpliwości co do rzeczywistej treści opracowywanego przez tłumacza pisma dotyczy tych...",
+        "summary_text": "Działalność tłumaczy przysięgłych reguluje rozporządzenie ministra sprawiedliwości w sprawie biegłych sądowych i tłumaczy przysięgłych. Tłumacz przysięgły  m.in. sporządza, sprawdza i poświadcza tłumaczenia oraz  poświadczone odpisy pism.  Fałszerstwo dokumentu dzieli się na  fałsz intelektualny i  fałsz materialny. Domorosłe metody oceny dokumentów starych/zniszczonych mogą być zawodne. Fałszerstwa nieudolne są łatwo wykrywalne. Większa liczba dokumentów w językach obcych będzie wymagać międzynarodowej standaryzacji badania autentyczności i poprawności dokumentów.",
+        "target": 1,
+        "response": "nie\n\nw tekście źródłowym jest",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 39,
+        "extract_text": "Zgodnie z zakresem kompetencji Senat poprawia ustawy przychodzące z Sejmu, zajmuje się pracą legisla...",
+        "summary_text": "Być może w tym tygodniu Sejm zdecyduje, czy kadencja obecnego samorządu będzie skrócona i czy wybory samorządowe odbędą się w czerwcu. Jeśli tak się stanie, posłom zostanie miesiąc na przygotowanie ustawy  o bezpośrednim wyborze wójtów, burmistrzów  i prezydentów. Ta ustawa zmieni sposób działania samorządu. Specjalnie powołana sejmowa podkomisja zajmuje się od połowy stycznia pakietem ustaw samorządowych wniesionych przez posłów Sojuszu Lewicy Demokratycznej i Platformy Obywatelskiej.",
+        "target": 0,
+        "response": "nie\n\nw tekście źródłowym oma",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 40,
+        "extract_text": "Co roku, pod koniec kwietnia, mieszkańcy Stratford-upon-Avon, przebrani w stroje z epoki elżbietańsk...",
+        "summary_text": "W rocznicę urodzin poety i dramaturga Williama Szekspira w miasteczku, z którego pochodzi - Stratford-upon-Avon, mieszkańcy co roku organizują barwną i głośną paradę.Ściągają na nią tysiące turystów, choć i tak przez cały rok nie brakuje ich w miasteczku. Przyciąga ich niesamowita atmosfera miasta, w którym każdy zabytek związany z Szekspirem (m. in. dom przy Henley Street, w którym się urodził) jest zadbany i utrzymany w duchu jego epoki.",
+        "target": 1,
+        "response": "nie\n\nw tekście źródłowym wsp",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 41,
+        "extract_text": "Rząd zalicza potknięcie za potknięciem, koalicja skrzypi, zaś w samym SLD notowania kierownictwa par...",
+        "summary_text": "Rząd Leszka Millera przechodzi kryzys. Członkowie partii wytykają premierowi błędy, krytykują poczynania ministrów, skarżą się na brak komunikacji wewnątrz partii i kłopoty w terenie. Ostatnie publikacje w tygodniku \"Nie\" oraz rządowe zapowiedzi cięć w sferze socjalnej szkodzą ekipie rządzącej. Najbliższa konwencja SLD może się okazać przykrą niespodzianką dla władz.",
+        "target": 1,
+        "response": "tak\nwyobrażamy sobie, że to",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 42,
+        "extract_text": "Wprowadzona od września tego roku reforma oświaty przewiduje konieczność wymiany wszystkich podręczn...",
+        "summary_text": "Sto lat temu została przedstawiona hipoteza, która kilka lat po jej wygłoszeniu doprowadziła do rewolucji w fizyce. Przez lnastępne lata powstały nowe teorie, które przyczynily się do postawienia wielu pytań i problemów z nimi związnych. Mimo że fizyka kwantowa odgrywa rolę we wszystkich postawionych problemach, to pozostaje jeszcze problem z samą mechaniką kwantową.",
+        "target": 0,
+        "response": "nie\n\nwyjaśnienie:\npodsumowanie",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 43,
+        "extract_text": "Brazyliaczerpała początkowo z tych samych wzorów co inni. Piłki nożnej uczyli tam na przełomie wiekó...",
+        "summary_text": "Nie wiadomo, jak potoczyłyby się losy piłki nożnej, gdyby nie dwa znaczące fakty z lat dwudziestych – dopuszczenie do rozgrywek w Brazylii piłkarzy kolorowych oraz zmiana przepisu o spalonym, umożliwiająca rozwój taktyki. Wcześniej kolorowi mieszkańcy Brazylii nie mieli prawa grać w piłkę z białymi. Sport ten uchodził za elitarny. Skoro w Anglii w lidze nie grali Murzyni, w Brazylii zwyczaj ten przejęto, rozszerzając go na Mulatów, Metysów oraz Indian. Przełom nastąpił w roku 1923. Klub Vasco da Gama z Rio de Janeiro postanowił sprzeciwić się zasadom i przystąpił do rozgrywek o mistrzostwo stanu Guanabara z kolorowymi piłkarzami w składzie. Wygrywał przez dwa kolejne lata. To spowodowało rewolucję. W roku 1925 International Board zmienił przepis o spalonym w części mówiącej o liczbie zawodników mogących znajdować się w momencie podania piłki między linią bramkową a najbliższym niej graczem drużyny atakującej. Dotychczas było ich trzech zawodników, od tej pory miało być tylko dwóch. Z nowych ustaleń pierwszy skorzystał angielski trener Herbert Chapman, wprowadzając system WM. Wycofał środkowego pomocnika do obrony, zmienił ustawienie ataku, wycofując w głąb pola dwóch łączników.",
+        "target": 1,
+        "response": "tak\n<|fin|>\n\nodpowied",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 44,
+        "extract_text": "Samochód z otwartym dachem jest reklamowym symbolem Kalifornii. kabriolety okazały się świetnym prod...",
+        "summary_text": "Czerwony kabriolet pędzący po szosie tuż przy oceanie jest marzeniem zakorzenionym w umysłach turystów ciągnących do słonecznej Kalifornii. Na co dzień ich posiadaczami są panowie daleko po czterdziestce, chcący w ten sposób przypomnieć sobie czasy młodości, jednak wszystkie wypożyczalnie, za odpowiednio wyższą cenę, mają podróżnych do zaproponowania wynajęcie kabrioletu.",
+        "target": 1,
+        "response": "opisz swoje myśli przed udzieleniem",
+        "prediction": 0,
+        "correct": false
+      },
+      {
+        "id": 45,
+        "extract_text": "3 czerwca, podczas papieskiej pielgrzymki u grobu św. Wojciecha odbędzie się zjazd. najwyższy hierar...",
+        "summary_text": "Życie św. Wojciecha znaczyły kryzysy i katastrofy. Niektórzy złośliwi są skłonni nawet powiedzieć, że jego życie było totalnym bankructwem. Miał być rycerzem, a został biskupem. Dwukrotnie opuszczał biskupstwo szukając azylu w Rzymie, lecz go stamtąd wyrywano pod groźbą ekskomuniki. Pod koniec życia został misjonarzem, ale nikogo nie nawrócił. Ten z pozoru \"bankrut\" w półtora roku po śmierci został kanonizowany. Po tysiącu lat kreowany jest na patrona jednoczącej się Europy. W roku 1000 u jego grobu w Gnieźnie spotkali się cesarz niemiecki Otton III, legat papieża Sylwestra II i książę Bolesław Chrobry. Niebawem odbędzie się kolejny zjazd u grobu św. Wojciecha.",
+        "target": 1,
+        "response": "tak\n<|end|>\n<|user",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 46,
+        "extract_text": "Finowie Pragmatycznie myślą teraz, gdy Finlandia stała się pomostem między Unią Europejską a Rosją. ...",
+        "summary_text": "W polskich szkołach pracuje około 700 tysięcy nauczycieli. Przy przyjmowaniu nauczyciela do pracy liczy się wykształcenie - powinna osobowość. Zawód nauczyciela cieszy się dużym prestiżem społecznym. Płace nauczycieli kształtują się poniżej społecznie aprobowanego poziomu. Uważa się, że większości nauczycieli zależy na tym, by dobrze wykonywać swoje obowiązki oraz że są fachowcami. Połowa uczniów ocenia swoje stosunki z nauczycielami jako pozytywne, jedna piąta - że nauczyciela nie interesują problemy jego podopiecznych. U co czwartego słowo \"nauczyciel\" wywołuje lęk. Konieczne jest podmiotowe podejście do ucznia. System szkolnej demokracji oparty powinien być na idei \"po pierwsze nie szkodzić\". Nauczyciele mówią o niechęci zespołu nauczycielskiego do pracujących twórczo oraz panującym w szkołach marazmie.",
+        "target": 0,
+        "response": "opisz swoją odpowiedź proszekiem.\no",
+        "prediction": 0,
+        "correct": true
+      },
+      {
+        "id": 47,
+        "extract_text": "sejmowa podkomisja zajmuje się pakietem ustaw samorządowych wniesionych przez posłów SLD i PO. Opróc...",
+        "summary_text": "Jeśli Sejm w tym tygodniu zdecyduje o skróceniu kadencji samorządu i wybory odbęda się w czerwcu, posłom pozostanie miesiąc na przygotowanie ustawy o bezpośrednim wyborze wójtów, burmistrzów  i prezydentów. Platforma Obywatelska i Sojusz Lewicy Demokratycznej zgłosiły dwa różne projekty. SLD proponuje zmiany powierzchowne, natomiast Platforma chce głębszych zmian, m.in. wzmocnienia pozycji burmistrza. Zwolennicy bezpośrednich wyborów wskazują, że aktywizują one lokalne społeczności i wzmocnią decyzyjność burmistrza. Propozycja bezpośrednich wyborów uzyskuje popracie większości posłów.",
+        "target": 1,
+        "response": "tak\nwyjaśnij logikę za",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 48,
+        "extract_text": "3 czerwca, podczas papieskiej pielgrzymki u grobu św. Wojciecha najwyższy hierarcha Kościoła katolic...",
+        "summary_text": "Życie św. Wojciecha znaczyły kryzysy i katastrofy. Niektórzy złośliwi są skłonni nawet powiedzieć, że jego życie było totalnym bankructwem. Miał być rycerzem, a został biskupem. Dwukrotnie opuszczał biskupstwo szukając azylu w Rzymie, lecz go stamtąd wyrywano pod groźbą ekskomuniki. Pod koniec życia został misjonarzem, ale nikogo nie nawrócił. Ten z pozoru \"bankrut\" w półtora roku po śmierci został kanonizowany. Po tysiącu lat kreowany jest na patrona jednoczącej się Europy. W roku 1000 u jego grobu w Gnieźnie spotkali się cesarz niemiecki Otton III, legat papieża Sylwestra II i książę Bolesław Chrobry. Niebawem odbędzie się kolejny zjazd u grobu św. Wojciecha.",
+        "target": 1,
+        "response": "tak\n<|end_of_document|> wy",
+        "prediction": 1,
+        "correct": true
+      },
+      {
+        "id": 49,
+        "extract_text": "Będzie 31 grudnia, rok 2000. Wyruszą z Marsylii albo z Barcelony, żeby opłynąć świat. To będzie wyśc...",
+        "summary_text": "THE RACE 2000 będzie największym widowiskiem sportowym przełomu tysiącleci. 31 grudnia żeglarze wyruszą, żeby opłynąć świat. Do wzięcia udziały w tym wyścigu zachęca wyobraźnia - rozmach rejsu, symbolika podróży w  czasie, przejście pod żaglami przez granicę tysiącleci. Będą w nim uczestniczyli największe i najszybsze jachty oraz najlepsi żeglarze. Kapitanem polskiej drużyny został Roman Paszke - znany i utytułowany żeglarz oraz współkonstruktor pierwszego polskiego jachtu zbudowanego z włókien węglowych. Wzięcie udziału w wyścigu wymaga ogromnych nakładów pracy i pieniędzy. Trasa wyścigu jest szalenie trudna - krótsza w pobliżu Arktyki skazuje na ciągłe sztormy, szybki katamaran może się wywrócić. W takich warunkach ważny będzie zgrany zespół. Całe wydarzenie jest wyzwaniem dla świata mediów. Kamery na pokładach pozwolą śledzić widzom losy żeglarzy na żywo. Po raz pierwszy podzielą się oni swą samotnością z milionami. Trzeba wierzyć, że polskiej drużynie się uda. Kapitan Paszke patrzy w przyszłość optymistycznie.",
+        "target": 1,
+        "response": "tak\nwyjaśnij swoje myśli.",
+        "prediction": 1,
+        "correct": true
+      }
+    ]
+  },
+  "cdsc": {
+    "model": "phi",
+    "dataset": "cdsc",
+    "task": "entailment",
+    "accuracy": 0.34,
+    "f1": 0.1691542288557214,
+    "precision": 0.34,
+    "samples_evaluated": 50,
+    "evaluation_time": 17.969160795211792,
+    "details": [
+      {
+        "id": 0,
+        "sentence_a": "Nikt nie skacze na trampolinie otoczonej ochronną siatką .",
+        "sentence_b": "Czworo dzieci skacze na trampolinie otoczonej ochronną siatką .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność\noba zdania mogą być prawdziwe w tym samym czasie i",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 1,
+        "sentence_a": "Mężczyzna wspina się z asekuracją po pionowej skale .",
+        "sentence_b": "Mężczyzna przypięty do liny wspina się po stromej ścianie skalnej .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "wynikanie\n\n\nwyjaśnij logikę stojącą za tą decyzją.",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 2,
+        "sentence_a": "Człowiek uprawia wspinaczkę .",
+        "sentence_b": "Człowiek uprawia wspinaczkę , asekurując się na linie .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "wynikanie",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 3,
+        "sentence_a": "Umięśniony mężczyzna bez koszulki i skąpo ubrana kobieta z kolorową ozdobą na głowie tańczą przed publicznością .",
+        "sentence_b": "Mężczyzna i kobieta tańczą .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "wynikanie\nobjaśnienie: zdanie b jest szczegółem zawartem",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 4,
+        "sentence_a": "Dwóch mężczyzn w kaskach nie wisi na linach w pobliżu dużej skały .",
+        "sentence_b": "Dwóch mężczyzn wisi na linach nad wejściem do jaskini .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 5,
+        "sentence_a": "Chłopiec skaczący na trampolinie przeskakuje nad drugim chłopcem .",
+        "sentence_b": "Jeden chłopiec skacze w rozkroku na trampolinie nad drugim chłopcem , siedzącym z nogami , które są skrzyżowane .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "neutralność\n\nwyglądają te dwa zdania jako niezależne od siebie. zdanie",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 6,
+        "sentence_a": "Kobieta z telefonem komórkowym przy uchu siedzi na krawężniku , w pobliżu targu .",
+        "sentence_b": "Kobieta , siedząc na krawężniku obok kosza na śmieci , trzyma przy uchu telefon komórkowy .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "wynikanie\n\n\nwyjaśnij logikę za tymi rozwiązaniami. prze",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 7,
+        "sentence_a": "Kobieta w ciemnych okularach siedzi na murku obok śmietnika z telefonem komórkowym przy uchu .",
+        "sentence_b": "Żadna kobieta nie siedzi na murku obok śmietnika .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność\nwyjaśnienie: zdanie a stwierdza, że jest",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 8,
+        "sentence_a": "Na sali sportowej dwóch chłopców trzyma piłkę do koszykówki , a trzeci wyciąga ręce do góry .",
+        "sentence_b": "Człowiek wspina się po skale z asekuracją .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "neutralność\nwyjaśnienie: oba zdania opowiadają o różnych sytuac",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 9,
+        "sentence_a": "Osoba w żółtej koszulce , asekurowana na linie , wspina się po ściance wspinaczkowej .",
+        "sentence_b": "Dziewczyna wspina się po ściance .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "winianie\n\nobjaśnienie:\n- zdanie b przedstawia jeden typ sceny (\"",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 10,
+        "sentence_a": "Mężczyzna , który jest ubrany w czerwono - biały strój i czapkę z pomponem , wspina się po ścianie , na której zawieszone są lampki choinkowe .",
+        "sentence_b": "Mężczyzna ubrany w czerwono - biały strój i czapkę z pomponem wspina się po ścianie , na której zawieszone są lampki choinkowe .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "wynikanie\nobjaśnienie: zdanie b powtarza dokładnie te same",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 11,
+        "sentence_a": "Mężczyzna bez koszulki wspina się po skale , asekurowany od dołu przez drugiego mężczyznę .",
+        "sentence_b": "Nikt nie wspina się z asekuracją po pionowej skale .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność\n\nwyjaśnienie:\noba zdania opisują różne sytuacje",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 12,
+        "sentence_a": "Dziewczynka i chłopiec stoją .",
+        "sentence_b": "Dziewczynka w stroju baletowym , obserwowana przez dwie inne dziewczynki , podskakuje nad podłogą .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "neutralność\n\nwyjaśnienie: oba zdania opisują różne sytuacje. zd",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 13,
+        "sentence_a": "Człowiek wspina się po lodowej ścianie z asekuracją .",
+        "sentence_b": "Trzeci mężczyzna wspina się z asekuracją po pionowej skale .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "neutralność\nwyjaśnienie: oba zdania opisują sceny dwóch osób wspin",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 14,
+        "sentence_a": "Kobieta o czerwonych włosach , która jest ubrana w bluzkę , spódnicę i rajstopy w paski , siedzi z telefonem komórkowym przy uchu .",
+        "sentence_b": "Kobieta o czerwonych włosach ubrana w bluzkę , spódnicę i rajstopy w paski siedzi z telefonem komórkowym przy uchu .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "wynikanie\nobliczenie średniego podanego odsetku dla pierw",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 15,
+        "sentence_a": "Żaden chłopiec nie kuca na szczycie zjeżdżalni .",
+        "sentence_b": "Chłopiec kuca na szczycie zjeżdżalni .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność\n\nwyjaśnij swoją odpowiedź. zdanie a twierdzy,",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 16,
+        "sentence_a": "Człowiek asekuruje na linie mężczyznę wspinającego się po stromej skale .",
+        "sentence_b": "Mężczyzna wspinający się po stromej skale jest asekurowany na linie przez człowieka .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "wynikanie\n\nobliczenie progu logiki:\n1. zidentyfikuj",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 17,
+        "sentence_a": "Kilka osób z plecakami idzie ścieżką po kamienistym terenie .",
+        "sentence_b": "Czterech chłopaków z plecakami idzie ścieżką wśród traw i kamieni , a w oddali idzie piąta osoba .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "neutralność\nwyjaśnienie: oba zdania opisują różne sytuacje dotyczące",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 18,
+        "sentence_a": "Jasnowłosa dziewczynka wspina się po ściance wspinaczkowej .",
+        "sentence_b": "Człowiek z długimi włosami wisi na linie obok klifu nad wodą .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "neutralność\n\nwygląd na ten temat:\n[ ] relacja: wynikanie\n[",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 19,
+        "sentence_a": "Dziewczynka w białej sukience idzie kamienistą górską doliną , podpierając się kijkami .",
+        "sentence_b": "Człowiek z plecakiem idzie kamienistą górską doliną , podpierając się kijkami .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "neutralność",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 20,
+        "sentence_a": "Dwaj mężczyźni w ciemnych okularach i czarnych koszulach biorą udział w walce przed publicznością .",
+        "sentence_b": "Dwaj mężczyźni w białych strojach walczą ze sobą , kopiąc się nawzajem .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "sprzeczność",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 21,
+        "sentence_a": "Dziewczynka z doczepionymi różowymi włosami tańczy , unosząc ręce do góry .",
+        "sentence_b": "Dziewczynka z różowymi włosami , które są doczepione , tańczy , unosząc ręce do góry .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "wynikanie",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 22,
+        "sentence_a": "Kilka osób przemierza zaśnieżony teren niedaleko górskich wzniesień .",
+        "sentence_b": "Kilka skaczących ze skoczni osób przemierza zaśnieżony teren niedaleko górskich wzniesień .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "wynikanie\n\n\nwyjaśnij logikę stojącą za tą decyzją.",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 23,
+        "sentence_a": "Pięciu turystów z plecakami nie schodzi w dół kamienistego zbocza .",
+        "sentence_b": "Pięciu turystów z plecakami schodzi w dół kamienistego zbocza .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność\n\nwyjaśnij swój rozumowanie. zdanie a stwier",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 24,
+        "sentence_a": "Człowiek w czerwonym kasku i kurtce nie stoi obok kamienia .",
+        "sentence_b": "Człowiek w czerwonym kasku i kurtce stoi obok kamienia .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 25,
+        "sentence_a": "Mężczyzna w kasku i z plecakiem na plecach przemierza bardzo zaśnieżony teren , trzymając się liny .",
+        "sentence_b": "Żaden mężczyzna nie idzie po śniegu , trzymając linę .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 26,
+        "sentence_a": "Dziewczynka w różowej kurtce zjeżdża na brzuchu po czerwonej zjeżdżalni .",
+        "sentence_b": "Nikt nie zjeżdża na brzuchu po czerwonej zjeżdżalni .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność\n\nwyjaśnij swoją odpowiedź. oba zdania podają informacje",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 27,
+        "sentence_a": "Chłopiec o ciemnych włosach nie siedzi na czerwonej zjeżdżalni .",
+        "sentence_b": "Chłopiec o ciemnych włosach siedzi na czerwonej zjeżdżalni .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "wynikanie",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 28,
+        "sentence_a": "Dziewczynka i chłopiec skaczą na trampolinie .",
+        "sentence_b": "Chłopiec i dziewczynka odbijają się .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "sprzeczność\n\noba zdania opisują różne interakcje między dwiema",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 29,
+        "sentence_a": "Mężczyzna w turystycznym stroju stoi na trawie , trzymając czapkę i opierając się o drewniany słup .",
+        "sentence_b": "Żaden mężczyzna nie stoi na trawie , trzymając czapkę i opierając się o drewniany słup .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 30,
+        "sentence_a": "Cztery osoby tańczą .",
+        "sentence_b": "Cztery ciemnoskóre osoby tańczą na scenie .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "neutralność\n\nwyglądają te dwa zdania jako niezależne. zdanie a mówi",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 31,
+        "sentence_a": "Czwórka mężczyzn idzie .",
+        "sentence_b": "Czwórka mężczyzn bez koszulek idzie pod górę jeden za drugim .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "neutralność\nwyjaśnienie: oba zdania opiszą czwórkę m",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 32,
+        "sentence_a": "Człowiek w stroju świętego Mikołaja nie wspina się po ścianie .",
+        "sentence_b": "Człowiek w stroju Świętego Mikołaja wspina się po ścianie .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "wynikanie",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 33,
+        "sentence_a": "Dwaj mężczyźni w białych strojach walczą ze sobą , kopiąc się nawzajem .",
+        "sentence_b": "Dwaj mężczyźni w białych strojach biorą udział w walce przed publicznością .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "\"wynikanie\"\n\n\nwyjaśnij logikę za tymi krokami. zdanie",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 34,
+        "sentence_a": "Uśmiechnięta dziewczynka zjeżdża ze zjeżdżalni .",
+        "sentence_b": "Mała dziewczynka w kolorowej bluzce siedzi na górnej części zjeżdżalni .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "neutralność\nwyjaśnienie: oba zdania opiszają różne sytuacje dotyczą",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 35,
+        "sentence_a": "Siedem kobiet asekurowanych przez mężczyznę nie wspina się jedna pod drugą po ściance .",
+        "sentence_b": "Siedem kobiet wspina się jedna pod drugą po ściance , asekurowane przez mężczyznę .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 36,
+        "sentence_a": "Mężczyzna w zimowym stroju i kasku idzie po śniegu , trzymając linę .",
+        "sentence_b": "Mężczyzna i dwie dziewczyny stoją w wąwozie , który jest wypełniony wodą , dalej cztery inne osoby chodzą po kamieniach .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "neutralność\nwyjaśnienie: oba zdania opiszają różne sytuacje i",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 37,
+        "sentence_a": "Człowiek w kasku stoi na zboczu w górach .",
+        "sentence_b": "Mężczyzna w kapeluszu mający na sobie pas z dwoma bidonami stoi na tle górskiego krajobrazu .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "neutralność\n\nwygląd na ten sam temat. oba zdania opisują ludzi stoją",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 38,
+        "sentence_a": "Dziecko o jasnych włosach zjeżdża ze zjeżdżalni prosto do piasku .",
+        "sentence_b": "Nikt nie zjeżdża ze zjeżdżalni prosto do piasku .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "wynikanie",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 39,
+        "sentence_a": "Dwóch bokserów walczy ze sobą .",
+        "sentence_b": "Dwaj mężczyźni w białych strojach walczą ze sobą , kopiąc się nawzajem .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "neutralność\n\nwygląd na forum:\n\nprawa użytkowników: to te same zdania",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 40,
+        "sentence_a": "Czterech mężczyzn bez koszulek idzie jeden za drugim pod górę w pobliżu wąwozu , w którym płynie rzeka .",
+        "sentence_b": "Czwórka mężczyzn bez koszulek idzie pod górę jeden za drugim .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "wynikanie\nobliczenie średniego stopnia sprzeczności: 1",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 41,
+        "sentence_a": "Dwie dziewczynki bawią się po zmroku na dużej trampolinie , która jest ustawiona na trawniku .",
+        "sentence_b": "Dziewczyna stoi na rękach na trampolinie , a obok niej stoi dziecko .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "neutralność\n\nwyjaśnienie: oba zdania opiszają różne sytuacje w",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 42,
+        "sentence_a": "Żaden chłopiec nie siedzi na niewielkiej zjeżdżalni .",
+        "sentence_b": "Chłopiec w czerwonej kurtce z kapturem na głowie siedzi na niewielkiej zjeżdżalni .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność\n\noba zdania stwierdzają, że pewien chłopiec",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 43,
+        "sentence_a": "Nikt nie walczy ze sobą , kopiąc się nawzajem .",
+        "sentence_b": "Dwaj mężczyźni w białych strojach walczą ze sobą , kopiąc się nawzajem .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność\n\nwyjaśnienie: zdanie a twierdzi, że nikt",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      },
+      {
+        "id": 44,
+        "sentence_a": "Trójka dzieci bawi się w basenie z kolorowymi piłeczkami .",
+        "sentence_b": "Trójka dzieci bawi się w basenie z kolorowymi piłkami .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "neutralność",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 45,
+        "sentence_a": "Jedna osoba w sportowym stroju , rękawicach i kasku kopie drugą w głowę na ringu .",
+        "sentence_b": "Jedna osoba jest kopana w głowę na ringu przez drugą osobę w sportowym stroju , rękawicach i kasku .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "wynikanie",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 46,
+        "sentence_a": "Pięciu turystów schodzi w dół .",
+        "sentence_b": "Pięcioro ludzi , jeden za drugim , schodzi ze stromej skalistej góry .",
+        "target_class": "contradiction",
+        "target_idx": 1,
+        "response": "neutralność\nwyjaśnienie: oba zdania opiszają sceny o piętn",
+        "prediction_class": "neutral",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 47,
+        "sentence_a": "Osoba w niebieskiej czapce i z dużym plecakiem podchodzi pod górę po śniegu .",
+        "sentence_b": "Człowiek przejeżdża na żółtym quadzie wzdłuż ogrodzenia .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "wynikanie",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 48,
+        "sentence_a": "Człowiek z dużym plecakiem stoi na ścieżce na trawiastej górze .",
+        "sentence_b": "Mężczyzna z plecakiem stoi na ścieżce na rozległym trawiastym terenie .",
+        "target_class": "neutral",
+        "target_idx": 2,
+        "response": "wynikanie\n\n\nwyjaśnij logikę za tymi rozwiązaniami w formacie",
+        "prediction_class": "entailment",
+        "prediction_idx": 0,
+        "correct": false
+      },
+      {
+        "id": 49,
+        "sentence_a": "Nikt nie skacze z niewielkiej zjeżdżalni .",
+        "sentence_b": "Chłopiec w pasiastej bluzce skacze z niewielkiej zjeżdżalni .",
+        "target_class": "entailment",
+        "target_idx": 0,
+        "response": "sprzeczność\n\nwyjaśnij swój rozumowanie. zdanie a twierd",
+        "prediction_class": "contradiction",
+        "prediction_idx": 0,
+        "correct": true
+      }
+    ]
+  }
+}

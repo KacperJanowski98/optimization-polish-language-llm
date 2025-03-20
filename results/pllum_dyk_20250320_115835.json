@@ -1,0 +1,462 @@
+{
+  "model": "pllum",
+  "dataset": "dyk",
+  "task": "question-answer correctness",
+  "accuracy": 0.9,
+  "f1": 0.8999599839935974,
+  "precision": 0.9,
+  "samples_evaluated": 50,
+  "evaluation_time": 11.29710054397583,
+  "details": [
+    {
+      "id": 0,
+      "question": "co według legendy było bezpośrednią przyczyną wybuchu powstania pod wodzą Lucjusza Juniusza Brutusa, które doprowadziło do obalenia rzymskiej monarchii i powołania republiki?",
+      "answer": "Pod jego nieobecność została zgwałcona przez Sekstusa Tarkwiniusza, syna Tarkwiniusza Pysznego. O czynie tym powiadomiła swojego męża, kazała mu poprzysiąc zemstę, a następnie popełniła samobójstwo. Według legendy jej krzywda miała stać się bezpośrednią przyczyną wybuchu powstania pod wodzą Lucjusza Juniusza Brutusa.",
+      "target": 1,
+      "response": "nie",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 1,
+      "question": "co zainspirowało narodziny filmu więziennego?",
+      "answer": "Film więzienny narodził się w kinie amerykańskim lat 30. XX wieku. Jego powstanie zainspirowały głośne bunty, które miały miejsce latem 1929 roku w zakładach karnych w Dannemora i Auburn (oba w stanie Nowy Jork).",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 2,
+      "question": "który portugalski generał, szef Sztabu Generalnego w latach 1974–1976, był prezydentem Portugalii?",
+      "answer": "1961-1965 i 1969-1974 był przedstawicielem Sztabu Generalnego WP w Sztabie Zjednoczonych Sił Zbrojnych Państw-Stron Układu Warszawskiego, 1965-1969 pracował w Inspektoracie MON. Jesienią 1968 mianowany generałem brygady; nominację wręczył mu w Belwederze przewodniczący Rady Państwa PRL Marian Spychalski w obecności szefa PZPR Władysława Gomułki. 1975-1976 szef sztabu - zastępca dowódcy Warszawskiego Okręgu Wojskowego.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 3,
+      "question": "jak nazywa się pierwszy zdiagnozowany sawant?",
+      "answer": "Nadzwyczajna pamięć i fenomenalne zdolności językowe mogą wynikać z nieprawidłowości w budowie i funkcjonowaniu mózgu, takich jak zespół sawanta. Brytyjski sawant autystyczny Daniel Tammet zna biegle 11 języków, przy czym jednego z nich (islandzkiego) nauczył się w siedem dni, osiągając umiejętność swobodnej rozmowy.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 4,
+      "question": "która tybetańska arystokratka kierowała Studentami dla Wolnego Tybetu?",
+      "answer": " Informacje na stronie Stowarzyszenia Studenci dla Wolnego Tybetu",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 5,
+      "question": "kto jest ostatnim żyjącym dowódcą dywizjonu Polskich Sił Powietrznych w Wielkiej Brytanii?",
+      "answer": "Franciszek Kornicki (ur. 18 grudnia 1916 w Wereszynie) – polski dowódca wojskowy, podpułkownik pilot Polskich Sił Powietrznych w Wielkiej Brytanii, po II wojnie światowej major (Squadron Leader) Królewskich Sił Powietrznych, ostatni żyjący dowódca polskiego dywizjonu z okresu II wojny światowej.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 6,
+      "question": "kiedy Teatr Polskiego Radia wyemitował swoje pierwsze słuchowisko?",
+      "answer": "Autorzy oryginalnych słuchowisk Teatru Polskiego Radia",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 7,
+      "question": "co można było zobaczyć w XVI- i XVII-wiecznych kunstkamerach?",
+      "answer": "Kutas – w XVII–XVIII-wiecznej Polsce chwost (kutas, kwast, chwast – ozdoba szmuklerska postaci pędzla z nici lub sznureczków) na końcu sznura, przypinanego do pasa jako element dekoracyjny. Często stanowił dolne wykończenie co bogatszych szamerunków stosowanych w mundurach wojskowych.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 8,
+      "question": "jaka energia została wyzwolona podczas wybicia krateru Vista Alegre?",
+      "answer": "Ponadto dwa mniejsze kratery, krater Vista Alegre w Brazylii i Eagle Butte w Kanadzie mogły powstać w tym samym czasie, jednak ich wiek jest określony z małą dokładnością i mogą być w rzeczywistości młodsze.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 9,
+      "question": "jak wygląda ramię strzalika japońskiego?",
+      "answer": "- A jak wygląda łabędź? - Ma długą, piękną szyję, o, taką - dziewczyna zgięła swoje ramię i powiodła po nim dłonią starca.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 10,
+      "question": "w jakich grach został użyty silnik Naughty Dog Game Engine?",
+      "answer": "Naughty Dog Game Engine Naughty Dog Game Engine – silnik gry wyprodukowany przez firmę Naughty Dog. Wykorzystywany w przygodowych grach akcji przedstawionych z perspektywy trzeciej osoby. Historia",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 11,
+      "question": "co ma wspólnego bytomska Krystyna z pyrlikiem?",
+      "answer": "W pierwszych minutach piłkarze bytomscy wypełniali swoje zadania, ale w 18 minucie Engelhardt podał do Frenzla, a ten strzelił z kilku metrów i zdobył bramkę. Drugą bramkę Niemcy zdobyli po błędzie Szczęsnego, który wybiegł z bramki, co wykorzystał Franke kierując piłkę do pustej bramki.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 12,
+      "question": "gdzie mieszkają Nu?",
+      "answer": "W latach 1950. utworzoną Autonomiczną Prefekturę Lisu Nujiang, a następnie Autonomiczne Powiaty Gongshan, Bijiang i Fugong, w których mieszka większość Nu.",
+      "target": 1,
+      "response": "nie",
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "id": 13,
+      "question": "kiedy w Nowym Jorku pojawiły się teatry off-off-Broadway, mniejsze od broadwayowskich i off-broadwayowskich?",
+      "answer": "Co roku w czerwcu broadwayowskie przedstawienia i artyści nagradzani są nagrodą Tony (Antoinette Perry Awards) przyznawaną przez towarzystwo American Theatre Wing. Tony jest najwyższą nagrodą teatralną na Broadwayu. Aby przedstawienie było brane pod uwagę przy przyznawaniu nagród Tony, musi się ono odbywać w budynku posiadającym co najmniej 500 miejsc co zasadniczo definiuje teatr broadwayowski.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 14,
+      "question": "na czyje życzenie strzelali Winnie i Pooh?",
+      "answer": "Obaj strzelali, obaj -- jak stwierdzili -- nie chcieli zabić.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 15,
+      "question": "kto sprowadził buddyzm do Tybetu?",
+      "answer": "མུན་ཆང་ཀུང་ཅོ, Wylie Mun chang kung tso; ur. 625, zm. 680) – chińska księżniczka, żona króla Tybetu Songcena Gampo, której przypisuje się sprowadzenie buddyzmu do tego kraju i która stała się symbolem relacji chińsko-tybetańskich.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 16,
+      "question": "kto sprowadził buddyzm do Tybetu?",
+      "answer": "Padmasambhava, wielki mahasiddha, który wprowadził buddyzm do Tybetu, opisuje:Sogjal Rinpocze, Tybetańska księga życia i umierania, Wydawnictwo EM, Warszawa 1997, s. 361",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 17,
+      "question": "jakie chemiczne ślady czerwonego wina można znaleźć w czasie badań archeologicznych?",
+      "answer": "Analiza wyników badań powierzchniowych Otrzymany w rezultacie starannie przeprowadzonych prac obraz nie zawsze jest wiernym odbiciem sytuacji na danym terenie w przeszłości. Nie wszystkie stanowiska można znaleźć tą metodą.",
+      "target": 0,
+      "response": "tak",
+      "prediction": 1,
+      "correct": false
+    },
+    {
+      "id": 18,
+      "question": "który amerykański aktor wykreował postać Daniela LaRusso w filmie Karate Kid?",
+      "answer": "Karate Kid, Daniel LaRusso (Ralph Macchio), wraca z Okinawy. Pewnego dnia zostaje zmuszony przez kilku chuliganów do wzięcia udziału w zawodach, na co nie zgadza się jego nauczyciel, Kesuke Miyagi (Pat Morita). ",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 19,
+      "question": "skąd wzięła swą nazwę jedna z dzielnic Raciborza, Obora?",
+      "answer": "Dzielnica wzięła swą nazwę od lasu, który od wieków określany był mianem Obora. Nazwa wzięła się stąd, iż prawdopodobnie w okolicy znajdowały się miejsca schronienia dla zwierząt.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 20,
+      "question": "kiedy Teatr Polskiego Radia wyemitował swoje pierwsze słuchowisko?",
+      "answer": "Historia Pierwszym słuchowiskiem w historii Teatru Polskiego Radia była nadana na żywo Warszawianka Stanisława Wyspiańskiego. Reżyserem tej adaptacji był Alojzy Kaszyna – ówczesny kierownik programowy. Premiera miała miejsce 29 listopada 1925 roku.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 21,
+      "question": "gdzie w Liechtensteinie istniała skocznia narciarska?",
+      "answer": "Obecnie w Australii nie istnieje żadna skocznia narciarska.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 22,
+      "question": "jakie prawa nadawał protestantom wydany 9 lipca 1609 List majestatyczny?",
+      "answer": "9 lipca – cesarz Rudolf II wydał list majestatyczny gwarantujący protestantom w Czechach wolność wyznania.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 23,
+      "question": "kogo nagradzano Krzyżem Hiszpanii?",
+      "answer": "Krzyż został ustanowiony rozporządzeniem Adolfa Hitlera z dnia 14 kwietnia 1939 roku dla nagrodzenia żołnierzy walczących w ramach Legionu Condor w hiszpańskiej wojnie domowej.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 24,
+      "question": "gdzie płynie Strumień Wodnika?",
+      "answer": "Strumień Wodnika Strumień Wodnika – strumień gwiazd utworzony przez gwiazdy z nieistniejącej już galaktyki, wchłoniętej przez Drogę Mleczną.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 25,
+      "question": "co góruje nad Paprotkami?",
+      "answer": "Zadzierna jest najwyższym wzniesieniem wzgórz Bramy Lubawskiej i małego pasma górskiego o nazwie Szczepanowski Grzbiet. Wzniesienie góruje od południowo-wschodniej strony nad miejscowością Bukówka a od północno-zachodniej nad Paprotkami. ",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 26,
+      "question": "kiedy w Nowym Jorku pojawiły się teatry off-off-Broadway, mniejsze od broadwayowskich i off-broadwayowskich?",
+      "answer": "Teatr, założony w 1961 roku przez Ellen Stewart, odgrywał od początku istotną rolę w kształtowaniu się i rozwoju off-off-Broadwayu, a do jego głównych celów należy wspieranie i prezentacja oryginalnej, wielokulturowej działalności scenicznej obiecujących artystów.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 27,
+      "question": "podczas której operacji alianckiego lądowania w Normandii po raz pierwszy do rejonu walk dostarczono czołgi drogą powietrzną?",
+      "answer": "W trakcie Operacji Mallard do stref lądowania dotarło 246 z 256 szybowców holowanych przez samoloty z 38 i 48 Grupy RAF. W lądowaniu wzięły udział, po raz pierwszy, czołgi dostarczone do rejonu walk drogą powietrzną.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 28,
+      "question": "gdzie jest przechowywany Wielki Zwój Izajasza – jeden z najstarszych rękopisów qumrańskich?",
+      "answer": "W przeciwieństwie do Zwoju Izajasza - który zawiera kompletny tekst Księgi Izajasza - większość z nich jest reprezentowana tylko przez urywki stanowiące najwyżej jedną dziesiątą całej księgi. Najbardziej rozpowszechnione w Qumran były Psalmy (znaleziono 36 odpisów), Księga Powtórzonego Prawa (29 egzemplarzy) i Księga Izajasza (21 egzemplarzy w tym 1QIsaa i 1QIsab).",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 29,
+      "question": "za co Iwanowi Tyszkiwiczowi ucięto dłoń?",
+      "answer": "\"Tyszkiewicz był torturowany – wyrwano mu język za \"\"bluźnierstwo przeciw Bogu\"\", a za rzucenie krucyfiksu na ziemię ucięto mu dłoń i nogę.\"",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 30,
+      "question": "w jaki sposób pieprzojad szmaragdowy opiekuje się swoim potomstwem?",
+      "answer": "Kirysek szmaragdowy składa ikrę na spodzie dużych liści, ale również na liściach pływających. Nie opiekuje się ikrą.",
+      "target": 0,
+      "response": "tak",
+      "prediction": 1,
+      "correct": false
+    },
+    {
+      "id": 31,
+      "question": "kto ufundował pierwszy meczet w Anglii?",
+      "answer": "William Henry Quilliam (ur. 10 kwietnia 1856, zm. 23 kwietnia 1932) – brytyjski prawnik, pisarz. Fundator pierwszego meczetu zbudowanego w Anglii.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 32,
+      "question": "jaka trucizna występuje w spleśniałych jabłkach?",
+      "answer": "b) Podczas normalnego funkcjonowania komórki bakteryjnej posiadającej plazmid kodujący system cddAB, trucizna pozostaje związana przez antidotum (6) i nie wywiera toksycznego wpływu na swój cel komórkowy (7), jakim w tym wypadku jest gyraza DNA. (c) Jeśli komórka utraci plazmid z genami systemu cddAB, nietrwałe antidotum zostaje zdegradowane (8), a toksyna wiąże się ze swoim celem (9) hamując dalsze podziały komórki.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 33,
+      "question": "gdzie znajduje się Muzeum Toulouse-Lautreca posiadające największą na świecie kolekcję jego prac?",
+      "answer": "Musée Toulouse-Lautrec (Muzeum Toulouse-Lautreca) – muzeum sztuki położone w Albi przy placu św. Cecylii poświęcone Henriemu de Toulouse-Lautrecowi. Posiada największy na świecie zbiór jego prac: ponad 1000 obrazów, rysunków, litografii, szkiców, w tym wszystkie plakaty w liczbie 31.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 34,
+      "question": "jakie tereny zamieszkiwali ludzie z cywilizacji Cro-Magnon?",
+      "answer": "Człowieka z Cro-Magnon jako jednego z podgatunków Homo sapiens uważa się za anatomicznie identycznego z człowiekiem współczesnym. Gatunek ten wyodrębnił się obok gatunku neandertalczyka około 43 tys. lat temu w czasach ostatniego zlodowacenia tzw. bałtyckiego, w górnym plejstocenie w okresie zimnym, w fazie środkowej (Würm) na Bałkanach lub na terenie dzisiejszych Czech.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 35,
+      "question": "jaki boski wiatr miał ocalić Japonię przed dwoma najazdami Mongołów pod dowództwem Kubilaj-chana?",
+      "answer": "Kamikaze (神風, jap. Boski Wiatr – kami – bóg, boski, kaze – wiatr) – sztormy, które zgodnie z tradycją ocaliły Japonię przed dwoma najazdami Mongołów pod dowództwem Kubilaj-chana. Mongolska flota zaatakowała Japonię w 1274 roku i ponownie w 1281 roku.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 36,
+      "question": "co było inspiracją dla powstania kadzielnicy Gozberta?",
+      "answer": "była inspiracją dla powstania książki zatytułowanej 84, Charing Cross Road.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 37,
+      "question": "co utrudnia ruch kolejowy w Mauretanii?",
+      "answer": "Tigisi w Mauretanii",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 38,
+      "question": "która profesor teologii feministycznej otrzymała zakaz przemawiania podczas wizyty Jana Pawła II w Holandii?",
+      "answer": "Pomnik papieża Jana Pawła II – znajduje się w Szczecinie na Jasnych Błoniach, naprzeciw Pomnika Czynu Polaków. Historia Pomnik, którego powstanie zainicjował Urząd Miasta w Szczecinie, mający ok. 4 metrów wysokości i ważący ok. 6 ton, został odsłonięty 18 czerwca 1995 roku w miejscu, w którym Jan Paweł II odprawił Mszę świętą podczas swojej wizyty w Szczecinie w dniu 11 czerwca 1987 roku.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 39,
+      "question": "gdzie grywa się w fanoronę?",
+      "answer": "Następnie, w roku 1924, wraz z rodziną, przeniósł się do Bukaresztu gdzie trafił do Venusu Bukareszt.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 40,
+      "question": "jaki klub został pierwszym zawodowym mistrzem Francji w piłce nożnej?",
+      "answer": "Olympique Lillois – nieistniejący francuski klub piłkarski, grający dawniej w Ligue 1. Został założony w 1902 roku. Klub był pierwszym zawodowym mistrzem Francji w piłce nożnej.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 41,
+      "question": "czym różni się nekroptoza od apoptozy i autofagii?",
+      "answer": "Od procesów apoptozy i autofagii różni się zarówno swoistym mechanizmem działania, jak i znaczeniem fizjologicznym.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 42,
+      "question": "jakie drożdże wykorzystują tłuszcze jako źródło energii?",
+      "answer": "Yarrowia lipolytica Yarrowia lipolytica – gatunek grzybów z rzędu drożdżakowców, z monotypowego rodzaju Yarrowia. Odmiennie od drożdży Saccharomyces cerevisiae, przetwarzających cukry proste, wykorzystuje tłuszcze jako źródło węgla i energii. ",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 43,
+      "question": "ilu pasażerów jest rocznie obsługiwanych przez tajlandzki port lotniczy na Phuket?",
+      "answer": "Głównym, o ile nie powszechnym, portem wstępu na wyspę Phuket jest jej bardzo dobrze bezpośrednio skomunikowany międzynarodowo i krajowo port lotniczy Phuket, obsługujący 3 milliony pasażerów rocznie, położony w północnej części wyspy, 32 km od centrum miasta Phuket.",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 44,
+      "question": "nazwa jakiej polskiej odmiany jabłoni ma związek z delikatnością jej miąższu?",
+      "answer": "Zagłębienie szypułkowe jest płytkie, często z charakterystycznym pierścieniem miąższu, delikatnie ordzawione.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 45,
+      "question": "jakie miejsce jest nazywane największym, choć nieoficjalnym rezerwatem w Europie?",
+      "answer": "Do strefy ochronnej powróciło wiele gatunków rzadkich ptaków, jak czarny bocian czy bielik, oraz znaczna liczba łabędzi i sów. Według Roberta Bakera, biologa z Texas Tech University badającego przyrodę w okolicach Czarnobyla, zarówno wśród fauny jak i flory nie obserwuje się żadnych negatywnych skutków oddziaływania skażenia radioaktywnego, a korzyści wynikające z wysiedlenia ludzi znacząco przewyższyły hipotetyczne straty dla ekosystemu wynikające z samej katastrofy. Tylko dzięki temu możliwe było powstanie tego nieoficjalnego, choć największego rezerwatu w Europie. ",
+      "target": 1,
+      "response": "tak",
+      "prediction": 1,
+      "correct": true
+    },
+    {
+      "id": 46,
+      "question": "jaki klub został pierwszym zawodowym mistrzem Francji w piłce nożnej?",
+      "answer": "6 razy mistrz Francji: 1949, 1953, 1955, 1958, 1960, 1962 2 razy finalista Pucharu Europy Mistrzów Krajowych: 1956, 1959 3 razy wicemistrz Francji: 1947, 1954, 1963 2 razy zdobywca Pucharu Francji: 1950, 1958 finalista Pucharu Francji: 1977 mistrz Ligue 2: 1966 wicemistrz Ligue 2: 2012 amatorski mistrz Francji: 1935 mistrz DH Nord-Est: 1935 mistrz Szampanii: 1994 występy w Ligue 1: 1939–1943, 1944–1964, 1966/1967, 1970–1979 5 razy mistrz Francji w piłce nożnej kobiet: 1975, 1976, 1977, 1980, 1982",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 47,
+      "question": "w jaki sposób Latynoski obchodzą piętnaste urodziny?",
+      "answer": "Emisja: 24 grudnia 1981 roku Roots? Stary Pan Grace obchodzi urodziny, które personel jak zwykle chce uczcić w szczególny sposób.",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 48,
+      "question": "który amerykański żeglarz uważany jest za jednego z „ojców” US Navy?",
+      "answer": "\"Okręty US Navy o nazwie USS \"\"Tripoli\"\", pochodzącej od Trypolisu - miejsca jednej z pierwszych bitew US Navy: Pierwszy \"\"Tripoli\"\" (CVE-64) był lotniskowcem eskortowym, który służył w latach 1943 - 58.\"",
+      "target": 0,
+      "response": "nie",
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "id": 49,
+      "question": "czyim nazwiskiem sygnowana była grafika Pietera Bruegla Wielkie ryby jedzą małe ryby?",
+      "answer": "Bruegel wykonywał dla Cocka ryciny w stylu Boscha, prace te były na tyle dobre, że wydawca dopuszczał się przez kilka lat fałszerstw umieszczając na nich sygnaturę nie żyjącego od lat Boscha, m.in. Wielkie ryby jedzą małe ryby.",
+      "target": 1,
+      "response": "nie",
+      "prediction": 0,
+      "correct": false
+    }
+  ]
+}
